@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : RESC_0805.dra                                 )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Mon Dec 26 16:08:34 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/RESC_0805/RESC_0805_Allegro
+    Name      = resc_0805.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : OSCCC200X250X90-4N.dra                        )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Mon Dec 26 17:43:36 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/OSCCC200X250X90-4N/OSCCC200X250X90-4N_Allegro
+    Name      = osccc200x250x90-4n.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

@@ -1,0 +1,20 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Dec 27 22:48:13 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=5376 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\libs\QFN24P400X400X80-25N\QFN24P400X400X80-25N_Allegro\dummy.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/dummy.dra
+\i (00:00:00) trapsize 2124
+\i (00:00:00) trapsize 2202
+\i (00:00:00) trapsize 2492
+\i (00:00:00) trapsize 2095
+\i (00:00:00) trapsize 11720
+\i (00:00:00) trapsize 10450
+\i (00:00:00) generaledit 
+\i (00:00:02) trapsize 2649
+\i (00:00:04) exit 
+\e (00:00:04) Do you want to save the changes you made to dummy.dra?
+\i (00:00:17) fillin no 
+\t (00:00:17)     Journal end - Tue Dec 27 22:48:30 2016

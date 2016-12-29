@@ -1,0 +1,39 @@
+{ Using PSTWRITER 17.2.0 d001Dec-29-2016 at 13:47:07 }
+
+#1 WARNING(ORCAP-36038): "No_connect" property on Pin "U6.20" ignored for U6: Main, SENSOR (3.70, 2.20). Connecting pin to net "GND".
+#2 WARNING(ORCAP-36038): "No_connect" property on Pin "U5.2" ignored for U5: Main, POWER (3.60, 3.50). Connecting pin to net "GND".
+#3 WARNING(ORCAP-36038): "No_connect" property on Pin "U5.14" ignored for U5: Main, POWER (3.60, 3.50). Connecting pin to net "GND".
+#4 WARNING(ORCAP-36038): "No_connect" property on Pin "U5.3" ignored for U5: Main, POWER (3.60, 3.50). Connecting pin to net "GND".
+#5 WARNING(ORCAP-36038): "No_connect" property on Pin "U5.4" ignored for U5: Main, POWER (3.60, 3.50). Connecting pin to net "GND".
+#6 WARNING(ORCAP-36038): "No_connect" property on Pin "U6.13" ignored for U6: Main, SENSOR (3.70, 2.20). Connecting pin to net "VCC_3V".
+#7 WARNING(ORCAP-36038): "No_connect" property on Pin "U7.9" ignored for U7: Main, USB_DEBUG (3.70, 3.00). Connecting pin to net "VCC_3V".
+#8 WARNING(ORCAP-36038): "No_connect" property on Pin "U5.10" ignored for U5: Main, POWER (3.60, 3.50). Connecting pin to net "VIN_OK".
+#9 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.18" ignored for U1: Main, DA14583 (1.80, 2.10). Connecting pin to net "INTA".
+#10 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.20" ignored for U1: Main, DA14583 (1.80, 2.10). Connecting pin to net "INTB".
+#11 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.39" ignored for U1: Main, DA14583 (1.80, 2.10). Connecting pin to net "INTC".
+#12 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.40" ignored for U1: Main, DA14583 (1.80, 2.10). Connecting pin to net "INTD".
+#13 WARNING(ORCAP-36038): "No_connect" property on Pin "U7.16" ignored for U7: Main, USB_DEBUG (3.70, 3.00). Connecting pin to net "N753932".
+#14 WARNING(ORCAP-36038): "No_connect" property on Pin "U4.9" ignored for U4: Main, POWER (3.60, 1.00). Connecting pin to net "N749072".
+#15 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON_BUTTON300X400X200-2N_BUTTON" is renamed to "SW PUSHBUTTON_BUTTON300X400X200".
+#16 WARNING(ORCAP-36006): Part Name "LED BI-COLOUR_0_RGB_COM_A_3528-4N_RED_GREEN" is renamed to "LED BI-COLOUR_0_RGB_COM_A_3528-".
+#17 WARNING(ORCAP-36006): Part Name "MOSFET_I_EN_GSD_SOT95P237X112-3N_SI2302DS" is renamed to "MOSFET_I_EN_GSD_SOT95P237X112-3".
+#18 WARNING(ORCAP-36006): Part Name "SI2301BDS_0_SOT95P237X112-3N_SI2301BDS" is renamed to "SI2301BDS_0_SOT95P237X112-3N_SI".
+#19 WARNING(ORCAP-36006): Part Name "DA14583_QFN40_QFN40P500X500X80-41N_DA14583_QFN40" is renamed to "DA14583_QFN40_QFN40P500X500X80-".
+#20 WARNING(ORCAP-36006): Part Name "ASC0111B_0_SOT95P237X292-6N_ASC0111B" is renamed to "ASC0111B_0_SOT95P237X292-6N_ASC".
+#21 WARNING(ORCAP-36006): Part Name "OLED_DIS_64_0_FPC14N_1280X670X200-16N_OLED_DIS_64_32" is renamed to "OLED_DIS_64_0_FPC14N_1280X670X2".
+#22 WARNING(ORCAP-36006): Part Name "BQ24050_SON40P200X200X80-11N_BQ24050" is renamed to "BQ24050_SON40P200X200X80-11N_BQ".
+#23 WARNING(ORCAP-36006): Part Name "TPS62736_PVQFN14_2_QFN14P350X350X80-15N_TPS62736_PVQFN14" is renamed to "TPS62736_PVQFN14_2_QFN14P350X35".
+#24 WARNING(ORCAP-36006): Part Name "MPU9250_1_QFN24P300X300X100-25N_MPU9250" is renamed to "MPU9250_1_QFN24P300X300X100-25N".
+#25 WARNING(ORCAP-36006): Part Name "CP2104_QFN24_0_QFN24P400X400X80-25N_CP2104_QFN24" is renamed to "CP2104_QFN24_0_QFN24P400X400X80".
+#26 WARNING(ORCAP-36006): Part Name "CRYSTAL14_OSCCC200X250X90-4N_16MHZ" is renamed to "CRYSTAL14_OSCCC200X250X90-4N_16".
+#27 WARNING(ORCAP-36006): Part Name "CRYSTAL_OSCCC200X120X60-2N_32KHZ" is renamed to "CRYSTAL_OSCCC200X120X60-2N_32KH".
+INFO(ORCAP-36080): Scanning netlist files ...
+
+Loading... C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\allegro/pstchip.dat
+
+Loading... C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\allegro/pstchip.dat
+
+Loading... C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\allegro/pstxprt.dat
+
+Loading... C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\allegro/pstxnet.dat
+packaging the design view...

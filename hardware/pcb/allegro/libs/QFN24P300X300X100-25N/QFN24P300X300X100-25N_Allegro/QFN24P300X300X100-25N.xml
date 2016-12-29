@@ -1,0 +1,215 @@
+<Footprint name="QFN24P300X300X100-25N" >
+ <Units type="millimeters" precision="4" />
+ <Extents minX="-10.2800" minY="-8.9050" width="20.2800" height="18.0800" />
+ <Padstack name="b75_25" type="single" > 
+  <Layers>
+    <Layer name="TOP" >
+     <Pad shape="oblong" width="0.7500" height="0.2500" />
+    </Layer>
+    <Layer name="SOLDERMASK_TOP" >
+     <Pad shape="oblong" width="0.7500" height="0.2500" />
+    </Layer>
+    <Layer name="PASTEMASK_TOP" >
+     <Pad shape="oblong" width="0.7500" height="0.2500" />
+    </Layer>
+  </Layers>
+ </Padstack>
+ <Padstack name="r168_152c20" type="single" > 
+  <Shapes>
+   <Shape name="dummy"  width="20.2800" height="18.0800" layer="TOP" >
+   <CompositeShape>
+   <Polygon>
+    <Point x="-0.6400"  y="-0.7600" />
+    <Point x="-0.8400"  y="-0.5600" />
+    <Point x="-0.8400"  y="0.5600" />
+    <Point x="-0.6400"  y="0.7600" />
+    <Point x="0.6400"  y="0.7600" />
+    <Point x="0.8400"  y="0.5600" />
+    <Point x="0.8400"  y="-0.5600" />
+    <Point x="0.6400"  y="-0.7600" />
+    <Point x="-0.6400"  y="-0.7600" />
+   </Polygon>
+   <Circle type="shape" originX="-0.6400" originY="-0.5600" radius="0.2000" />
+   <Circle type="shape" originX="0.6400" originY="0.5600" radius="0.2000" />
+   <Circle type="shape" originX="0.6400" originY="-0.5600" radius="0.2000" />
+   </CompositeShape>
+    </Shape>
+   <Shape name="r168_152c20_TOP"  width="20.2800" height="18.0800" layer="TOP" >
+   <CompositeShape>
+   <Polygon>
+    <Point x="-0.6400"  y="-0.7600" />
+    <Point x="-0.8400"  y="-0.5600" />
+    <Point x="-0.8400"  y="0.5600" />
+    <Point x="-0.6400"  y="0.7600" />
+    <Point x="0.6400"  y="0.7600" />
+    <Point x="0.8400"  y="0.5600" />
+    <Point x="0.8400"  y="-0.5600" />
+    <Point x="0.6400"  y="-0.7600" />
+    <Point x="-0.6400"  y="-0.7600" />
+   </Polygon>
+   <Circle type="shape" originX="-0.6400" originY="-0.5600" radius="0.2000" />
+   <Circle type="shape" originX="0.6400" originY="0.5600" radius="0.2000" />
+   <Circle type="shape" originX="0.6400" originY="-0.5600" radius="0.2000" />
+   </CompositeShape>
+    </Shape>
+   <Shape name="r168_152c20_SM"  width="20.2800" height="18.0800" layer="SOLDERMASK_TOP" >
+   <CompositeShape>
+   <Polygon>
+    <Point x="-0.6400"  y="-0.7600" />
+    <Point x="-0.8400"  y="-0.5600" />
+    <Point x="-0.8400"  y="0.5600" />
+    <Point x="-0.6400"  y="0.7600" />
+    <Point x="0.6400"  y="0.7600" />
+    <Point x="0.8400"  y="0.5600" />
+    <Point x="0.8400"  y="-0.5600" />
+    <Point x="0.6400"  y="-0.7600" />
+    <Point x="-0.6400"  y="-0.7600" />
+   </Polygon>
+   <Circle type="shape" originX="-0.6400" originY="-0.5600" radius="0.2000" />
+   <Circle type="shape" originX="0.6400" originY="0.5600" radius="0.2000" />
+   <Circle type="shape" originX="0.6400" originY="-0.5600" radius="0.2000" />
+   </CompositeShape>
+    </Shape>
+   <Shape name="r168_152c20_PM"  width="20.2800" height="18.0800" layer="PASTEMASK_TOP" >
+   <CompositeShape>
+   <Polygon>
+    <Point x="-0.6400"  y="-0.7600" />
+    <Point x="-0.8400"  y="-0.5600" />
+    <Point x="-0.8400"  y="0.5600" />
+    <Point x="-0.6400"  y="0.7600" />
+    <Point x="0.6400"  y="0.7600" />
+    <Point x="0.8400"  y="0.5600" />
+    <Point x="0.8400"  y="-0.5600" />
+    <Point x="0.6400"  y="-0.7600" />
+    <Point x="-0.6400"  y="-0.7600" />
+   </Polygon>
+   <Circle type="shape" originX="-0.6400" originY="-0.5600" radius="0.2000" />
+   <Circle type="shape" originX="0.6400" originY="0.5600" radius="0.2000" />
+   <Circle type="shape" originX="0.6400" originY="-0.5600" radius="0.2000" />
+   </CompositeShape>
+    </Shape>
+  </Shapes>
+  <Layers>
+    <Layer name="TOP" shapeName="r168_152c20_TOP" >
+   </Layer>
+    <Layer name="SOLDERMASK_TOP" shapeName="r168_152c20_SM" >
+   </Layer>
+    <Layer name="PASTEMASK_TOP" shapeName="r168_152c20_PM" >
+   </Layer>
+  </Layers>
+ </Padstack>
+ <Padstack name="b75_23" type="single" > 
+  <Layers>
+    <Layer name="TOP" >
+     <Pad shape="oblong" width="0.7500" height="0.2380" />
+    </Layer>
+    <Layer name="SOLDERMASK_TOP" >
+     <Pad shape="oblong" width="0.7500" height="0.2380" />
+    </Layer>
+    <Layer name="PASTEMASK_TOP" >
+     <Pad shape="oblong" width="0.7500" height="0.2380" />
+    </Layer>
+  </Layers>
+ </Padstack>
+ <Pins>
+  <Pin number="1" padName="b75_23" originX="-1.5000" originY="1.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="2" padName="b75_23" originX="-1.5000" originY="0.6000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="3" padName="b75_23" originX="-1.5000" originY="0.2000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="4" padName="b75_23" originX="-1.5000" originY="-0.2000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="5" padName="b75_23" originX="-1.5000" originY="-0.6000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="6" padName="b75_23" originX="-1.5000" originY="-1.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="7" padName="b75_23" originX="-1.0000" originY="-1.5000" rotation="90" isMechanical="no" textBlk="1" />
+  <Pin number="8" padName="b75_23" originX="-0.6000" originY="-1.5000" rotation="90" isMechanical="no" textBlk="1" />
+  <Pin number="9" padName="b75_23" originX="-0.2000" originY="-1.5000" rotation="90" isMechanical="no" textBlk="1" />
+  <Pin number="10" padName="b75_23" originX="0.2000" originY="-1.5000" rotation="90" isMechanical="no" textBlk="1" />
+  <Pin number="11" padName="b75_23" originX="0.6000" originY="-1.5000" rotation="90" isMechanical="no" textBlk="1" />
+  <Pin number="12" padName="b75_23" originX="1.0000" originY="-1.5000" rotation="90" isMechanical="no" textBlk="1" />
+  <Pin number="13" padName="b75_23" originX="1.5000" originY="-1.0000" rotation="180" isMechanical="no" textBlk="1" />
+  <Pin number="14" padName="b75_23" originX="1.5000" originY="-0.6000" rotation="180" isMechanical="no" textBlk="1" />
+  <Pin number="15" padName="b75_23" originX="1.5000" originY="-0.2000" rotation="180" isMechanical="no" textBlk="1" />
+  <Pin number="16" padName="b75_23" originX="1.5000" originY="0.2000" rotation="180" isMechanical="no" textBlk="1" />
+  <Pin number="17" padName="b75_23" originX="1.5000" originY="0.6000" rotation="180" isMechanical="no" textBlk="1" />
+  <Pin number="18" padName="b75_23" originX="1.5000" originY="1.0000" rotation="180" isMechanical="no" textBlk="1" />
+  <Pin number="19" padName="b75_23" originX="1.0000" originY="1.5000" rotation="270" isMechanical="no" textBlk="1" />
+  <Pin number="20" padName="b75_23" originX="0.6000" originY="1.5000" rotation="270" isMechanical="no" textBlk="1" />
+  <Pin number="21" padName="b75_23" originX="0.2000" originY="1.5000" rotation="270" isMechanical="no" textBlk="1" />
+  <Pin number="22" padName="b75_23" originX="-0.2000" originY="1.5000" rotation="270" isMechanical="no" textBlk="1" />
+  <Pin number="23" padName="b75_23" originX="-0.6000" originY="1.5000" rotation="270" isMechanical="no" textBlk="1" />
+  <Pin number="24" padName="b75_23" originX="-1.0000" originY="1.5000" rotation="270" isMechanical="no" textBlk="1" />
+  <Pin number="25" padName="r168_152c20" originX="0.0000" originY="0.0000" rotation="0" isMechanical="yes" textBlk="1" />
+ </Pins>
+ <Vias>
+ </Vias>
+ <Layers>
+  <Layer name="PACKAGE GEOMETRY/PLACE_BOUND_TOP" packageHeight="1.0000" >
+   <Path lineWidth="0.0500" type="shape" >
+    <Point x="-2.1250" y="-2.1250" />
+    <Point x="-2.1250" y="2.1250" />
+    <Point x="2.1250" y="2.1250" />
+    <Point x="2.1250" y="-2.1250" />
+    <Point x="-2.1250" y="-2.1250" />
+   </Path>
+  </Layer>
+  <Layer name="PACKAGE GEOMETRY/DFA_BOUND_TOP" packageHeight="1.0000" >
+   <Path lineWidth="0.0000" type="shape" >
+    <Point x="-2.1250" y="-2.1250" />
+    <Point x="-2.1250" y="2.1250" />
+    <Point x="2.1250" y="2.1250" />
+    <Point x="2.1250" y="-2.1250" />
+    <Point x="-2.1250" y="-2.1250" />
+   </Path>
+  </Layer>
+  <Layer name="MANUFACTURING/NO_PROBE_TOP" packageHeight="1.0000" >
+   <Path lineWidth="0.0000" type="shape" >
+    <Point x="-2.1250" y="-2.1250" />
+    <Point x="-2.1250" y="2.1250" />
+    <Point x="2.1250" y="2.1250" />
+    <Point x="2.1250" y="-2.1250" />
+    <Point x="-2.1250" y="-2.1250" />
+   </Path>
+  </Layer>
+  <Layer name="PACKAGE GEOMETRY/ASSEMBLY_TOP" packageHeight="1.0000" >
+   <Path lineWidth="0.1000" type="line" >
+    <Point x="1.5000" y="1.5000" />
+    <Point x="1.5000" y="-1.5000" />
+    <Point x="-1.5000" y="-1.5000" />
+    <Point x="-1.5000" y="1.5000" />
+    <Point x="1.5000" y="1.5000" />
+   </Path>
+   <Path lineWidth="0.1000" type="line" >
+    <Point x="-1.5000" y="1.4000" />
+    <Point x="-1.4000" y="1.5000" />
+   </Path>
+   <Path lineWidth="0.1000" type="line" >
+    <Point x="-1.5000" y="1.3000" />
+    <Point x="-1.3000" y="1.5000" />
+   </Path>
+   <Path lineWidth="0.1000" type="line" >
+    <Point x="-1.5000" y="1.2000" />
+    <Point x="-1.2000" y="1.5000" />
+   </Path>
+   <Path lineWidth="0.1000" type="line" >
+    <Point x="-1.5000" y="1.1000" />
+    <Point x="-1.1000" y="1.5000" />
+   </Path>
+   <Label layer="REF DES/ASSEMBLY_TOP" textBlock="3" angle="0" x="0.0000" y="-0.6750" text="Ref" />
+  </Layer>
+  <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="1.0000" >
+   <Path lineWidth="0.2000" type="line" >
+    <Point x="-1.5000" y="1.5000" />
+   </Path>
+   <Path lineWidth="0.2000" type="line" >
+    <Point x="1.5000" y="1.5000" />
+   </Path>
+   <Path lineWidth="0.2000" type="line" >
+    <Point x="-1.5000" y="-1.5000" />
+   </Path>
+   <Path lineWidth="0.2000" type="line" >
+    <Point x="1.5000" y="-1.5000" />
+   </Path>
+   <Label layer="REF DES/SILKSCREEN_TOP" textBlock="3" angle="0" x="0.0000" y="1.7750" text="Ref" />
+   <Label layer="DEVICE TYPE/SILKSCREEN_TOP" textBlock="3" angle="0" x="0.0000" y="1.3250" text="Dev" />
+   <Circle type="shape" lineWidth="0.2000" originX="-2.4750" originY="1.0000" radius="0.2000" />
+  </Layer>
+ </Layers>
+</Footprint>

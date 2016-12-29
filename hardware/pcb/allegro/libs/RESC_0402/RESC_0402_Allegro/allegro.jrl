@@ -1,0 +1,66 @@
+\t (00:00:03) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Mon Dec 26 15:45:07 2016
+\t (00:00:03)         Host=NINFEION-PC User=Ninfeion Pid=5716 CPUs=4
+\t (00:00:03) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe -s C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/RESC_0402/RESC_0402_Allegro/RESC_0402.scr.txt
+\t (00:00:03) 
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 788
+\i (00:00:03) trapsize 810
+\i (00:00:03) trapsize 1371
+\i (00:00:03) trapsize 1371
+\w (00:00:03) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:00:03) trapsize 34823
+\t (00:00:03) Performing DRC...
+\t (00:00:03) Multithreaded DRC update (4 threads).
+\t (00:00:03) No DRC errors detected.
+\t (00:00:03) Opening Design "RESC_0402.dra"
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 20023
+\i (00:00:03) trapsize 20563
+\i (00:00:03) trapsize 34823
+\i (00:00:03) trapsize 34823
+\i (00:00:03) trapsize 377
+\t (00:00:03) Creating Shapes on Package layers
+\t (00:00:03) Creating Pins
+\t (00:00:03) Creating Vias
+\t (00:00:03) Symbol Created
+\t (00:00:03) Creating package symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/RESC_0402/RESC_0402_Allegro/resc_0402.psm'.
+\t (00:00:03) Starting Create symbol...
+\i (00:00:04) trapsize 197
+   (00:00:04) Loading cmds.cxt 
+   (00:00:04) Loading skillExt.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) trapsize 192
+\i (00:00:05) trapsize 197
+\i (00:00:05) trapsize 197
+\d (00:00:05) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/RESC_0402/RESC_0402_Allegro/RESC_0402.dra
+\t (00:00:05) Symbol Saved
+   (00:00:05) t
+\i (00:00:05) trapsize 197
+\i (00:00:05) generaledit 
+\i (00:00:16) trapsize 326
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in -0.4463 -0.1261
+\i (00:00:19) trapsize 163
+\i (00:00:19) zoom out 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom out -0.4495 -0.1326
+\i (00:00:19) trapsize 326
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in -0.4496 -0.1326
+\i (00:00:19) trapsize 163
+\i (00:00:19) zoom out 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom out -0.5181 -0.1718
+\i (00:00:19) trapsize 326
+\i (00:00:19) zoom out 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom out -0.5181 -0.2104
+\i (00:00:19) trapsize 512
+\i (00:01:18) exit 
+\e (00:01:18) Do you want to save the changes you made to RESC_0402.dra?
+\i (00:03:36) fillin yes 
+\t (00:03:36) Symbol 'resc_0402.psm' created.
+\t (00:03:36)     Journal end - Mon Dec 26 15:48:40 2016

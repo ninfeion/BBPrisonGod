@@ -1,0 +1,76 @@
+\t (00:00:02) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Dec 26 17:39:50 2016
+\t (00:00:02)         Host=NINFEION-PC User=Ninfeion Pid=6168 CPUs=4
+\t (00:00:02) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe -s C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/OSCCC200X250X90-4N/OSCCC200X250X90-4N_Allegro/OSCCC200X250X90-4N.scr.txt
+\t (00:00:02) 
+\t (00:00:02) Starting new design...
+\i (00:00:02) trapsize 1284
+\i (00:00:03) trapsize 1341
+\i (00:00:03) trapsize 1860
+\i (00:00:03) trapsize 1860
+\w (00:00:03) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:00:03) trapsize 47243
+\t (00:00:03) Performing DRC...
+\t (00:00:03) Multithreaded DRC update (4 threads).
+\t (00:00:03) No DRC errors detected.
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 32604
+\i (00:00:03) trapsize 34061
+\i (00:00:03) trapsize 47243
+\i (00:00:03) trapsize 47243
+\t (00:00:03) Opening Design "OSCCC200X250X90-4N.dra"
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 32604
+\i (00:00:03) trapsize 34061
+\i (00:00:03) trapsize 47243
+\i (00:00:03) trapsize 47243
+\i (00:00:03) trapsize 1621
+\t (00:00:03) Creating Shapes on Package layers
+\t (00:00:03) Creating Pins
+\t (00:00:03) Creating Vias
+\t (00:00:03) Symbol Created
+\t (00:00:03) Creating package symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/OSCCC200X250X90-4N/OSCCC200X250X90-4N_Allegro/osccc200x250x90-4n.psm'.
+\t (00:00:03) Starting Create symbol...
+\i (00:00:03) trapsize 409
+   (00:00:03) Loading cmds.cxt 
+   (00:00:03) Loading skillExt.cxt 
+\t (00:00:03) Opening existing design...
+\i (00:00:04) trapsize 392
+\i (00:00:04) trapsize 409
+\i (00:00:04) trapsize 409
+\d (00:00:04) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/OSCCC200X250X90-4N/OSCCC200X250X90-4N_Allegro/OSCCC200X250X90-4N.dra
+\t (00:00:04) Symbol Saved
+   (00:00:04) t
+\i (00:00:04) trapsize 409
+\i (00:00:04) generaledit 
+\i (00:00:15) pick grid 2.3485 0.4156
+\t (00:00:15) last pick:  2.5400 0.0000
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out 2.3485 0.4156
+\i (00:00:15) trapsize 818
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out 2.3486 0.4155
+\i (00:00:15) trapsize 1621
+\i (00:00:16) zoom out 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom out -4.7551 -0.2629
+\i (00:00:16) trapsize 1621
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in -4.8200 -0.2954
+\i (00:00:16) trapsize 811
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in -4.4633 -1.1385
+\i (00:00:16) trapsize 405
+\i (00:00:16) zoom out 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom out -0.7582 -1.2925
+\i (00:00:16) trapsize 811
+\i (00:03:48) exit 
+\e (00:03:48) Do you want to save the changes you made to OSCCC200X250X90-4N.dra?
+\i (00:03:49) fillin yes 
+\t (00:03:49) Symbol 'osccc200x250x90-4n.psm' created.
+\t (00:03:49)     Journal end - Mon Dec 26 17:43:37 2016

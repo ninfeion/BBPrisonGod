@@ -1,0 +1,172 @@
+(ExpressProject "prison_god_sch_v100"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\libs\bbprisongod_lib.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\prison_god_sch_v100.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (Board_sim_option "VHDL_flow"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("LED BI-COLOUR"
+      (FullPartName "LED BI-COLOUR.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("SW PUSHBUTTON"
+      (FullPartName "SW PUSHBUTTON.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (Si2301BDS
+      (FullPartName "Si2301BDS.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SILICONIX.OLB")
+      (DeviceIndex "0"))
+    ("MOSFET P"
+      (FullPartName "MOSFET P.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("MOSFET N"
+      (FullPartName "MOSFET N.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (OLED_DIS_64_32
+      (FullPartName "OLED_DIS_64_32.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\LIBS\BBPRISONGOD_LIB.OLB")
+      (DeviceIndex "0"))
+    (BQ24050
+      (FullPartName "BQ24050.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\LIBS\BBPRISONGOD_LIB.OLB")
+      (DeviceIndex "0"))
+    (CP2104_QFN24
+      (FullPartName "CP2104_QFN24.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\LIBS\BBPRISONGOD_LIB.OLB")
+      (DeviceIndex "0"))
+    (ASC0111B
+      (FullPartName "ASC0111B.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\LIBS\BBPRISONGOD_LIB.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (TPS62736_PVQFN14
+      (FullPartName "TPS62736_PVQFN14.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\LIBS\BBPRISONGOD_LIB.OLB")
+      (DeviceIndex "0"))
+    (CRYSTAL
+      (FullPartName "CRYSTAL.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (DA14583_QFN40
+      (FullPartName "DA14583_QFN40.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\LIBS\BBPRISONGOD_LIB.OLB")
+      (DeviceIndex "0"))
+    (CRYSTAL1-4/SM
+      (FullPartName "CRYSTAL1-4/SM.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (VCC_CIRCLE
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (GND_SIGNAL
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (ANTENNA
+      (FullPartName "ANTENNA.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (CC2640_QFN48
+      (FullPartName "CC2640_QFN48.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\LIBS\BBPRISONGOD_LIB.OLB")
+      (DeviceIndex "0"))
+    (CC2640_QFN36
+      (FullPartName "CC2640_QFN36.Normal")
+      (LibraryName
+         "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\LIBS\BBPRISONGOD_LIB.OLB")
+      (DeviceIndex "0"))
+    ("NPN BCE"
+      (FullPartName "NPN BCE.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (CRYSTAL14
+      (FullPartName "CRYSTAL14.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "Ninfeion")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbprisongod\hardware\pcb\cadence\prison_god_sch_v100.dsn")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbprisongod\hardware\pcb\cadence\prison_god_sch_v100.dsn"
+         "Main")
+      (Path "Design Resources"
+         "c:\ninfeion_git\bbprisongod\hardware\pcb\cadence\prison_god_sch_v100.dsn"
+         "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "c:\ninfeion_git\bbprisongod\hardware\pcb\cadence\libs\bbprisongod_lib.olb"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -23 0 200 0 243"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 220 1462 220 690")
+        (Scroll "0 0")
+        (Zoom "82")
+        (Occurrence "/"))
+      (Path
+         "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\PRISON_GOD_SCH_V100.DSN")
+      (Schematic "Main")
+      (Page "DA14583")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\Cadence_SPB_17.2-2016\tools\capture\library"))

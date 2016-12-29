@@ -1,0 +1,59 @@
+# 
+# ===============================================================================
+#                               Allegro PCB Router                               
+# Copyright 1990-2010 Cadence Design Systems, Inc.  All Rights Reserved.
+# ===============================================================================
+# 
+# Software licensed for sale by Cadence Design Systems, Inc.
+# Current time = Thu Dec 29 11:44:37 2016
+# 
+# Allegro PCB Router v17-2-50 made 2016/05/25 at 18:32:05
+# Running on: ninfeion-pc, OS Version: WindowsNT 6.1.7601, Architecture: Intel Pentium II, III, or 4
+# Licensing: The program will not obey any unlicensed rules
+# No graphics will be displayed.
+# Design Name C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro\PRISON_GOD_SCH_V130_4layer.dsn
+# Batch File Name: pasde.do
+# Did File Name: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/specctra.did
+# Current time = Thu Dec 29 11:44:38 2016
+# PCB C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro
+# Master Unit set up as: MM 100000
+# PCB Limits xlo= -2.3444 ylo= -2.4714 xhi= 32.8244 yhi= 35.4914
+# Total 77 Images Consolidated.
+# Via VIA z=1, 2 xlo= -0.3048 ylo= -0.3048 xhi=  0.3048 yhi=  0.3048
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# Wires Processed 4, Vias Processed 0
+# Using colormap in design file.
+# Layers Processed: Signal Layers 2
+# Layers Processed: Power Layers 2
+# Components Placed 95, Images Processed 114, Padstacks Processed 29
+# Nets Processed 73, Net Terminals 280
+# PCB Area= 1103.404  EIC=22  Area/EIC= 50.155  SMDs=95
+# Total Pin Count: 312
+# Signal Connections Created 139
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0001 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.1270, Clearance= 0.1270
+# Layer BOTTOM Vert Signal Wire Grid 0.0001 with offset 0.0000, Width= 0.1270, Clearance= 0.1270
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro\PRISON_GOD_SCH_V130_4layer.dsn
+# Nets 73 Connections 209 Unroutes 209
+# Signal Layers 2 Power Layers 2
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    0.00
+# Manhattan Length 967.1510 Horizontal 501.1055 Vertical 466.0455
+# Routed Length   3.1228 Horizontal   1.6615 Vertical   1.7820
+# Ratio Actual / Manhattan   0.0032
+# Unconnected Length 965.2925 Horizontal 506.4800 Vertical 458.8125
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# Loading Do File pasde.do ...
+# Loading Do File C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro\PRISON_GOD_SCH_V130_4layer_rules.do ...
+# Colormap Written to File _notify.std
+# Enter command <quit

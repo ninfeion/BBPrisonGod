@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : DET402_450X300-2N.dra                         )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Tue Dec 27 15:31:45 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/DET402_450X300-2N/DET402_450X300-2N_Allegro
+    Name      = det402_450x300-2n.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

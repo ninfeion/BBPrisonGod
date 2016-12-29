@@ -1,0 +1,160 @@
+\t (00:00:01) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:01)     Journal start - Mon Dec 26 17:23:36 2016
+\t (00:00:01)         Host=NINFEION-PC User=Ninfeion Pid=5688 CPUs=4
+\t (00:00:01) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe -s C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/QFN40P500X500X80-41N.scr.txt
+\t (00:00:01) 
+\t (00:00:01) Starting new design...
+\i (00:00:01) trapsize 1284
+\i (00:00:01) trapsize 1341
+\i (00:00:01) trapsize 1860
+\i (00:00:01) trapsize 1860
+\w (00:00:01) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:00:01) trapsize 47243
+\t (00:00:01) Performing DRC...
+\t (00:00:01) No DRC errors detected.
+\i (00:00:01) trapsize 2932
+\t (00:00:01) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/s360c30_top.ssm'.
+\t (00:00:01) Starting Create symbol...
+\t (00:00:01) Starting new design...
+\i (00:00:01) trapsize 1773
+\i (00:00:01) trapsize 1852
+\i (00:00:01) trapsize 2932
+\i (00:00:01) trapsize 2932
+\t (00:00:01) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/s360c30_pm.ssm'.
+\t (00:00:01) Starting Create symbol...
+\t (00:00:02) Starting new design...
+\i (00:00:02) trapsize 1773
+\i (00:00:02) trapsize 1852
+\i (00:00:02) trapsize 2932
+\i (00:00:02) trapsize 2932
+\t (00:00:02) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/s360c30_sm.ssm'.
+\t (00:00:02) Starting Create symbol...
+\t (00:00:02) Starting new design...
+\i (00:00:02) trapsize 1773
+\i (00:00:02) trapsize 1852
+\i (00:00:02) trapsize 2932
+\i (00:00:02) trapsize 2932
+\t (00:00:02) Starting new design...
+\i (00:00:02) trapsize 1773
+\i (00:00:03) trapsize 1852
+\i (00:00:03) trapsize 2932
+\i (00:00:03) trapsize 2932
+\t (00:00:03) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_25_pm.ssm'.
+\t (00:00:03) Starting Create symbol...
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 1773
+\i (00:00:03) trapsize 1852
+\i (00:00:03) trapsize 2932
+\i (00:00:03) trapsize 2932
+\t (00:00:03) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_25_top.ssm'.
+\t (00:00:03) Starting Create symbol...
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 1773
+\i (00:00:04) trapsize 1852
+\i (00:00:04) trapsize 2932
+\i (00:00:04) trapsize 2932
+\t (00:00:04) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_25_sm.ssm'.
+\t (00:00:04) Starting Create symbol...
+\t (00:00:04) Starting new design...
+\i (00:00:04) trapsize 1773
+\i (00:00:04) trapsize 1852
+\i (00:00:04) trapsize 2932
+\i (00:00:04) trapsize 2932
+\t (00:00:04) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/dummy.ssm'.
+\t (00:00:04) Starting Create symbol...
+\t (00:00:04) Starting new design...
+\i (00:00:04) trapsize 1773
+\i (00:00:05) trapsize 1852
+\i (00:00:05) trapsize 2932
+\i (00:00:05) trapsize 2932
+\t (00:00:05) Opening Design "QFN40P500X500X80-41N.dra"
+\t (00:00:05) Starting new design...
+\i (00:00:05) trapsize 1773
+\i (00:00:05) trapsize 1852
+\i (00:00:05) trapsize 2932
+\i (00:00:05) trapsize 2932
+\i (00:00:05) trapsize 2932
+\t (00:00:05) Creating Shapes on Package layers
+\t (00:00:05) Creating Pins
+\t (00:00:05) Creating Vias
+\t (00:00:05) Symbol Created
+\t (00:00:05) Creating package symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/qfn40p500x500x80-41n.psm'.
+\t (00:00:05) Starting Create symbol...
+\i (00:00:05) trapsize 784
+   (00:00:05) Loading cmds.cxt 
+   (00:00:05) Loading skillExt.cxt 
+\t (00:00:05) Opening existing design...
+\i (00:00:05) trapsize 751
+\i (00:00:05) trapsize 784
+\i (00:00:05) trapsize 784
+\d (00:00:05) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/QFN40P500X500X80-41N.dra
+\t (00:00:05) Symbol Saved
+   (00:00:05) t
+\i (00:00:05) trapsize 784
+\i (00:00:06) generaledit 
+\i (00:00:16) pick grid 7.1663 0.7189
+\t (00:00:16) last pick:  7.6200 0.0000
+\i (00:00:18) pick grid 6.4760 0.1541
+\t (00:00:18) last pick:  7.6200 0.0000
+\i (00:00:20) zoom out 1 
+\i (00:00:20) setwindow pcb
+\i (00:00:20) zoom out 4.8913 -0.0185
+\i (00:00:20) trapsize 1569
+\i (00:00:20) zoom out 1 
+\i (00:00:20) setwindow pcb
+\i (00:00:20) zoom out 4.4521 0.1383
+\i (00:00:20) trapsize 2932
+\i (00:00:21) zoom in 1 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) zoom in 2.4566 -2.7951
+\i (00:00:21) trapsize 1466
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in -1.7649 -2.4432
+\i (00:00:23) trapsize 733
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in -1.4570 -2.5312
+\i (00:00:23) trapsize 367
+\i (00:00:24) zoom in 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom in -1.7722 -2.3919
+\i (00:00:24) trapsize 183
+\i (00:00:27) zoom out 1 
+\i (00:00:27) setwindow pcb
+\i (00:00:27) zoom out -1.4313 -2.1829
+\i (00:00:27) trapsize 367
+\i (00:00:28) zoom out 1 
+\i (00:00:28) setwindow pcb
+\i (00:00:28) zoom out -1.9517 -2.4468
+\i (00:00:28) trapsize 733
+\i (00:00:28) zoom in 1 
+\i (00:00:28) setwindow pcb
+\i (00:00:28) zoom in -1.9223 -2.4614
+\i (00:00:28) trapsize 367
+\i (00:00:28) zoom in 1 
+\i (00:00:28) setwindow pcb
+\i (00:00:28) zoom in -1.9150 -2.4761
+\i (00:00:28) trapsize 183
+\i (00:00:33) define grid 
+\t (00:00:33) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (00:00:33) generaledit 
+\i (00:00:39) setwindow form.grid
+\i (00:00:39) FORM grid non_etch non_etch_x_grids 0.0254 
+\i (00:00:40) FORM grid non_etch non_etch_y_grids 0.0254 
+\i (00:00:40) FORM grid all_etch all_etch_x_grids 0.0254 
+\i (00:00:41) FORM grid all_etch all_etch_y_grids 0.0254 
+\i (00:00:42) FORM grid top subclass_y_grids 0.0254 
+\i (00:00:42) FORM grid done  
+\i (00:00:45) setwindow pcb
+\i (00:00:45) pick grid -1.7281 -3.0955
+\t (00:00:45) last pick:  -1.7272 -3.0988
+\i (00:01:05) zoom out 1 
+\i (00:01:05) setwindow pcb
+\i (00:01:05) zoom out -1.3066 -2.0692
+\i (00:01:05) trapsize 367
+\i (00:01:17) exit 
+\e (00:01:17) Do you want to save the changes you made to QFN40P500X500X80-41N.dra?
+\i (00:01:18) fillin yes 
+\t (00:01:18) Symbol 'qfn40p500x500x80-41n.psm' created.
+\t (00:01:18)     Journal end - Mon Dec 26 17:24:54 2016

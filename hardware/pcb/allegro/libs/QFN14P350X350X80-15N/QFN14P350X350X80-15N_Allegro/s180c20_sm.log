@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : s180c20_SM.dra                                )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Mon Dec 26 22:24:15 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: SHAPE
+    Directory = C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN14P350X350X80-15N/QFN14P350X350X80-15N_Allegro
+    Name      = s180c20_sm.ssm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

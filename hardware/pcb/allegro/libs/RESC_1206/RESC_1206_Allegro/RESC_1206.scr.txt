@@ -1,0 +1,2 @@
+cd "C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/RESC_1206/RESC_1206_Allegro"
+skill (LB_createFootprint "C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/RESC_1206/RESC_1206_Allegro/RESC_1206.xml")

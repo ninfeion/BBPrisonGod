@@ -1,0 +1,20 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Dec 27 22:30:37 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=7444 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe -s C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/QFN24P400X400X80-25N.scr.txt
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Starting new design...
+\i (00:00:00) trapsize 1724
+\i (00:00:00) trapsize 1731
+\i (00:00:00) trapsize 1860
+\i (00:00:00) trapsize 1860
+\i (00:00:00) trapsize 1435
+\i (00:00:00) trapsize 10294
+\i (00:00:00) trapsize 8750
+\i (00:00:00) replay C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/QFN24P400X400X80-25N.scr.txt 
+\i (00:00:00) cd C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro 
+\i (00:00:00) skill '(LB_createFootprint "C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/QFN24P400X400X80-25N.xml")' 
+\t (00:00:00) Reading Footprint XML
+\t (00:00:00) Creating padstacks
+\t (00:00:00)     Journal end - Tue Dec 27 22:30:38 2016

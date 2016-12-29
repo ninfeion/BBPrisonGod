@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : r85_145c20_PM.dra                             )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Mon Dec 26 23:06:07 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: SHAPE
+    Directory = C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/SON40P200X200X80-11N/SON40P200X200X80-11N_Allegro
+    Name      = r85_145c20_pm.ssm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

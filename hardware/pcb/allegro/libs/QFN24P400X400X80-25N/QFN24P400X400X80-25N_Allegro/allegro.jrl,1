@@ -1,0 +1,78 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Dec 27 22:30:38 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=7444 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe -s C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/QFN24P400X400X80-25N.scr.txt
+\t (00:00:00) 
+\t (00:00:00) Starting new design...
+\i (00:00:00) trapsize 1284
+\i (00:00:00) trapsize 1341
+\i (00:00:01) trapsize 1860
+\i (00:00:01) trapsize 1860
+\w (00:00:01) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:00:01) trapsize 47243
+\t (00:00:01) Performing DRC...
+\t (00:00:01) No DRC errors detected.
+\i (00:00:01) trapsize 2661
+\t (00:00:01) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/s250c30_pm.ssm'.
+\t (00:00:01) Starting Create symbol...
+\t (00:00:01) Starting new design...
+\i (00:00:01) trapsize 1533
+\i (00:00:01) trapsize 1602
+\i (00:00:01) trapsize 2661
+\i (00:00:01) trapsize 2661
+\t (00:00:01) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/s250c30_sm.ssm'.
+\t (00:00:01) Starting Create symbol...
+\t (00:00:02) Starting new design...
+\i (00:00:02) trapsize 1533
+\i (00:00:02) trapsize 1602
+\i (00:00:02) trapsize 2661
+\i (00:00:02) trapsize 2661
+\t (00:00:02) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/s250c30_top.ssm'.
+\t (00:00:02) Starting Create symbol...
+\t (00:00:02) Starting new design...
+\i (00:00:02) trapsize 1533
+\i (00:00:02) trapsize 1602
+\i (00:00:02) trapsize 2661
+\i (00:00:02) trapsize 2661
+\t (00:00:02) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/dummy.ssm'.
+\t (00:00:02) Starting Create symbol...
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 1533
+\i (00:00:03) trapsize 1602
+\i (00:00:03) trapsize 2661
+\i (00:00:03) trapsize 2661
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 1533
+\i (00:00:03) trapsize 1602
+\i (00:00:03) trapsize 2661
+\i (00:00:03) trapsize 2661
+\t (00:00:03) Opening Design "QFN24P400X400X80-25N.dra"
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 1533
+\i (00:00:03) trapsize 1602
+\i (00:00:03) trapsize 2661
+\i (00:00:04) trapsize 2661
+\i (00:00:04) trapsize 2661
+\t (00:00:04) Creating Shapes on Package layers
+\t (00:00:04) Creating Pins
+\t (00:00:04) Creating Vias
+\t (00:00:04) Symbol Created
+\t (00:00:04) Creating package symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/qfn24p400x400x80-25n.psm'.
+\t (00:00:04) Starting Create symbol...
+\i (00:00:04) trapsize 672
+   (00:00:04) Loading cmds.cxt 
+   (00:00:04) Loading skillExt.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) trapsize 644
+\i (00:00:04) trapsize 672
+\i (00:00:04) trapsize 672
+\d (00:00:04) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro/QFN24P400X400X80-25N.dra
+\t (00:00:04) Symbol Saved
+   (00:00:04) t
+\i (00:00:04) trapsize 672
+\i (00:00:04) generaledit 
+\i (00:00:08) exit 
+\e (00:00:08) Do you want to save the changes you made to QFN24P400X400X80-25N.dra?
+\i (00:00:09) fillin yes 
+\t (00:00:10) Symbol 'qfn24p400x400x80-25n.psm' created.
+\t (00:00:10)     Journal end - Tue Dec 27 22:30:47 2016

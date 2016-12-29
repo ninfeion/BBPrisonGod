@@ -1,0 +1,45 @@
+\t (00:00:02) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Dec 26 18:31:19 2016
+\t (00:00:02)         Host=NINFEION-PC User=Ninfeion Pid=5268 CPUs=4
+\t (00:00:02) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe -s C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/OSCCC200X120X60-2N/OSCCC200X120X60-2N_Allegro/OSCCC200X120X60-2N.scr.txt
+\t (00:00:02) 
+\t (00:00:02) Starting new design...
+\i (00:00:02) trapsize 1284
+\i (00:00:03) trapsize 1341
+\i (00:00:03) trapsize 1860
+\i (00:00:03) trapsize 1860
+\w (00:00:03) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:00:03) trapsize 47243
+\t (00:00:03) Performing DRC...
+\t (00:00:03) Multithreaded DRC update (4 threads).
+\t (00:00:03) No DRC errors detected.
+\t (00:00:03) Opening Design "OSCCC200X120X60-2N.dra"
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 32604
+\i (00:00:03) trapsize 34061
+\i (00:00:03) trapsize 47243
+\i (00:00:03) trapsize 47243
+\i (00:00:03) trapsize 955
+\t (00:00:03) Creating Shapes on Package layers
+\t (00:00:03) Creating Pins
+\t (00:00:03) Creating Vias
+\t (00:00:03) Symbol Created
+\t (00:00:03) Creating package symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/OSCCC200X120X60-2N/OSCCC200X120X60-2N_Allegro/osccc200x120x60-2n.psm'.
+\t (00:00:03) Starting Create symbol...
+\i (00:00:03) trapsize 336
+   (00:00:03) Loading cmds.cxt 
+   (00:00:03) Loading skillExt.cxt 
+\t (00:00:03) Opening existing design...
+\i (00:00:03) trapsize 322
+\i (00:00:03) trapsize 336
+\i (00:00:03) trapsize 336
+\d (00:00:03) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/OSCCC200X120X60-2N/OSCCC200X120X60-2N_Allegro/OSCCC200X120X60-2N.dra
+\t (00:00:03) Symbol Saved
+   (00:00:03) t
+\i (00:00:03) trapsize 336
+\i (00:00:03) generaledit 
+\i (00:00:05) exit 
+\e (00:00:05) Do you want to save the changes you made to OSCCC200X120X60-2N.dra?
+\i (00:00:06) fillin yes 
+\t (00:00:06) Symbol 'osccc200x120x60-2n.psm' created.
+\t (00:00:06)     Journal end - Mon Dec 26 18:31:23 2016

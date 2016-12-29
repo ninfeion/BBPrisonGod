@@ -1,0 +1,21 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Dec 27 22:53:33 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=7980 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\libs\SOT95P237X112-3N\SOT95P237X112-3N_Allegro\SOT95P237X112-3N.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/SOT95P237X112-3N/SOT95P237X112-3N_Allegro/SOT95P237X112-3N.dra
+\i (00:00:00) trapsize 677
+\i (00:00:00) trapsize 702
+\i (00:00:00) trapsize 795
+\i (00:00:00) trapsize 668
+\i (00:00:00) trapsize 6210
+\i (00:00:00) trapsize 5537
+\i (00:00:00) generaledit 
+\i (00:00:04) setwindow form.mini
+\i (00:00:04) FORM mini subclass PIN_NUMBER 
+\i (00:00:05) FORM mini subcolor 1 
+\i (00:02:18) setwindow pcb
+\i (00:02:18) exit 
+\t (00:02:18)     Journal end - Tue Dec 27 22:55:51 2016

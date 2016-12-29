@@ -1,0 +1,31 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon Dec 26 22:27:00 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=5216 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\libs\QFN14P350X350X80-15N\QFN14P350X350X80-15N_Allegro\QFN14P350X350X80-15N.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\d (00:00:02) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN14P350X350X80-15N/QFN14P350X350X80-15N_Allegro/QFN14P350X350X80-15N.dra
+\i (00:00:02) trapsize 763
+\i (00:00:02) trapsize 808
+\i (00:00:02) trapsize 808
+\i (00:00:02) trapsize 623
+\i (00:00:02) trapsize 4783
+\i (00:00:02) trapsize 4066
+\i (00:00:02) generaledit 
+\i (00:00:18) setwindow form.mini
+\i (00:00:18) FORM mini class PIN 
+\i (00:00:20) FORM mini subcolor 0 
+\i (00:00:20) FORM mini subcolor 1 
+\i (00:00:20) FORM mini subcolor 0 
+\i (00:00:28) FORM mini class PACKAGE GEOMETRY 
+\i (00:00:32) FORM mini subclass PIN_NUMBER 
+\i (00:00:33) FORM mini subcolor 1 
+\i (00:00:34) FORM mini subcolor 0 
+\i (00:00:35) FORM mini subcolor 1 
+\i (00:00:35) FORM mini subcolor 0 
+\i (00:00:36) FORM mini subcolor 1 
+\i (00:00:36) FORM mini subcolor 0 
+\i (00:00:47) setwindow pcb
+\i (00:00:47) exit 
+\t (00:00:47)     Journal end - Mon Dec 26 22:27:47 2016

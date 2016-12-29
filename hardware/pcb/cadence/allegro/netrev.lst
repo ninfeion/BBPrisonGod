@@ -1,0 +1,94 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : PRISON_GOD_SCH_V130_4layer.brd                )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Thu Dec 29 13:47:13 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  No
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               Always
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         'C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\allegro'
+Design Directory:            'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro'
+Old design name:             'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V130_4layer.brd'
+New design name:             'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V131_4layer.brd'
+
+CmdLine: netrev.exe -y 1 -i C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\allegro C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V130_4layer.brd C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V131_4layer.brd
+
+------ Preparing to read pst files ------
+
+Starting to read C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstchip.dat 
+   Finished reading C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstchip.dat (00:00:00.03)
+Starting to read C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstxprt.dat 
+   Finished reading C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstxprt.dat (00:00:00.00)
+Starting to read C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstxnet.dat 
+   Finished reading C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/local/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/local/pcb/symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/allegrolib/symbols 
+           C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/ 
+           C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/local/pcb/padstacks 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/allegrolib/symbols 
+           C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs 
+           C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Dec 29 13:47:13 2016
+   DESIGN NAME : 'PRISON_GOD_SCH_V110'
+   PACKAGING ON Aug  8 2016 18:41:50
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:01:21
+elapsed time  0:00:00
+

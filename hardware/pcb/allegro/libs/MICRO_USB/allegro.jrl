@@ -1,0 +1,23 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Dec 28 13:52:46 2016
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=4364 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:02) Opening existing design...
+\d (00:00:02) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/MICRO_USB/microusb.dra
+\i (00:00:02) trapsize 2619
+\i (00:00:02) trapsize 2771
+\i (00:00:02) trapsize 2770
+\i (00:00:02) trapsize 2137
+\i (00:00:02) trapsize 17917
+\i (00:00:02) trapsize 15229
+\i (00:00:02) generaledit 
+\i (00:00:04) open 
+\i (00:00:19) fillin "C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V120.brd"
+\i (00:00:19) cd "C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro"
+\t (00:00:19) Opening existing design...
+\i (00:00:19) trapsize 6363
+\i (00:00:19) trapsize 6647
+\i (00:00:19) trapsize 6647
+\t (00:00:19)     Journal end - Wed Dec 28 13:53:05 2016

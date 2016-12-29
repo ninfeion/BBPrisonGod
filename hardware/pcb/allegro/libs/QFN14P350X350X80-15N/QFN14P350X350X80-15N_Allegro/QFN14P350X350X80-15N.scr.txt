@@ -1,0 +1,2 @@
+cd "C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN14P350X350X80-15N/QFN14P350X350X80-15N_Allegro"
+skill (LB_createFootprint "C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN14P350X350X80-15N/QFN14P350X350X80-15N_Allegro/QFN14P350X350X80-15N.xml")

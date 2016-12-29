@@ -1,0 +1,966 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.2.0 d001Dec-29-2016 at 13:47:08 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='PRISON_GOD_SCH_V110';
+ POST_TIME='Aug  8 2016 18:41:50';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ ANT 'ANTENNA_0_ANT700X200-2N_ANTENNA':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS650526@PRISON_GOD_SCH_V110.ANTENNA_0.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins650526@prison_god_sch_v110.\antenna_0.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins650526@prison_god_sch_v110.\antenna_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ BAT+ 'TEST POINT_TESTPOINT120_BAT+':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS651440@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins651440@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins651440@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ BAT- 'TEST POINT_TESTPOINT120_BAT-':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS656933@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins656933@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins656933@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C1 'CAP NP_RESC_0402_100N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS779266@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins779266@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins779266@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C10 'CAP NP_RESC_0402_0-75P':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS754459@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins754459@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins754459@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C11 'CAP NP_RESC_0402_100N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS754441@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins754441@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins754441@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C12 'CAP NP_RESC_0402_1U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752241@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752241@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752241@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C13 'CAP NP_RESC_0402_4.7U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752569@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752569@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752569@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C14 'CAP NP_RESC_0402_1U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752259@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752259@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752259@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C15 'CAP NP_RESC_0402_2.2U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752551@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752551@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752551@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C16 'CAP NP_RESC_0402_4.7U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752605@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752605@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752605@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C17 'CAP NP_RESC_0603_1U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS748962@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins748962@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins748962@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C18 'CAP NP_RESC_0603_4.7U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749174@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749174@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749174@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C19 'CAP NP_RESC_0402_0.1U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749192@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749192@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749192@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C2 'CAP NP_RESC_0402_2.2P':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS680173@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins680173@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins680173@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C20 'CAP NP_RESC_0603_10U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749422@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749422@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749422@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C21 'CAP NP_RESC_0603_10U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749440@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749440@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749440@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C22 'CAP NP_RESC_0402_100N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS750627@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins750627@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page5_ins750627@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C23 'CAP_RESC_1206_10UF':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS753720@DISCRETE.CAP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins753720@discrete.\cap.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page6_ins753720@discrete.\cap.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C24 'CAP NP_RESC_0402_4.7U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS753902@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins753902@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page6_ins753902@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C25 'CAP NP_RESC_0402_100N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS753970@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins753970@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page6_ins753970@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C26 'CAP NP_RESC_0402_100N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS753988@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins753988@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page6_ins753988@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C27 'CAP NP_RESC_0402_1.0U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS754034@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins754034@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page6_ins754034@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C28 'CAP NP_RESC_0402_100N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS783657@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins783657@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page5_ins783657@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C3 'CAP NP_RESC_0402_100N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS721231@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins721231@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins721231@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C4 'CAP NP_RESC_0402_1.0U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS650872@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins650872@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins650872@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C5 'CAP NP_RESC_0402_1.0U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS658664@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins658664@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins658664@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C6 'CAP NP_RESC_0402_100N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS723936@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins723936@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins723936@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C7 'CAP NP_RESC_0402_1.0U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS659067@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins659067@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins659067@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C8 'CAP NP_RESC_0402_100N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS659051@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins659051@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins659051@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C9 'CAP NP_RESC_0402_100N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS658572@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins658572@discrete.\cap np.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins658572@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CHR_LED 'LED_RESC_0603_LED':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749074@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749074@discrete.\led.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749074@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ DA_RES 'SW PUSHBUTTON_BUTTON300X400X200':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS721988@DISCRETE.SW PUSHBUTTON.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins721988@discrete.\sw pushbutton.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins721988@discrete.\sw pushbutton.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ INTA 'TEST POINT_TESTPOINT120_INTA':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS746144@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins746144@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins746144@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ INTB 'TEST POINT_TESTPOINT120_INTB':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS746160@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins746160@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins746160@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ INTC 'TEST POINT_TESTPOINT120_INTC':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS746176@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins746176@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins746176@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ INTD 'TEST POINT_TESTPOINT120_INTD':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS746192@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins746192@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins746192@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J_GND 'TEST POINT_TESTPOINT120_GND':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS651400@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins651400@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins651400@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J_VCC 'TEST POINT_TESTPOINT120_J_VCC':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS657404@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins657404@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins657404@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L1 'INDUCTOR_RESC_0402_DNP':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS680466@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins680466@discrete.\inductor.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins680466@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L2 'INDUCTOR_RESC_0402_7.5N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS680330@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins680330@discrete.\inductor.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins680330@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L3 'INDUCTOR_RESC_0402_3.9N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS679409@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins679409@discrete.\inductor.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins679409@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L4 'INDUCTOR_RESC_0603_2.2U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS650820@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins650820@discrete.\inductor.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins650820@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L5 'INDUCTOR_RESC_1206_4.7U':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749316@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749316@discrete.\inductor.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749316@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ LED 'LED BI-COLOUR_0_RGB_COM_A_3528-':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS781600@PRISON_GOD_SCH_V110.LED BI-COLOUR_0.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins781600@prison_god_sch_v110.\led bi-colour_0.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins781600@prison_god_sch_v110.\led bi-colour_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ PAD 'TEST POINT_TESTPOINT120_PAD':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS754507@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins754507@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins754507@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Q1 'MOSFET_I_EN_GSD_SOT95P237X112-3':
+ ROOM='motor';
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS751148@TRANSISTOR.MOSFET_I_EN_GSD.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins751148@transistor.\mosfet_i_en_gsd.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins751148@transistor.\mosfet_i_en_gsd.normal\(chips)',
+ ROOM='motor',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Q2 'MOSFET_I_EN_GSD_SOT95P237X112-3':
+ ROOM='motor';
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS751192@TRANSISTOR.MOSFET_I_EN_GSD.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins751192@transistor.\mosfet_i_en_gsd.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins751192@transistor.\mosfet_i_en_gsd.normal\(chips)',
+ ROOM='motor',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Q3 'SI2301BDS_0_SOT95P237X112-3N_SI':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752303@PRISON_GOD_SCH_V110.SI2301BDS_0.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752303@prison_god_sch_v110.\si2301bds_0.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752303@prison_god_sch_v110.\si2301bds_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Q4 'MOSFET_I_EN_GSD_SOT95P237X112-3':
+ ROOM='motor';
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752351@TRANSISTOR.MOSFET_I_EN_GSD.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752351@transistor.\mosfet_i_en_gsd.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752351@transistor.\mosfet_i_en_gsd.normal\(chips)',
+ ROOM='motor',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'R_RESC_0402_10K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS779313@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins779313@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins779313@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R10 'R_RESC_0402_100':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS753128@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins753128@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins753128@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R11 'R_RESC_0402_100':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS753146@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins753146@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins753146@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R12 'R_RESC_0402_100':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS751262@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins751262@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins751262@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R13 'R_RESC_0402_100':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS751280@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins751280@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins751280@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R14 'R_RESC_0402_1-10K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS754521@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins754521@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins754521@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R15 'R_RESC_0402_47K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752285@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752285@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752285@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R16 'R_RESC_0402_47K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752485@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752485@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752485@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R17 'R_RESC_0402_10K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752525@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752525@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752525@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R18 'R_RESC_0402_560K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752507@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752507@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752507@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R19 'R_RESC_0402_500':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS748898@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins748898@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins748898@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R2 'R_RESC_0402_10K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS779288@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins779288@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins779288@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R20 'R_RESC_0402_250':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749016@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749016@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749016@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R21 'R_RESC_0402_10K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749046@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749046@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749046@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R22 'R_RESC_0402_1.5K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749126@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749126@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749126@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R23 'R_RESC_0402_158K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749458@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749458@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749458@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R24 'R_RESC_0402_90K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749542@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749542@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749542@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R25 'R_RESC_0402_15K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749506@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749506@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749506@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R3 'R_RESC_0402_10K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS781251@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins781251@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins781251@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R4 'R_RESC_0402_10K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS781269@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins781269@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins781269@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R5 'R_RESC_0402_10K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS702705@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins702705@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins702705@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R6 'R_RESC_0402_10K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS702721@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins702721@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins702721@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R7 'R_RESC_0402_10K':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS722004@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins722004@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins722004@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R8 'R_RESC_0402_100':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS751168@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins751168@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins751168@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R9 'R_RESC_0402_100':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS751212@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins751212@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins751212@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RES 'TEST POINT_TESTPOINT120_RES':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752159@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752159@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752159@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RXD 'TEST POINT_TESTPOINT120_RX':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS656325@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins656325@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins656325@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SOUNDER 'R_DET402_450X300-2N_R':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS751078@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins751078@discrete.\r.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins751078@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SWCLK 'TEST POINT_TESTPOINT120_SWCLK':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS651386@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins651386@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins651386@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SWDIO 'TEST POINT_TESTPOINT120_SWDIO':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS650562@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins650562@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins650562@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TXD 'TEST POINT_TESTPOINT120_TX':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS656305@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins656305@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins656305@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U1 'DA14583_QFN40_QFN40P500X500X80-':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS651228@BBPRISONGOD_LIB.DA14583_QFN40.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins651228@bbprisongod_lib.\da14583_qfn40.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins651228@bbprisongod_lib.\da14583_qfn40.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U2 'ASC0111B_0_SOT95P237X292-6N_ASC':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS754361@PRISON_GOD_SCH_V100.ASC0111B_0.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins754361@prison_god_sch_v100.\asc0111b_0.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins754361@prison_god_sch_v100.\asc0111b_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U3 'OLED_DIS_64_0_FPC14N_1280X670X2':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS752185@PRISON_GOD_SCH_V110.OLED_DIS_64_0.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins752185@prison_god_sch_v110.\oled_dis_64_0.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page3_ins752185@prison_god_sch_v110.\oled_dis_64_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U4 'BQ24050_SON40P200X200X80-11N_BQ':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS748920@BBPRISONGOD_LIB.BQ24050.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins748920@bbprisongod_lib.\bq24050.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins748920@bbprisongod_lib.\bq24050.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U5 'TPS62736_PVQFN14_2_QFN14P350X35':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS749226@PRISON_GOD_SCH_V100.TPS62736_PVQFN14_2.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins749226@prison_god_sch_v100.\tps62736_pvqfn14_2.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page4_ins749226@prison_god_sch_v100.\tps62736_pvqfn14_2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U6 'MPU9250_1_QFN24P300X300X100-25N':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS750481@PRISON_GOD_SCH_V100.MPU9250_1.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins750481@prison_god_sch_v100.\mpu9250_1.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page5_ins750481@prison_god_sch_v100.\mpu9250_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U7 'CP2104_QFN24_0_QFN24P400X400X80':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS753828@PRISON_GOD_SCH_V110.CP2104_QFN24_0.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins753828@prison_god_sch_v110.\cp2104_qfn24_0.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page6_ins753828@prison_god_sch_v110.\cp2104_qfn24_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ USB 'MICROUSB_1_MICROUSB_MICRO USB':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS753738@OUTDOORDATACOLLECTERV100.MICROUSB_1.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins753738@outdoordatacollecterv100.\microusb_1.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page6_ins753738@outdoordatacollecterv100.\microusb_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U_GND 'TEST POINT_TESTPOINT120_GND':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS656775@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins656775@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins656775@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ VM+ 'TEST POINT_TESTPOINT120_VM+':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS770348@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins770348@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins770348@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ VM- 'TEST POINT_TESTPOINT120_VM-':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS770370@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins770370@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page2_ins770370@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ VPP 'TEST POINT_TESTPOINT120_VPP':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS651372@BBSCCOMPONENT.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins651372@bbsccomponent.\test point.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins651372@bbsccomponent.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Y1 'CRYSTAL14_OSCCC200X250X90-4N_16':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS650640@DISCRETE.CRYSTAL14.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins650640@discrete.\crystal14.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins650640@discrete.\crystal14.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Y2 'CRYSTAL_OSCCC200X120X60-2N_32KH':;
+
+SECTION_NUMBER 1
+ '@PRISON_GOD_SCH_V110.MAIN(SCH_1):INS653436@DISCRETE.CRYSTAL.NORMAL(CHIPS)':
+ C_PATH='@prison_god_sch_v110.main(sch_1):ins653436@discrete.\crystal.normal\(chips)',
+ P_PATH='@prison_god_sch_v110.main(sch_1):page1_ins653436@discrete.\crystal.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.

@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : s250c30_SM.dra                                )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Tue Dec 27 22:30:39 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: SHAPE
+    Directory = C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P400X400X80-25N/QFN24P400X400X80-25N_Allegro
+    Name      = s250c30_sm.ssm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

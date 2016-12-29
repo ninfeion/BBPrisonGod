@@ -1,0 +1,51 @@
+\t (00:00:02) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Dec 26 16:02:09 2016
+\t (00:00:02)         Host=NINFEION-PC User=Ninfeion Pid=5364 CPUs=4
+\t (00:00:02) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe -s C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/RESC_0603/RESC_0603_Allegro/RESC_0603.scr.txt
+\t (00:00:02) 
+\t (00:00:02) Starting new design...
+\i (00:00:02) trapsize 1284
+\i (00:00:03) trapsize 1341
+\i (00:00:03) trapsize 1860
+\i (00:00:03) trapsize 1860
+\w (00:00:03) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:00:03) trapsize 47243
+\t (00:00:03) Performing DRC...
+\t (00:00:03) Multithreaded DRC update (4 threads).
+\t (00:00:03) No DRC errors detected.
+\t (00:00:03) Opening Design "RESC_0603.dra"
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 32604
+\i (00:00:03) trapsize 34061
+\i (00:00:03) trapsize 47243
+\i (00:00:03) trapsize 47243
+\i (00:00:03) trapsize 728
+\t (00:00:03) Creating Shapes on Package layers
+\t (00:00:03) Creating Pins
+\t (00:00:03) Creating Vias
+\t (00:00:03) Symbol Created
+\t (00:00:03) Creating package symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/RESC_0603/RESC_0603_Allegro/resc_0603.psm'.
+\t (00:00:03) Starting Create symbol...
+\i (00:00:03) trapsize 292
+   (00:00:03) Loading cmds.cxt 
+   (00:00:03) Loading skillExt.cxt 
+\t (00:00:03) Opening existing design...
+\i (00:00:03) trapsize 279
+\i (00:00:03) trapsize 292
+\i (00:00:03) trapsize 292
+\d (00:00:04) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/RESC_0603/RESC_0603_Allegro/RESC_0603.dra
+\t (00:00:04) Symbol Saved
+   (00:00:04) t
+\i (00:00:04) trapsize 292
+\i (00:00:04) generaledit 
+\i (00:00:09) pick grid 2.1408 0.1547
+\t (00:00:09) last pick:  2.5400 0.0000
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out 2.1000 0.1839
+\i (00:00:10) trapsize 583
+\i (00:00:17) exit 
+\e (00:00:17) Do you want to save the changes you made to RESC_0603.dra?
+\i (00:00:18) fillin yes 
+\t (00:00:18) Symbol 'resc_0603.psm' created.
+\t (00:00:18)     Journal end - Mon Dec 26 16:02:25 2016
