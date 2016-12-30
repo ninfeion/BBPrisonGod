@@ -1,527 +1,373 @@
 \t (00:00:01) allegro 17.2 S004 Windows SPB 64-bit Edition
-\t (00:00:01)     Journal start - Thu Dec 29 14:00:52 2016
-\t (00:00:01)         Host=NINFEION-PC User=Ninfeion Pid=1556 CPUs=4
+\t (00:00:01)     Journal start - Sat Dec 31 01:00:54 2016
+\t (00:00:01)         Host=NINFEION-PC User=Ninfeion Pid=8216 CPUs=4
 \t (00:00:01) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
 \t (00:00:01) 
    (00:00:01) Loading axlcore.cxt 
 \t (00:00:03) Opening existing design...
-\d (00:00:03) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V130_4layer.brd
-\i (00:00:03) trapsize 4155
-\i (00:00:03) trapsize 4285
-\i (00:00:03) trapsize 4285
-\i (00:00:03) trapsize 4032
-\i (00:00:04) etchedit 
-\i (00:00:08) zoom out 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom out 21.2097 6.6560
-\i (00:00:08) trapsize 8065
-\i (00:00:09) zoom in 1 
-\i (00:00:09) setwindow pcb
-\i (00:00:09) zoom in 2.5806 8.0645
-\i (00:00:09) trapsize 4032
-\i (00:00:16) zoom in 1 
-\i (00:00:16) setwindow pcb
-\i (00:00:16) zoom in -8.0646 6.4517
-\i (00:00:16) trapsize 2016
-\i (00:00:16) zoom in 1 
-\i (00:00:16) setwindow pcb
-\i (00:00:16) zoom in -1.4113 1.4517
-\i (00:00:16) trapsize 1008
-\i (00:00:25) shape select 
-\i (00:00:26) pick grid 2.6008 5.2622
-\t (00:00:26) last pick:  2.5400 5.3340
-\i (00:00:28) drag_start grid 2.5000 5.1614
-\t (00:00:28) last pick:  2.4792 5.1408
-\i (00:00:36) drag_stop grid 1.7943 4.6574
-\t (00:00:36) No DRC errors detected.
-\i (00:00:41) drag_start grid 4.8185 8.8509
-\t (00:00:41) last pick:  4.8185 8.8900
-\i (00:00:43) drag_stop grid 4.2742 8.8711
-\t (00:00:43) No DRC errors detected.
-\i (00:00:45) zoom in 1 
-\i (00:00:45) setwindow pcb
-\i (00:00:45) zoom in 2.2177 3.7501
-\i (00:00:45) trapsize 504
-\i (00:00:48) drag_start grid 2.0968 4.3247
-\t (00:00:48) last pick:  2.0610 4.2890
-\i (00:00:51) drag_stop grid 2.3286 4.6070
-\t (00:00:51) No DRC errors detected.
-\i (00:00:53) pick grid 1.8952 5.0304
-\t (00:00:53) last pick:  1.7780 5.0800
-\t (00:00:53) last pick:  1.8614 4.9966
-\i (00:00:57) pick grid 1.6532 5.3328
-\t (00:00:57) last pick:  1.7780 5.3340
+\d (00:00:03) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V201.brd
+\i (00:00:04) trapsize 5306
+\i (00:00:04) trapsize 5502
+\i (00:00:04) trapsize 5502
+\i (00:00:04) trapsize 5123
+\i (00:00:04) generaledit 
+\i (00:00:05) pick grid 38.6066 10.6297
+\t (00:00:05) last pick:  38.6080 10.6680
+\i (00:00:08) flipdesign 
+\i (00:00:10) color192 
+\i (00:00:10) generaledit 
+\i (00:00:19) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Components "Ref des"
+\i (00:00:21) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 7 0
+\i (00:00:21) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Silkscreen_Top RefDes
+\i (00:00:21) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:00:24) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Package geometry"
+\i (00:00:27) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 15 0
+\i (00:00:27) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Silkscreen_Top PkgGeo
+\i (00:00:27) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:00:28) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 15 0
+\i (00:00:28) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Silkscreen_Top PkgGeo
+\i (00:00:28) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:00:29) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 15 0
+\i (00:00:29) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Silkscreen_Top PkgGeo
+\i (00:00:29) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:00:31) QtSignal CVPLayerGrid CVPButtonPinTop clicked
+\i (00:00:33) pick grid -7.1926 22.1051
+\t (00:00:33) last pick:  -7.1120 22.0980
+\i (00:00:33) zoom in 1 
+\i (00:00:33) setwindow pcb
+\i (00:00:33) zoom in 2.6435 22.5149
+\i (00:00:33) trapsize 2561
+\i (00:00:33) zoom in 1 
+\i (00:00:33) setwindow pcb
+\i (00:00:33) zoom in 2.6435 22.5149
+\i (00:00:33) trapsize 1281
+\i (00:00:34) zoom out 1 
+\i (00:00:34) setwindow pcb
+\i (00:00:34) zoom out 4.5134 21.9770
+\i (00:00:34) trapsize 2561
+\i (00:00:34) zoom in 1 
+\i (00:00:34) setwindow pcb
+\i (00:00:34) zoom in 6.8700 26.6901
+\i (00:00:34) trapsize 1281
+\i (00:00:36) pick grid 8.3301 23.7957
+\t (00:00:36) last pick:  8.3820 23.8760
+\i (00:00:37) text edit 
+\i (00:00:39) setwindow form.textedit
+\i (00:00:39) FORM textedit done  
+\i (00:00:39) setwindow pcb
+\i (00:00:39) pick 0.0000 0.0000
+\i (00:00:39) setwindow pcb
+\i (00:00:39) generaledit 
+\i (00:00:41) pick grid 8.4581 23.2834
+\t (00:00:41) last pick:  8.3820 23.3680
+\i (00:00:41) prepopup 8.4325 23.4627
+\i (00:00:45) pop dyn_option_select 'Change Text block to@:@3(9652,12700)' 
+\i (00:00:45) text block 
+\t (00:00:45) No DRC errors detected.
+\t (00:00:45) Changed 1 items out of 1 items found.
+\i (00:00:45) generaledit 
+\i (00:00:46) pick grid 7.4592 23.6676
+\t (00:00:46) last pick:  7.3660 23.6220
+\i (00:00:47) prepopup 7.6128 23.7188
+\i (00:00:48) pop dyn_option_select 'Change Text block to@:@2(5842,7874)' 
+\i (00:00:48) text block 
+\t (00:00:49) No DRC errors detected.
+\t (00:00:49) Changed 1 items out of 1 items found.
+\i (00:00:49) generaledit 
+\i (00:00:50) pick grid 8.9960 22.3100
+\t (00:00:50) last pick:  8.8900 22.3520
+\i (00:00:50) prepopup 8.9960 22.3100
+\i (00:00:53) pop dyn_option_select 'Change Text block to@:@2(5842,7874)' 
+\i (00:00:54) text block 
+\t (00:00:54) No DRC errors detected.
+\t (00:00:54) Changed 1 items out of 1 items found.
+\i (00:00:54) generaledit 
+\i (00:00:54) pick grid 6.4858 20.8500
+\t (00:00:54) last pick:  6.6040 20.8280
+\i (00:00:55) prepopup 6.4858 20.8500
+\i (00:00:57) pop dyn_option_select 'Change Text block to@:@2(5842,7874)' 
+\i (00:00:57) text block 
 \t (00:00:57) No DRC errors detected.
-\i (00:00:58) pick grid 2.0867 5.0304
-\t (00:00:58) last pick:  2.0320 5.0800
-\t (00:00:58) last pick:  2.0466 4.9983
-\i (00:01:00) pick grid 2.6714 5.0404
-\t (00:01:00) last pick:  2.7940 5.0800
-\t (00:01:00) No DRC errors detected.
-\i (00:01:01) pick grid 2.6210 5.1513
-\t (00:01:01) last pick:  2.5400 5.0800
-\t (00:01:01) last pick:  2.6144 5.1249
-\i (00:01:02) pick grid 2.6109 5.2118
-\t (00:01:02) last pick:  2.5400 5.3340
-\t (00:01:02) No DRC errors detected.
+\t (00:00:57) Changed 1 items out of 1 items found.
+\i (00:00:57) generaledit 
+\i (00:00:58) prepopup 3.4633 24.8459
+\i (00:01:00) drag_start grid 3.8731 21.0037
+\i (00:01:00) move 
+\t (00:01:00) last pick:  3.8100 21.0820
+\t (00:01:00) Pick new location for the element(s).
+\i (00:01:04) drag_stop grid 3.8987 21.0549
+\i (00:01:04) generaledit 
 \i (00:01:04) zoom out 1 
 \i (00:01:04) setwindow pcb
-\i (00:01:04) zoom out 2.5403 4.1836
-\i (00:01:04) trapsize 1008
-\i (00:01:05) zoom in 1 
-\i (00:01:05) setwindow pcb
-\i (00:01:05) zoom in 1.8751 3.6190
-\i (00:01:05) trapsize 504
-\i (00:01:12) zoom out 1 
-\i (00:01:12) setwindow pcb
-\i (00:01:12) zoom out 2.1977 4.8690
-\i (00:01:12) trapsize 1008
-\i (00:01:16) zoom out 1 
-\i (00:01:16) setwindow pcb
-\i (00:01:16) zoom out 2.0565 5.0505
-\i (00:01:16) trapsize 2016
-\i (00:01:17) zoom in 1 
-\i (00:01:17) setwindow pcb
-\i (00:01:17) zoom in 1.0887 10.1311
-\i (00:01:17) trapsize 1008
-\i (00:01:27) zoom out 1 
-\i (00:01:27) setwindow pcb
-\i (00:01:27) zoom out 9.2944 5.1311
-\i (00:01:27) trapsize 2016
-\i (00:01:28) zoom in 1 
+\i (00:01:04) zoom out 4.0780 20.9268
+\i (00:01:04) trapsize 2561
+\i (00:01:06) drag_start grid 7.8178 21.2342
+\i (00:01:06) move 
+\t (00:01:06) last pick:  7.8740 21.3360
+\t (00:01:06) Pick new location for the element(s).
+\i (00:01:14) drag_stop grid 7.7665 21.3367
+\i (00:01:14) generaledit 
+\i (00:01:15) pick grid 4.0780 21.4392
+\t (00:01:15) last pick:  4.0640 21.3360
+\i (00:01:15) pick grid dbl 4.0780 21.4392
+\t (00:01:15) last pick:  4.0640 21.3360
+\i (00:01:17) text edit 
+\i (00:01:20) setwindow form.textedit
+\i (00:01:20) FORM textedit str 'Designed by' 
+\i (00:01:20) FORM textedit done  
+\i (00:01:20) setwindow pcb
+\i (00:01:20) pick 0.0000 0.0000
+\t (00:01:20) Pick text to edit.
+\i (00:01:20) setwindow pcb
+\i (00:01:20) generaledit 
+\i (00:01:21) zoom in 1 
+\i (00:01:21) setwindow pcb
+\i (00:01:21) zoom in 4.4879 17.8531
+\i (00:01:21) trapsize 1281
+\i (00:01:24) add text 
+\t (00:01:24) Pick text location.
+\i (00:01:27) setwindow form.mini
+\i (00:01:27) FORM mini text_block 2 
 \i (00:01:28) setwindow pcb
-\i (00:01:28) zoom in 0.8871 5.3731
-\i (00:01:28) trapsize 1008
-\i (00:01:29) zoom in 1 
+\i (00:01:28) pick grid 6.6396 19.5437
+\t (00:01:28) last pick:  6.6040 19.5580
+\t (00:01:28) Enter text string.
 \i (00:01:29) setwindow pcb
-\i (00:01:29) zoom in 3.3468 9.6070
-\i (00:01:29) trapsize 504
-\i (00:01:32) zoom out 1 
-\i (00:01:32) setwindow pcb
-\i (00:01:32) zoom out 4.1331 8.8207
-\i (00:01:32) trapsize 1008
-\i (00:01:34) zoom out 1 
-\i (00:01:34) setwindow pcb
-\i (00:01:34) zoom out 1.9557 3.2966
-\i (00:01:34) trapsize 2016
-\i (00:01:35) zoom in 1 
-\i (00:01:35) setwindow pcb
-\i (00:01:35) zoom in 1.5322 2.5304
-\i (00:01:35) trapsize 1008
-\i (00:01:35) zoom in 1 
-\i (00:01:35) setwindow pcb
-\i (00:01:35) zoom in 1.7137 2.8732
-\i (00:01:35) trapsize 504
-\i (00:01:36) zoom in 1 
-\i (00:01:36) setwindow pcb
-\i (00:01:36) zoom in 1.7137 2.8732
-\i (00:01:36) trapsize 252
-\i (00:01:36) zoom out 1 
-\i (00:01:36) setwindow pcb
-\i (00:01:36) zoom out 2.1673 3.5385
-\i (00:01:36) trapsize 504
-\i (00:01:39) prepopup 2.4496 3.9720
-\i (00:01:40) done 
-\i (00:01:40) etchedit 
-\i (00:01:45) shape select 
-\i (00:01:46) pick grid 2.0464 3.1958
-\t (00:01:46) last pick:  2.0320 3.3020
-\i (00:01:49) zoom out 1 
-\i (00:01:49) setwindow pcb
-\i (00:01:49) zoom out 2.4496 4.2543
-\i (00:01:49) trapsize 1008
-\i (00:02:01) drag_start grid 3.3367 5.0405
-\t (00:02:01) last pick:  3.2995 5.0775
-\i (00:02:04) drag_stop grid 0.7964 8.0042
-\t (00:02:04) No DRC errors detected.
-\i (00:02:06) zoom out 1 
-\i (00:02:06) setwindow pcb
-\i (00:02:06) zoom out 2.6714 6.7542
-\i (00:02:06) trapsize 2016
-\i (00:02:06) zoom out 1 
-\i (00:02:06) setwindow pcb
-\i (00:02:06) zoom out 7.0968 6.7542
-\i (00:02:06) trapsize 4032
+\i (00:01:29) prepopup 6.6396 19.5437
+\i (00:01:31) pick grid 6.2041 19.9279
+\t (00:01:31) last pick:  6.0960 19.8120
+\t (00:01:31) Enter text string.
+\i (00:01:33) setwindow pcb
+\i (00:01:33) pick grid 5.8711 19.8511
+\t (00:01:33) last pick:  5.8420 19.8120
+\t (00:01:33) Enter text string.
+\i (00:01:40) setwindow pcb
+\i (00:01:40) pick 5.8420 19.8120
+\t (00:01:40) Enter text string.
+\i (00:01:41) prepopup 5.1539 20.0048
+\i (00:01:42) done 
+\i (00:01:42) generaledit 
+\i (00:01:42) drag_start grid 3.3609 20.1329
+\i (00:01:42) move 
+\t (00:01:42) last pick:  3.3020 20.0660
+\t (00:01:42) Pick new location for the element(s).
+\i (00:01:44) drag_stop grid 5.0002 19.5437
+\i (00:01:44) generaledit 
+\i (00:01:47) QtSignal CVDTabs CVDLayerContainer keyPressEvent 16777249 67108864 false 1
+\i (00:01:50) drag_start grid 9.9951 23.6933
+\i (00:01:50) move 
+\t (00:01:50) last pick:  9.9060 23.6220
+\t (00:01:50) Pick new location for the element(s).
+\i (00:01:52) drag_stop grid 9.7902 24.9484
+\i (00:01:52) generaledit 
+\i (00:01:53) drag_start grid 9.9439 22.4126
+\i (00:01:53) move 
+\t (00:01:53) last pick:  9.9060 22.3520
+\t (00:01:53) Pick new location for the element(s).
+\i (00:01:54) drag_stop grid 9.9951 23.7445
+\i (00:01:54) generaledit 
+\i (00:01:54) drag_start grid 8.9449 20.8757
+\i (00:01:54) move 
+\t (00:01:54) last pick:  8.8900 20.8280
+\t (00:01:54) Pick new location for the element(s).
+\i (00:01:56) drag_stop grid 8.8681 22.1052
+\i (00:01:56) generaledit 
+\i (00:01:57) drag_start grid 5.5637 19.5181
+\i (00:01:57) move 
+\t (00:01:57) last pick:  5.5880 19.5580
+\t (00:01:57) Pick new location for the element(s).
+\i (00:02:03) drag_stop grid 10.3793 21.0806
+\i (00:02:03) generaledit 
+\i (00:02:04) QtSignal CVDLayerContainer CVDFilterLayerEntry editingFinished ROCKEY.J
+\i (00:02:04) zoom out 1 
+\i (00:02:04) setwindow pcb
+\i (00:02:04) zoom out 9.9951 20.6964
+\i (00:02:04) trapsize 2561
+\i (00:02:05) pick grid -4.0930 22.2845
+\t (00:02:05) last pick:  -4.0640 22.3520
 \i (00:02:07) zoom in 1 
 \i (00:02:07) setwindow pcb
-\i (00:02:07) zoom in -0.3226 6.7742
-\i (00:02:07) trapsize 2016
-\i (00:02:08) zoom in 1 
-\i (00:02:08) setwindow pcb
-\i (00:02:08) zoom in 2.0161 9.4355
-\i (00:02:08) trapsize 1008
-\i (00:02:16) drag_start grid 9.6169 9.6371
-\t (00:02:16) last pick:  9.6169 9.6520
-\i (00:02:19) drag_stop grid 9.9597 8.6895
-\t (00:02:19) No DRC errors detected.
-\i (00:02:24) drag_start grid 1.2298 8.4274
-\t (00:02:24) last pick:  1.1456 8.5116
-\i (00:02:27) drag_stop grid 2.3790 7.4194
-\t (00:02:27) No DRC errors detected.
-\i (00:02:29) prepopup 2.0363 8.8508
-\i (00:02:32) done 
-\i (00:02:32) etchedit 
-\i (00:02:34) zoom in 1 
-\i (00:02:34) setwindow pcb
-\i (00:02:34) zoom in 2.9234 9.0121
-\i (00:02:34) trapsize 504
-\i (00:02:38) shape select 
-\i (00:02:39) pick grid 2.9234 8.6391
-\t (00:02:39) last pick:  3.0480 8.6360
-\i (00:02:41) drag_start grid 4.2843 8.8710
-\t (00:02:41) last pick:  4.2843 8.8900
-\i (00:02:44) drag_stop grid 4.1230 8.8508
-\t (00:02:44) No DRC errors detected.
-\i (00:02:47) drag_start grid 5.8367 8.6290
-\t (00:02:47) last pick:  5.8420 8.6360
-\i (00:02:47) drag_stop grid 5.8367 8.2863
-\t (00:02:47) No DRC errors detected.
-\i (00:02:48) drag_start grid 4.8992 8.8811
-\t (00:02:48) last pick:  4.8992 8.8900
-\i (00:02:49) drag_stop grid 4.8992 8.6492
-\t (00:02:49) No DRC errors detected.
-\i (00:02:50) zoom out 1 
-\i (00:02:50) setwindow pcb
-\i (00:02:50) zoom out 4.8992 8.6290
-\i (00:02:50) trapsize 1008
-\i (00:02:52) zoom in 1 
-\i (00:02:52) setwindow pcb
-\i (00:02:52) zoom in 3.4274 8.5888
-\i (00:02:52) trapsize 504
-\i (00:02:53) prepopup 4.0020 8.9618
-\i (00:02:54) done 
-\i (00:02:54) etchedit 
-\i (00:02:55) zoom out 1 
-\i (00:02:55) setwindow pcb
-\i (00:02:55) zoom out 4.2036 8.8408
-\i (00:02:55) trapsize 1008
-\i (00:02:55) zoom in 1 
-\i (00:02:55) setwindow pcb
-\i (00:02:55) zoom in 3.8609 9.5263
-\i (00:02:55) trapsize 504
-\i (00:02:58) shape select 
-\i (00:02:59) pick grid 5.1916 10.1413
-\t (00:02:59) last pick:  5.0800 10.1600
-\i (00:03:01) drag_start grid 3.9416 9.2441
-\t (00:03:01) last pick:  3.9258 9.2598
-\i (00:03:03) drag_stop grid 3.9517 9.0626
-\t (00:03:03) No DRC errors detected.
-\i (00:03:04) zoom out 1 
-\i (00:03:04) setwindow pcb
-\i (00:03:04) zoom out 4.8589 9.0626
-\i (00:03:04) trapsize 1008
-\i (00:03:07) zoom out 1 
-\i (00:03:07) setwindow pcb
-\i (00:03:07) zoom out 6.3106 7.9135
-\i (00:03:07) trapsize 2016
-\i (00:03:07) zoom out 1 
-\i (00:03:07) setwindow pcb
-\i (00:03:07) zoom out 8.2661 7.9134
-\i (00:03:07) trapsize 4032
-\i (00:03:08) prepopup 36.2904 12.0263
-\i (00:03:09) done 
-\i (00:03:09) etchedit 
-\i (00:03:09) pick grid 32.7420 12.0263
-\t (00:03:09) last pick:  32.7660 11.9380
-\i (00:03:10) zoom in 1 
-\i (00:03:10) setwindow pcb
-\i (00:03:10) zoom in -3.3064 12.9941
-\i (00:03:10) trapsize 2016
-\i (00:03:14) QtSignal CVPLayerGrid CVPBoxAllPower_Source clicked true
-\i (00:03:14) QtSignal CVPLayerGrid CVPBoxAllPower_Source clicked false
-\i (00:03:17) QtSignal CVPLayerGrid CVPBoxAllTop clicked true
-\i (00:03:18) QtSignal CVPLayerGrid CVPBoxAllTop clicked false
-\i (00:03:18) QtSignal CVPLayerGrid CVPBoxAllTop clicked true
-\i (00:03:18) QtSignal CVPLayerGrid CVPBoxAllTop clicked false
-\i (00:03:19) QtSignal CVPLayerGrid CVPBoxAllTop clicked true
-\i (00:03:20) QtSignal CVPLayerGrid CVPBoxAllTop clicked false
-\i (00:03:23) QtSignal CVPLayerGrid CVPBoxAllBottom clicked true
-\i (00:03:23) QtSignal CVPLayerGrid CVPBoxAllBottom clicked false
-\i (00:03:25) pick grid -7.1371 9.7280
-\t (00:03:25) last pick:  -7.1120 9.6520
+\i (00:02:07) zoom in 10.7123 23.5652
+\i (00:02:07) trapsize 1281
+\i (00:02:11) drag_start grid 9.0986 21.0037
+\i (00:02:11) move 
+\t (00:02:11) last pick:  9.1440 21.0820
+\t (00:02:11) Pick new location for the element(s).
+\i (00:02:13) drag_stop grid 9.0986 20.8500
+\i (00:02:13) generaledit 
+\i (00:02:14) grid toggle 
+\i (00:02:14) generaledit 
+\i (00:02:16) grid toggle 
+\i (00:02:16) generaledit 
+\i (00:02:18) color192 
+\i (00:02:18) generaledit 
+\i (00:02:21) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Stack-Up
+\i (00:02:22) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Areas
+\i (00:02:27) QtSignal ColorVisibilityDialog CVDApplyButton clicked
+\i (00:02:28) QtSignal CVDLayerContainer CVDVisibilityOn clicked
+\i (00:02:32) grid toggle 
+\i (00:02:32) generaledit 
+\i (00:02:33) grid toggle 
+\i (00:02:33) generaledit 
+\i (00:02:33) grid toggle 
+\i (00:02:33) generaledit 
+\i (00:02:35) QtSignal ColorVisibilityDialog CVDCancelButton clicked
+\i (00:02:37) zoom in 1 
+\i (00:02:37) setwindow pcb
+\i (00:02:37) zoom in 11.1990 21.8234
+\i (00:02:37) trapsize 640
+\i (00:02:38) zoom out 1 
+\i (00:02:38) setwindow pcb
+\i (00:02:38) zoom out 11.7113 22.3613
+\i (00:02:38) trapsize 1281
+\i (00:02:40) pick grid -1.3522 21.6953
+\t (00:02:40) last pick:  -1.2700 21.5900
+\i (00:02:41) zoom out 1 
+\i (00:02:41) setwindow pcb
+\i (00:02:41) zoom out -1.2754 21.6953
+\i (00:02:41) trapsize 2561
+\i (00:02:42) save 
+\i (00:02:43) fillin yes 
+\i (00:02:43) generaledit 
+\i (00:02:44) zoom out 1 
+\i (00:02:44) setwindow pcb
+\i (00:02:44) zoom out 4.1037 19.5950
+\t (00:02:44) Grids are drawn 0.5080, 0.5080 apart for enhanced viewability.
+\i (00:02:44) trapsize 5123
+\i (00:02:46) zoom in 1 
+\i (00:02:46) setwindow pcb
+\i (00:02:46) zoom in -4.7336 15.5991
+\i (00:02:46) trapsize 2561
+\i (00:02:47) zoom out 1 
+\i (00:02:47) setwindow pcb
+\i (00:02:47) zoom out -4.6311 15.9065
+\i (00:02:47) trapsize 5123
+\i (00:02:48) zoom in 1 
+\i (00:02:48) setwindow pcb
+\i (00:02:48) zoom in -4.9385 9.2467
+\i (00:02:48) trapsize 2561
+\i (00:02:49) zoom out 1 
+\i (00:02:49) setwindow pcb
+\i (00:02:49) zoom out -4.9385 9.3491
+\i (00:02:49) trapsize 5123
+\i (00:02:49) zoom in 1 
+\i (00:02:49) setwindow pcb
+\i (00:02:49) zoom in -5.7582 17.3410
+\i (00:02:49) trapsize 2561
+\i (00:02:51) zoom out 1 
+\i (00:02:51) setwindow pcb
+\i (00:02:51) zoom out -5.8094 17.2898
+\i (00:02:51) trapsize 5123
+\i (00:02:55) color192 
+\i (00:02:56) generaledit 
+\i (00:03:00) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Components "Ref des"
+\i (00:03:01) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 7 0
+\i (00:03:01) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Silkscreen_Top RefDes
+\i (00:03:01) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:03:06) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Package geometry"
+\i (00:03:08) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 15 0
+\i (00:03:08) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Silkscreen_Top PkgGeo
+\i (00:03:08) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:03:09) QtSignal ColorVisibilityDialog CVDApplyButton clicked
+\i (00:03:10) QtSignal ColorVisibilityDialog CVDOkButton clicked
+\i (00:03:16) flipdesign 
+\i (00:03:17) zoom out 1 
+\i (00:03:17) setwindow pcb
+\i (00:03:17) zoom out 36.9672 18.0071
+\t (00:03:17) Grids are drawn 1.0160, 1.0160 apart for enhanced viewability.
+\i (00:03:17) trapsize 10246
+\i (00:03:18) zoom in 1 
+\i (00:03:18) setwindow pcb
+\i (00:03:18) zoom in 23.2377 6.2295
+\t (00:03:18) Grids are drawn 0.5080, 0.5080 apart for enhanced viewability.
+\i (00:03:18) trapsize 5123
+\i (00:03:20) zoom in 1 
+\i (00:03:20) setwindow pcb
+\i (00:03:20) zoom in 10.3279 16.6804
+\i (00:03:20) trapsize 2561
+\i (00:03:21) zoom in 1 
+\i (00:03:21) setwindow pcb
+\i (00:03:21) zoom in 10.5329 24.1599
+\i (00:03:21) trapsize 1281
+\i (00:03:21) zoom in 1 
+\i (00:03:21) setwindow pcb
+\i (00:03:21) zoom in 10.5329 24.1600
+\i (00:03:21) trapsize 640
+\i (00:03:26) zoom out 1 
+\i (00:03:26) setwindow pcb
+\i (00:03:26) zoom out 12.9663 21.5217
+\i (00:03:26) trapsize 1281
+\i (00:03:27) grid toggle 
+\i (00:03:27) generaledit 
+\i (00:03:28) zoom out 1 
+\i (00:03:28) setwindow pcb
+\i (00:03:28) zoom out 18.0893 23.4939
+\i (00:03:28) trapsize 2561
+\i (00:03:28) zoom out 1 
+\i (00:03:28) setwindow pcb
+\i (00:03:28) zoom out 21.9827 20.5739
+\i (00:03:28) trapsize 5123
+\i (00:03:29) zoom out 1 
+\i (00:03:29) setwindow pcb
+\i (00:03:29) zoom out 41.2705 14.5288
+\i (00:03:29) trapsize 10246
 \i (00:03:29) zoom in 1 
 \i (00:03:29) setwindow pcb
-\i (00:03:29) zoom in -5.3226 10.3732
-\i (00:03:29) trapsize 1008
-\i (00:03:30) zoom in 1 
-\i (00:03:30) setwindow pcb
-\i (00:03:30) zoom in 2.8024 8.2966
-\i (00:03:30) trapsize 504
-\i (00:03:30) zoom in 1 
-\i (00:03:30) setwindow pcb
-\i (00:03:30) zoom in 3.4476 8.5386
-\i (00:03:30) trapsize 252
+\i (00:03:29) zoom in 24.0574 0.2869
+\i (00:03:29) trapsize 5123
+\i (00:03:31) zoom in 1 
+\i (00:03:31) setwindow pcb
+\i (00:03:31) zoom in 33.0738 12.2747
+\i (00:03:31) trapsize 2561
 \i (00:03:31) zoom out 1 
 \i (00:03:31) setwindow pcb
-\i (00:03:31) zoom out 3.2965 8.6848
-\i (00:03:31) trapsize 504
-\i (00:03:31) zoom out 1 
-\i (00:03:31) setwindow pcb
-\i (00:03:31) zoom out 3.2662 8.6546
-\i (00:03:31) trapsize 1008
-\i (00:03:31) zoom out 1 
-\i (00:03:31) setwindow pcb
-\i (00:03:31) zoom out 3.2258 8.6344
-\i (00:03:31) trapsize 2016
-\i (00:03:36) zoom out 1 
-\i (00:03:36) setwindow pcb
-\i (00:03:36) zoom out 7.6613 7.4651
-\i (00:03:36) trapsize 4032
-\i (00:03:39) zoom in 1 
-\i (00:03:39) setwindow pcb
-\i (00:03:39) zoom in -19.1935 14.8038
-\i (00:03:39) trapsize 2016
-\i (00:03:41) zoom out 1 
-\i (00:03:41) setwindow pcb
-\i (00:03:41) zoom out -15.9677 13.9167
-\i (00:03:41) trapsize 4032
-\i (00:03:54) zoom in 1 
-\i (00:03:54) setwindow pcb
-\i (00:03:54) zoom in 6.2097 14.2394
-\i (00:03:54) trapsize 2016
-\i (00:03:54) zoom in 1 
-\i (00:03:54) setwindow pcb
-\i (00:03:54) zoom in 6.2097 14.2394
-\i (00:03:54) trapsize 1008
-\i (00:03:57) zoom out 1 
-\i (00:03:57) setwindow pcb
-\i (00:03:57) zoom out 12.8428 14.1588
-\i (00:03:57) trapsize 2016
-\i (00:04:05) zoom in 1 
-\i (00:04:05) setwindow pcb
-\i (00:04:05) zoom in 10.1411 13.8362
-\i (00:04:05) trapsize 1008
-\i (00:04:07) zoom in 1 
-\i (00:04:07) setwindow pcb
-\i (00:04:07) zoom in 13.2258 14.2192
-\i (00:04:07) trapsize 504
-\i (00:04:08) zoom out 1 
-\i (00:04:08) setwindow pcb
-\i (00:04:08) zoom out 13.1351 14.0781
-\i (00:04:08) trapsize 1008
-\i (00:04:08) zoom out 1 
-\i (00:04:08) setwindow pcb
-\i (00:04:08) zoom out 13.1352 14.0781
-\i (00:04:08) trapsize 2016
-\i (00:04:10) QtSignal CVPLayerGrid CVPBoxAllPower_Source clicked true
-\i (00:04:12) QtSignal CVPLayerGrid CVPBoxAllPower_Source clicked false
-\i (00:04:16) zoom out 1 
-\i (00:04:16) setwindow pcb
-\i (00:04:16) zoom out 13.5787 8.7152
-\i (00:04:16) trapsize 4032
-\i (00:04:17) zoom in 1 
-\i (00:04:17) setwindow pcb
-\i (00:04:17) zoom in 10.4839 2.5861
-\i (00:04:17) trapsize 2016
-\i (00:04:26) zoom in 1 
-\i (00:04:26) setwindow pcb
-\i (00:04:26) zoom in 13.4275 14.5216
-\i (00:04:26) trapsize 1008
-\i (00:04:31) shape add 
-\i (00:04:36) setwindow form.mini
-\i (00:04:36) FORM mini dyns_netname_list  
-\i (00:04:43) fillin "Gnd"
-\t (00:04:43) Assigning selected shape to net: GND
-\i (00:04:50) setwindow pcb
-\i (00:04:50) pick grid 11.0485 16.7595
-\t (00:04:50) last pick:  10.9220 16.7640
-\i (00:04:52) pick grid 15.3025 16.3966
-\t (00:04:52) last pick:  15.2400 16.5100
-\i (00:04:55) pick grid 14.9195 15.1063
-\t (00:04:55) last pick:  14.9860 14.9860
-\i (00:04:57) pick grid 14.1130 12.7474
-\t (00:04:57) last pick:  14.2240 12.7000
-\i (00:05:04) pick grid 14.1332 9.7837
-\t (00:05:04) last pick:  14.2240 9.9060
-\i (00:05:13) prepopup 13.1453 8.8563
-\i (00:05:14) oops 
-\t (00:05:14) last pick:  14.2240 12.7000
-\i (00:05:19) prepopup 15.6654 11.5982
-\i (00:05:20) oops 
-\t (00:05:20) last pick:  14.9860 14.9860
-\i (00:05:22) pick grid 15.8872 11.2353
-\t (00:05:22) last pick:  16.0020 11.1760
-\i (00:05:24) pick grid 16.0888 10.0257
-\t (00:05:24) last pick:  16.0020 9.9060
-\i (00:05:25) pick grid 14.6574 8.4732
-\t (00:05:25) last pick:  14.7320 8.3820
-\i (00:05:27) pick grid 12.5404 9.2999
-\t (00:05:27) last pick:  12.4460 9.3980
-\i (00:05:34) pick grid 10.7864 16.2757
-\t (00:05:34) last pick:  10.6680 16.2560
-\i (00:05:35) pick grid 10.8066 16.6990
-\t (00:05:35) last pick:  10.9220 16.7640
-\i (00:05:35) prepopup 10.9477 16.7394
-\i (00:05:35) done 
-\i (00:05:36) etchedit 
-\i (00:05:38) zoom out 1 
-\i (00:05:38) setwindow pcb
-\i (00:05:38) zoom out 12.3792 14.4007
-\i (00:05:38) trapsize 2016
-\i (00:05:41) zoom in 1 
-\i (00:05:41) setwindow pcb
-\i (00:05:41) zoom in 10.2017 13.3119
-\i (00:05:41) trapsize 1008
-\i (00:05:43) zoom in 1 
-\i (00:05:43) setwindow pcb
-\i (00:05:43) zoom in 11.3106 13.9167
-\i (00:05:43) trapsize 504
-\i (00:05:45) zoom out 1 
-\i (00:05:45) setwindow pcb
-\i (00:05:45) zoom out 10.7663 13.2716
-\i (00:05:45) trapsize 1008
-\i (00:05:48) shape select 
-\i (00:05:49) pick grid 11.9961 13.4732
-\t (00:05:49) last pick:  11.9380 13.4620
-\i (00:05:52) drag_start grid 10.8268 16.6385
-\t (00:05:52) last pick:  10.8116 16.6536
-\i (00:05:53) drag_stop grid 11.0284 16.3765
-\t (00:05:53) No DRC errors detected.
-\i (00:05:54) prepopup 12.0365 15.4087
-\i (00:05:54) done 
-\i (00:05:54) etchedit 
-\i (00:05:59) shape select 
-\i (00:06:00) pick grid 13.6897 14.4006
-\t (00:06:00) last pick:  13.7160 14.4780
-\i (00:06:00) zoom in 1 
-\i (00:06:00) setwindow pcb
-\i (00:06:00) zoom in 14.3348 16.7797
-\i (00:06:00) trapsize 504
-\i (00:06:00) zoom in 1 
-\i (00:06:00) setwindow pcb
-\i (00:06:00) zoom in 14.3147 16.7797
-\i (00:06:00) trapsize 252
-\i (00:06:02) drag_start grid 15.0556 16.6840
-\t (00:06:02) last pick:  15.0608 16.6892
-\i (00:06:03) drag_stop grid 14.7734 16.5378
-\t (00:06:03) No DRC errors detected.
-\i (00:06:04) drag_start grid 15.2270 15.7717
-\t (00:06:04) last pick:  15.2400 15.7717
-\i (00:06:05) drag_stop grid 14.9296 15.7667
-\t (00:06:05) No DRC errors detected.
-\i (00:06:06) drag_start grid 14.7331 16.5026
-\t (00:06:06) last pick:  14.7362 16.5058
-\i (00:06:09) drag_stop grid 14.8339 16.6538
-\t (00:06:09) No DRC errors detected.
-\i (00:06:09) zoom out 1 
-\i (00:06:09) setwindow pcb
-\i (00:06:09) zoom out 15.4639 16.3866
-\i (00:06:09) trapsize 504
-\i (00:06:09) zoom out 1 
-\i (00:06:09) setwindow pcb
-\i (00:06:09) zoom out 15.4639 16.3665
-\i (00:06:09) trapsize 1008
-\i (00:06:10) prepopup 15.4236 15.7616
-\i (00:06:10) done 
-\i (00:06:10) etchedit 
-\i (00:06:11) pick grid 16.8550 15.5802
-\t (00:06:11) last pick:  16.7640 15.4940
-\i (00:06:12) zoom in 1 
-\i (00:06:12) setwindow pcb
-\i (00:06:12) zoom in 14.0123 15.7616
-\i (00:06:12) trapsize 504
-\i (00:06:16) zoom out 1 
-\i (00:06:16) setwindow pcb
-\i (00:06:16) zoom out 16.2502 15.6205
-\i (00:06:16) trapsize 1008
-\i (00:06:18) zoom out 1 
-\i (00:06:18) setwindow pcb
-\i (00:06:18) zoom out 16.2502 15.6407
-\i (00:06:18) trapsize 2016
-\i (00:06:19) zoom out 1 
-\i (00:06:19) setwindow pcb
-\i (00:06:19) zoom out 16.2502 15.6408
-\i (00:06:19) trapsize 4032
-\i (00:06:24) zoom in 1 
-\i (00:06:24) setwindow pcb
-\i (00:06:24) zoom in 10.4839 10.0763
-\i (00:06:24) trapsize 2016
-\i (00:06:25) zoom in 1 
-\i (00:06:25) setwindow pcb
-\i (00:06:25) zoom in 12.7420 13.2618
-\i (00:06:25) trapsize 1008
-\i (00:06:32) shape select 
-\i (00:06:32) pick grid 13.1452 15.2175
-\t (00:06:32) last pick:  13.2080 15.2400
-\i (00:06:33) prepopup 13.1452 15.2175
-\i (00:06:37) pick grid 12.7017 15.5199
-\t (00:06:37) last pick:  12.7000 15.4940
-\w (00:06:37) WARNING(SPMHGE-604): No editable vertex was found.
-\e (00:06:38) Command not found: ~?
-\i (00:06:41) delete 
-\i (00:06:44) pick grid 14.6170 15.1772
-\t (00:06:44) last pick:  14.7320 15.2400
-\t (00:06:44) Dynamic Shape "Gnd, Boundary/Gnd"
-\i (00:06:44) pick grid dbl 14.6170 15.1772
-\t (00:06:44) last pick:  14.7320 15.2400
-\i (00:06:45) prepopup 14.6170 15.1772
-\i (00:06:45) done 
-\i (00:06:45) etchedit 
-\i (00:06:46) zoom out 1 
-\i (00:06:46) setwindow pcb
-\i (00:06:46) zoom out 15.8670 15.4393
-\i (00:06:46) trapsize 2016
-\i (00:06:46) zoom out 1 
-\i (00:06:46) setwindow pcb
-\i (00:06:46) zoom out 16.5121 14.6731
-\i (00:06:46) trapsize 4032
-\i (00:06:48) zoom in 1 
-\i (00:06:48) setwindow pcb
-\i (00:06:48) zoom in 25.0807 3.4678
-\i (00:06:48) trapsize 2016
-\i (00:06:49) zoom in 1 
-\i (00:06:49) setwindow pcb
-\i (00:06:49) zoom in 26.0485 5.1210
-\i (00:06:49) trapsize 1008
-\i (00:06:49) zoom in 1 
-\i (00:06:49) setwindow pcb
-\i (00:06:49) zoom in 26.0687 5.1412
-\i (00:06:49) trapsize 504
-\i (00:06:51) zoom out 1 
-\i (00:06:51) setwindow pcb
-\i (00:06:51) zoom out 26.9356 3.9517
-\i (00:06:51) trapsize 1008
-\i (00:06:51) zoom out 1 
-\i (00:06:51) setwindow pcb
-\i (00:06:51) zoom out 26.9357 3.9518
-\i (00:06:51) trapsize 2016
-\i (00:06:52) zoom in 1 
-\i (00:06:52) setwindow pcb
-\i (00:06:52) zoom in 27.7421 2.1776
-\i (00:06:52) trapsize 1008
-\i (00:06:54) zoom out 1 
-\i (00:06:54) setwindow pcb
-\i (00:06:54) zoom out 27.5203 2.8227
-\i (00:06:54) trapsize 2016
-\i (00:06:54) zoom in 1 
-\i (00:06:54) setwindow pcb
-\i (00:06:54) zoom in 27.5203 2.8228
-\i (00:06:54) trapsize 1008
-\i (00:06:54) zoom out 1 
-\i (00:06:54) setwindow pcb
-\i (00:06:54) zoom out 27.5203 2.8228
-\i (00:06:54) trapsize 2016
-\i (00:06:55) zoom out 1 
-\i (00:06:55) setwindow pcb
-\i (00:06:55) zoom out 27.5203 2.8229
-\i (00:06:55) trapsize 4032
-\i (00:06:59) zoom in 1 
-\i (00:06:59) setwindow pcb
-\i (00:06:59) zoom in 8.0645 31.5326
-\i (00:06:59) trapsize 2016
-\i (00:06:59) zoom in 1 
-\i (00:06:59) setwindow pcb
-\i (00:06:59) zoom in 8.0242 31.5729
-\i (00:06:59) trapsize 1008
-\i (00:07:00) zoom out 1 
-\i (00:07:00) setwindow pcb
-\i (00:07:00) zoom out 14.3952 29.4761
-\i (00:07:00) trapsize 2016
-\i (00:07:00) zoom out 1 
-\i (00:07:00) setwindow pcb
-\i (00:07:00) zoom out 14.4356 29.3955
-\i (00:07:00) trapsize 4032
-\i (00:07:02) exit 
-\e (00:07:02) Do you want to save the changes you made to PRISON_GOD_SCH_V130_4layer.brd?
-\i (00:07:03) fillin yes 
-\t (00:07:04)     Journal end - Thu Dec 29 14:07:54 2016
+\i (00:03:31) zoom out 33.0738 12.2747
+\i (00:03:31) trapsize 5123
+\i (00:03:34) trapsize 7722
+\i (00:03:35) trapsize 4381
+\i (00:03:37) zoom fit 
+\i (00:03:37) trapsize 2780
+\i (00:03:50) QtSignal CVPLayerGrid CVPButtonEtchTop clicked
+\i (00:03:54) color192 
+\i (00:03:54) generaledit 
+\i (00:03:54) QtSignal ColorVisibilityDialog CVDTabs currentChanged Nets
+\i (00:03:56) QtSignal CVDNetTable CVDNetTableDelegate clickedBox 4 0
+\i (00:03:56) QtSignal CVDNetSplitter CVDNetTable dataChanged "[Net] Gnd" Net
+\i (00:03:56) QtSignal CVDNetSplitter CVDNetTable selectionChanged
+\i (00:03:57) QtSignal ColorVisibilityDialog CVDApplyButton clicked
+\i (00:03:57) QtSignal ColorVisibilityDialog CVDOkButton clicked
+\i (00:04:06) QtSignal CVPLayerGrid CVPButtonPinTop clicked
+\i (00:04:09) QtSignal CVPLayerGrid CVPButtonPinBottom clicked
+\i (00:04:11) QtSignal CVPLayerGrid CVPButtonEtchBottom clicked
+\i (00:04:18) prepopup 37.8157 16.2876
+\i (00:04:19) save 
+\i (00:04:20) fillin yes 
+\i (00:04:21) generaledit 
+\i (00:04:31) zoom in 1 
+\i (00:04:31) setwindow pcb
+\i (00:04:31) zoom in 25.3602 4.0544
+\i (00:04:31) trapsize 1390
+\i (00:04:32) zoom in 1 
+\i (00:04:32) setwindow pcb
+\i (00:04:32) zoom in 24.3037 3.5262
+\i (00:04:32) trapsize 695
+\i (00:04:36) zoom out 1 
+\i (00:04:36) setwindow pcb
+\i (00:04:36) zoom out 24.7069 3.8598
+\i (00:04:36) trapsize 1390
+\i (00:04:36) zoom out 1 
+\i (00:04:36) setwindow pcb
+\i (00:04:36) zoom out 24.6235 3.9432
+\i (00:04:36) trapsize 2780
+\i (00:04:37) zoom out 1 
+\i (00:04:37) setwindow pcb
+\i (00:04:37) zoom out 24.2899 3.7765
+\i (00:04:37) trapsize 5561
+\i (00:04:38) zoom in 1 
+\i (00:04:38) setwindow pcb
+\i (00:04:38) zoom in 27.8205 1.4410
+\i (00:04:38) trapsize 2780
+\i (00:04:40) zoom fit 
+\i (00:04:40) trapsize 2780
+\i (00:04:47) exit 
+\t (00:04:47)     Journal end - Sat Dec 31 01:05:40 2016

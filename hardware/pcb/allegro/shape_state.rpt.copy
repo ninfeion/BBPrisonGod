@@ -1,0 +1,22 @@
+<HTML><HEAD><STYLE TYPE="text/css">.errorMessage { color:darkred; font-weight:bold; font-style:italic; text-decoration:underline; }</STYLE></HEAD><BODY><PRE>
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Dynamic Status Report                                      )
+(                                                                     )
+(    Drawing          : PRISON_GOD_SCH_V200.brd                       )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Fri Dec 30 18:53:27 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Dynamic shapes out of date: 1 out of 30
+  Current fill mode         : DISABLED
+
+
+  <<<  ETCH  >>>
+
+    Layer = TOP
+       State: No Etch      Point on shape: <a href="xprobe:xy:23.9014 20.4216">(23.9014 20.4216)</a>  Net: GND
+</PRE>
+</BODY></HTML>

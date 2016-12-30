@@ -2,9 +2,9 @@
 (                                                                     )
 (    Allegro Netrev Import Logic                                      )
 (                                                                     )
-(    Drawing          : PRISON_GOD_SCH_V130_4layer.brd                )
+(    Drawing          : PRISON_GOD_SCH_V142_4layer.brd                )
 (    Software Version : 17.2S004                                      )
-(    Date/Time        : Thu Dec 29 13:47:13 2016                      )
+(    Date/Time        : Fri Dec 30 18:18:37 2016                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -19,15 +19,15 @@ Missing symbol has error:    No
 DRC update:                  Yes
 Schematic directory:         'C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\allegro'
 Design Directory:            'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro'
-Old design name:             'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V130_4layer.brd'
-New design name:             'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V131_4layer.brd'
+Old design name:             'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V142_4layer.brd'
+New design name:             'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V142_4layer.brd'
 
-CmdLine: netrev.exe -y 1 -i C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\allegro C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V130_4layer.brd C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V131_4layer.brd
+CmdLine: netrev.exe -y 1 -i C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\allegro C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V142_4layer.brd C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V142_4layer.brd
 
 ------ Preparing to read pst files ------
 
 Starting to read C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstchip.dat 
-   Finished reading C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstchip.dat (00:00:00.03)
+   Finished reading C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstchip.dat (00:00:00.06)
 Starting to read C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstxprt.dat 
    Finished reading C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstxprt.dat (00:00:00.00)
 Starting to read C:/NINFEION_GIT/BBPRISONGOD/HARDWARE/PCB/CADENCE/allegro/pstxnet.dat 
@@ -64,7 +64,7 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Dec 29 13:47:13 2016
+netrev run on Dec 30 18:18:37 2016
    DESIGN NAME : 'PRISON_GOD_SCH_V110'
    PACKAGING ON Aug  8 2016 18:41:50
 
@@ -89,6 +89,6 @@ netrev run on Dec 29 13:47:13 2016
  No oversight detected
  No warning detected
 
-cpu time      0:01:21
+cpu time      0:00:41
 elapsed time  0:00:00
 

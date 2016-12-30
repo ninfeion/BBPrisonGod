@@ -1,4 +1,4 @@
-{ Using PSTWRITER 17.2.0 d001Dec-29-2016 at 13:47:07 }
+{ Using PSTWRITER 17.2.0 d001Dec-30-2016 at 18:18:35 }
 
 #1 WARNING(ORCAP-36038): "No_connect" property on Pin "U6.20" ignored for U6: Main, SENSOR (3.70, 2.20). Connecting pin to net "GND".
 #2 WARNING(ORCAP-36038): "No_connect" property on Pin "U5.2" ignored for U5: Main, POWER (3.60, 3.50). Connecting pin to net "GND".

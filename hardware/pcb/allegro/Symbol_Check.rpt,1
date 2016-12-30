@@ -1,0 +1,29 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Unplaced Symbol Availability Check                               )
+(                                                                     )
+(    Drawing          : PRISON_GOD_SCH_V142_4layer.brd                )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Fri Dec 30 18:33:32 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Current PSMPATH consists of:
+	.
+	symbols
+	..
+	../symbols
+	C:/Cadence/Cadence_SPB_17.2-2016/share/local/pcb/symbols
+	C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/pcb_lib/symbols
+	C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/allegrolib/symbols
+	C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/
+	C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs
+
+
+All Symbols Found
+
+Total symbols placed:      94 out of 95
+
+
+Symbol Found:  C7	- C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/resc_0402.psm

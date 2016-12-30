@@ -85,7 +85,7 @@
     ("Allegro Netlist Create DCF File" "FALSE")
     ("Update Allegro Board" "TRUE")
     ("Allegro Netlist Output Board File"
-       "C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V131_4layer.brd")
+       "C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V142_4layer.brd")
     ("Allegro Netlist Remove Etch" "FALSE")
     ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
     ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
@@ -98,7 +98,7 @@
     ("Allegro Netlist User Defined Property" "FALSE")
     (Netlist_TAB "0")
     ("Allegro Netlist Input Board File"
-       "C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V130_4layer.brd"))
+       "C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\PRISON_GOD_SCH_V142_4layer.brd"))
   (Folder "Outputs"
     (File ".\prison_god_sch_v110.bom"
       (Type "Report"))
@@ -258,9 +258,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 220 1462 220 690")
-        (Scroll "720 333")
-        (Zoom "276")
+        (Placement "44 2 3 -1 -1 -4 -23 220 1462 220 690")
+        (Scroll "-46 483")
+        (Zoom "138")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\PRISON_GOD_SCH_V110.DSN")
@@ -270,8 +270,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -4 -23 66 1180 66 448")
-        (Scroll "-203 0")
-        (Zoom "69")
+        (Scroll "789 234")
+        (Zoom "276")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\PRISON_GOD_SCH_V110.DSN")
@@ -281,8 +281,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -4 -23 110 1224 110 492")
-        (Scroll "-203 0")
-        (Zoom "69")
+        (Scroll "0 251")
+        (Zoom "138")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\PRISON_GOD_SCH_V110.DSN")
@@ -292,8 +292,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -4 -23 132 1246 132 514")
-        (Scroll "-203 0")
-        (Zoom "69")
+        (Scroll "0 375")
+        (Zoom "138")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\PRISON_GOD_SCH_V110.DSN")
@@ -302,8 +302,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -4 -23 154 1268 154 536")
-        (Scroll "-381 -2")
+        (Placement "44 0 1 -1 -1 -4 -23 154 1268 154 536")
+        (Scroll "-203 0")
         (Zoom "69")
         (Occurrence "/"))
       (Path

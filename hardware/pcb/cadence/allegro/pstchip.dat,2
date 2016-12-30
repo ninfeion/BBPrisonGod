@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Dec-28-2016 at 11:35:09}
+{ Using PSTWRITER 17.2.0 d001Dec-30-2016 at 17:29:09}
 primitive 'ANTENNA_0_ANT700X200-2N_ANTENNA';
   pin
     '1':
@@ -219,6 +219,21 @@ primitive 'CAP NP_RESC_0402_1.0U';
     VALUE='1.0u';
   end_body;
 end_primitive;
+primitive 'CAP NP_RESC_0603_1.0U';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP NP';
+    JEDEC_TYPE='RESC_0603';
+    VALUE='1.0u';
+  end_body;
+end_primitive;
 primitive 'LED_RESC_0603_LED';
   pin
     'ANODE':
@@ -381,7 +396,7 @@ primitive 'INDUCTOR_RESC_0603_2.2U';
     VALUE='2.2u';
   end_body;
 end_primitive;
-primitive 'INDUCTOR_RESC_0603_4.7U';
+primitive 'INDUCTOR_RESC_1206_4.7U';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -392,7 +407,7 @@ primitive 'INDUCTOR_RESC_0603_4.7U';
   end_pin;
   body
     PART_NAME='INDUCTOR';
-    JEDEC_TYPE='RESC_0603';
+    JEDEC_TYPE='RESC_1206';
     VALUE='4.7u';
   end_body;
 end_primitive;
