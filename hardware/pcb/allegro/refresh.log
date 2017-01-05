@@ -1,9 +1,9 @@
-Tue Dec 27 22:35:21 2016				Page     1
+Tue Jan 03 19:42:49 2017				Page     1
 
 
  
 Update Symbols/Modules Logfile
-	Tue Dec 27 22:35:21 2016
+	Tue Jan 03 19:42:49 2017
 
 ------ Module Refresh Messages ------
 
@@ -12,4 +12,99 @@ SUMMARY:    Updated 0 out of 0 modules
 ------ End Module Messages     ------
 
 
+
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Symbol                                                   )
+(                                                                     )
+(    Drawing          : PRISON_GOD_PCB_V230_DEBUG.brd                 )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Tue Jan 03 19:42:49 2017                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Tue Jan 03 19:42:49 2017				Page     1
+
+
+------ Symbol Refresh Directives ------
+
+Input design  = 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_PCB_V230_DEBUG.brd'
+Output design = ''
+
+Update mechanical symbols              = 'NO'
+Update format symbols                  = 'NO'
+Update package symbols                 = 'NO'
+Update shape/flash symbols             = 'YES'
+Update symbol padstacks                = 'NO'
+Preserve padstacks replaced on pins    = 'NO'
+Reset symbol text and size locations   = 'NO'
+Reset Pin Escapes (fanouts)            = 'NO'
+Ripup Etch                             = 'NO'
+Reset custom drill data                = 'NO'
+Symbol list file                       = 'C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaab08140.tmp'
+
+
+------ Library Paths ------
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/local/pcb/symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/allegrolib/symbols 
+           C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs/ 
+           C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/local/pcb/padstacks 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_17.2-2016/share/pcb/allegrolib/symbols 
+           C:/Ninfeion_Git/BBSolarController/pcb/cadence/board/libs 
+           C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs 
+
+
+------ Symbol Refresh Messages ------
+
+'QFN40P500X500X80-41N'  symbol refreshed successfully.
+'S330C30_TOP'  symbol refreshed successfully.
+'S330C30_PM'  symbol refreshed successfully.
+'S330C30_SM'  symbol refreshed successfully.
+'D85_22_TOP'  symbol refreshed successfully.
+'D85_22_PM'  symbol refreshed successfully.
+'D85_22_SM'  symbol refreshed successfully.
+'D78_23_TOP'  symbol refreshed successfully.
+'D78_23_PM'  symbol refreshed successfully.
+'D78_23_SM'  symbol refreshed successfully.
+'AB00'  symbol refreshed successfully.
+'S250C30_TOP'  symbol refreshed successfully.
+'S250C30_PM'  symbol refreshed successfully.
+'S250C30_SM'  symbol refreshed successfully.
+'R168_152C20_TOP'  symbol refreshed successfully.
+'R168_152C20_PM'  symbol refreshed successfully.
+'R168_152C20_SM'  symbol refreshed successfully.
+'S180C20_TOP'  symbol refreshed successfully.
+'S180C20_PM'  symbol refreshed successfully.
+'S180C20_SM'  symbol refreshed successfully.
+'R85_145C20_TOP'  symbol refreshed successfully.
+'R85_145C20_PM'  symbol refreshed successfully.
+'R85_145C20_SM'  symbol refreshed successfully.
+'S360C30_TOP'  symbol refreshed successfully.
+'S360C30_PM'  symbol refreshed successfully.
+'S360C30_SM'  symbol refreshed successfully.
+'D85_25_TOP'  symbol refreshed successfully.
+'D85_25_PM'  symbol refreshed successfully.
+'D85_25_SM'  symbol refreshed successfully.
+'D85_23_SM'  symbol refreshed successfully.
+'D85_23_PM'  symbol refreshed successfully.
+'D85_23_TOP'  symbol refreshed successfully.
+
+
+----- Symbol Update Summary ----
+
+Updated symbols: 32 out 32
+    Design updated.
 

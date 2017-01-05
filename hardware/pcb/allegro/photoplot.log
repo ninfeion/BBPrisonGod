@@ -1,0 +1,509 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    ARTWORK LOG                                                      )
+(                                                                     )
+(    Drawing          : PRISON_GOD_PCB_V235_SOMECHANGE.brd            )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Wed Jan 04 13:13:35 2017                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ ******************************************
+ WARNING: DRC OUT OF DATE on this layout.
+ ******************************************
+
+ ---- Photoplot outline rectangle not found; using drawing extents.
+
+
+
+Results from parameter file ...
+    DEVICE-TYPE           GERBER_RS274X
+    OUTPUT-UNITS          MM
+    FILM-SIZE             2400000 1600000
+    FORMAT                5.5
+    ABORT-ON-ERROR        NO
+    SCALE                 1
+    SUPPRESS-LEAD-ZEROES  YES
+    SUPPRESS-TRAIL-ZEROES NO
+    SUPPRESS-EQUAL        YES
+    UNDEF-APT-CONT        NO
+
+
+
+================================================================
+     PROCESSING FILM < TOP >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.15240                                  DARK 
+  CIRCLE     0.23500                                  DARK 
+  CIRCLE     0.24000                                  DARK 
+  CIRCLE     0.25000                                  DARK 
+  CIRCLE     0.30000                                  DARK 
+  CIRCLE     0.45000                                  DARK 
+  CIRCLE     0.50000                                  DARK 
+  CIRCLE     0.60000                                  DARK 
+  CIRCLE     0.70000                                  DARK 
+  CIRCLE     1.20000                                  DARK 
+  RECTANGLE  0.30000     x 1.28000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.64000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.64000      90.000 NO     DARK 
+  RECTANGLE  0.73000     x 0.94000       0.000 NO     DARK 
+  RECTANGLE  0.73000     x 0.94000      90.000 NO     DARK 
+  RECTANGLE  0.92500     x 1.75000       0.000 NO     DARK 
+  RECTANGLE  0.92500     x 1.75000      90.000 NO     DARK 
+  RECTANGLE  1.00000     x 1.02500       0.000 NO     DARK 
+  RECTANGLE  1.00000     x 1.35000       0.000 NO     DARK 
+  RECTANGLE  1.10000     x 1.20000      90.000 NO     DARK 
+  RECTANGLE  1.32500     x 1.45000       0.000 NO     DARK 
+  RECTANGLE  1.62500     x 2.17000       0.000 NO     DARK 
+  RECTANGLE  1.87500     x 1.75000       0.000 NO     DARK 
+  RECTANGLE  2.00000     x 3.00000       0.000 NO     DARK 
+  OBLONG     0.46000     x 2.30000       0.000 NO     DARK 
+  OBLONG     0.75000     x 0.24000       0.000 NO     DARK 
+  OBLONG     0.85000     x 0.30000       0.000 NO     DARK 
+  OBLONG     0.85000     x 0.30000      90.000 NO     DARK 
+  OBLONG     0.92500     x 0.30000       0.000 NO     DARK 
+  OBLONG     0.92500     x 0.30000      90.000 NO     DARK 
+  OBLONG     1.32500     x 0.60000       0.000 NO     DARK 
+  OBLONG     1.60000     x 1.00000      90.000 NO     DARK 
+  PAD SHAPE  D85_23_TOP                  0.000 NO     DARK 
+  PAD SHAPE  S250C30_TOP                 0.000 NO     DARK 
+  PAD SHAPE  R168_152C20_TOP             0.000 NO     DARK 
+  PAD SHAPE  D78_23_TOP                  0.000 NO     DARK 
+  PAD SHAPE  S330C30_TOP                 0.000 NO     DARK 
+  PAD SHAPE  D78_23_TOP                 90.000 NO     DARK 
+  PAD SHAPE  D85_23_TOP                 90.000 NO     DARK 
+  PAD SHAPE  D78_23_TOP                180.000 NO     DARK 
+  PAD SHAPE  S180C20_TOP               180.000 NO     DARK 
+  PAD SHAPE  D85_23_TOP                180.000 NO     DARK 
+  PAD SHAPE  R85_145C20_TOP            180.000 NO     DARK 
+  PAD SHAPE  D78_23_TOP                270.000 NO     DARK 
+  PAD SHAPE  D85_23_TOP                270.000 NO     DARK 
+
+     TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < POWER_SOURCE >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/POWER_SOURCE.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.45000                                  DARK 
+
+     POWER_SOURCE created with warnings
+
+
+================================================================
+     PROCESSING FILM < GND >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/GND.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.45000                                  DARK 
+
+     GND created with warnings
+
+
+================================================================
+     PROCESSING FILM < BOTTOM >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.15240                                  DARK 
+  CIRCLE     0.24000                                  DARK 
+  CIRCLE     0.25000                                  DARK 
+  CIRCLE     0.30000                                  DARK 
+  CIRCLE     0.45000                                  DARK 
+  CIRCLE     0.50000                                  DARK 
+  CIRCLE     1.20000                                  DARK 
+  RECTANGLE  0.55000     x 0.64000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.64000      90.000 NO     DARK 
+  RECTANGLE  0.73000     x 0.94000       0.000 NO     DARK 
+  OBLONG     1.60000     x 1.00000       0.000 NO     DARK 
+  OBLONG     1.90000     x 0.80000      89.712 NO     DARK 
+
+     BOTTOM created with warnings
+
+
+================================================================
+     PROCESSING FILM < SILKSCREEN_TOP >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/SILKSCREEN_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: text composed 0 width line found at (0.9398 2.9292)
+           ... using undefined line width of 0.2000
+
+    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.2000
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.20000                                  DARK 
+  CIRCLE     0.50000                                  DARK 
+
+     SILKSCREEN_TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < SILKSCREEN_BOTTOM >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/SILKSCREEN_BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.15240                                  DARK 
+  CIRCLE     0.20000                                  DARK 
+
+     SILKSCREEN_BOTTOM created with warnings
+
+
+================================================================
+     PROCESSING FILM < SOLDERMASK_TOP >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/SOLDERMASK_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.60000                                  DARK 
+  CIRCLE     1.20000                                  DARK 
+  RECTANGLE  0.30000     x 1.28000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.64000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.64000      90.000 NO     DARK 
+  RECTANGLE  0.73000     x 0.94000       0.000 NO     DARK 
+  RECTANGLE  0.73000     x 0.94000      90.000 NO     DARK 
+  RECTANGLE  0.92500     x 1.75000       0.000 NO     DARK 
+  RECTANGLE  0.92500     x 1.75000      90.000 NO     DARK 
+  RECTANGLE  1.00000     x 1.02500       0.000 NO     DARK 
+  RECTANGLE  1.00000     x 1.35000       0.000 NO     DARK 
+  RECTANGLE  1.10000     x 1.20000      90.000 NO     DARK 
+  RECTANGLE  1.32500     x 1.45000       0.000 NO     DARK 
+  RECTANGLE  1.62500     x 2.17000       0.000 NO     DARK 
+  RECTANGLE  1.87500     x 1.75000       0.000 NO     DARK 
+  RECTANGLE  2.00000     x 3.00000       0.000 NO     DARK 
+  OBLONG     0.46000     x 2.30000       0.000 NO     DARK 
+  OBLONG     0.75000     x 0.24000       0.000 NO     DARK 
+  OBLONG     0.85000     x 0.30000       0.000 NO     DARK 
+  OBLONG     0.85000     x 0.30000      90.000 NO     DARK 
+  OBLONG     0.92500     x 0.30000       0.000 NO     DARK 
+  OBLONG     0.92500     x 0.30000      90.000 NO     DARK 
+  OBLONG     1.32500     x 0.60000       0.000 NO     DARK 
+  OBLONG     1.55000     x 0.45000      89.712 NO     DARK 
+  OBLONG     1.60000     x 1.00000      90.000 NO     DARK 
+  PAD SHAPE  S250C30_SM                  0.000 NO     DARK 
+  PAD SHAPE  D85_23_SM                   0.000 NO     DARK 
+  PAD SHAPE  R168_152C20_SM              0.000 NO     DARK 
+  PAD SHAPE  D78_23_SM                   0.000 NO     DARK 
+  PAD SHAPE  S330C30_SM                  0.000 NO     DARK 
+  PAD SHAPE  D85_23_SM                  90.000 NO     DARK 
+  PAD SHAPE  D78_23_SM                  90.000 NO     DARK 
+  PAD SHAPE  D78_23_SM                 180.000 NO     DARK 
+  PAD SHAPE  R85_145C20_SM             180.000 NO     DARK 
+  PAD SHAPE  D85_23_SM                 180.000 NO     DARK 
+  PAD SHAPE  S180C20_SM                180.000 NO     DARK 
+  PAD SHAPE  D85_23_SM                 270.000 NO     DARK 
+  PAD SHAPE  D78_23_SM                 270.000 NO     DARK 
+
+     SOLDERMASK_TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < SOLDERMASK_BOTTOM >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/SOLDERMASK_BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.60000                                  DARK 
+  CIRCLE     1.20000                                  DARK 
+  RECTANGLE  0.55000     x 0.64000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.64000      90.000 NO     DARK 
+  RECTANGLE  0.73000     x 0.94000       0.000 NO     DARK 
+  OBLONG     1.60000     x 1.00000       0.000 NO     DARK 
+  OBLONG     1.90000     x 0.80000      89.712 NO     DARK 
+
+     SOLDERMASK_BOTTOM created with warnings
+
+
+================================================================
+     PROCESSING FILM < PASTEMASK_TOP >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PASTEMASK_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     1.20000                                  DARK 
+  RECTANGLE  0.30000     x 1.28000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.64000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.64000      90.000 NO     DARK 
+  RECTANGLE  0.73000     x 0.94000       0.000 NO     DARK 
+  RECTANGLE  0.73000     x 0.94000      90.000 NO     DARK 
+  RECTANGLE  0.92500     x 1.75000       0.000 NO     DARK 
+  RECTANGLE  0.92500     x 1.75000      90.000 NO     DARK 
+  RECTANGLE  1.00000     x 1.02500       0.000 NO     DARK 
+  RECTANGLE  1.00000     x 1.35000       0.000 NO     DARK 
+  RECTANGLE  1.10000     x 1.20000      90.000 NO     DARK 
+  RECTANGLE  1.32500     x 1.45000       0.000 NO     DARK 
+  RECTANGLE  1.62500     x 2.17000       0.000 NO     DARK 
+  RECTANGLE  1.87500     x 1.75000       0.000 NO     DARK 
+  RECTANGLE  2.00000     x 3.00000       0.000 NO     DARK 
+  OBLONG     0.46000     x 2.30000       0.000 NO     DARK 
+  OBLONG     0.75000     x 0.24000       0.000 NO     DARK 
+  OBLONG     0.85000     x 0.30000       0.000 NO     DARK 
+  OBLONG     0.85000     x 0.30000      90.000 NO     DARK 
+  OBLONG     0.92500     x 0.30000       0.000 NO     DARK 
+  OBLONG     0.92500     x 0.30000      90.000 NO     DARK 
+  OBLONG     1.32500     x 0.60000       0.000 NO     DARK 
+  OBLONG     1.60000     x 1.00000      90.000 NO     DARK 
+  PAD SHAPE  R168_152C20_PM              0.000 NO     DARK 
+  PAD SHAPE  D85_23_PM                   0.000 NO     DARK 
+  PAD SHAPE  S250C30_PM                  0.000 NO     DARK 
+  PAD SHAPE  S330C30_PM                  0.000 NO     DARK 
+  PAD SHAPE  D78_23_PM                   0.000 NO     DARK 
+  PAD SHAPE  D78_23_PM                  90.000 NO     DARK 
+  PAD SHAPE  D85_23_PM                  90.000 NO     DARK 
+  PAD SHAPE  S180C20_PM                180.000 NO     DARK 
+  PAD SHAPE  D78_23_PM                 180.000 NO     DARK 
+  PAD SHAPE  D85_23_PM                 180.000 NO     DARK 
+  PAD SHAPE  R85_145C20_PM             180.000 NO     DARK 
+  PAD SHAPE  D78_23_PM                 270.000 NO     DARK 
+  PAD SHAPE  D85_23_PM                 270.000 NO     DARK 
+
+     PASTEMASK_TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < PASTEMASK_BOTTOM >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PASTEMASK_BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     1.20000                                  DARK 
+  RECTANGLE  0.55000     x 0.64000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.64000      90.000 NO     DARK 
+  RECTANGLE  0.73000     x 0.94000       0.000 NO     DARK 
+  OBLONG     1.60000     x 1.00000       0.000 NO     DARK 
+  OBLONG     1.90000     x 0.80000      89.712 NO     DARK 
+
+     PASTEMASK_BOTTOM created with warnings
+
+
+================================================================
+     PROCESSING FILM < DRILL >
+     TO FILE < C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/DRILL.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: 0 width line found at (49.8602 -3.9092)
+           ... using undefined line width of 0.2000
+
+    WARNING: Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.2000
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.20000                                  DARK 
+
+     DRILL created with warnings
+
+
+------------------------------------------------------
+ SUMMARY:
+        TOP created with warnings
+        POWER_SOURCE created with warnings
+        GND created with warnings
+        BOTTOM created with warnings
+        SILKSCREEN_TOP created with warnings
+        SILKSCREEN_BOTTOM created with warnings
+        SOLDERMASK_TOP created with warnings
+        SOLDERMASK_BOTTOM created with warnings
+        PASTEMASK_TOP created with warnings
+        PASTEMASK_BOTTOM created with warnings
+        DRILL created with warnings
+
+ ARTWORK had warnings

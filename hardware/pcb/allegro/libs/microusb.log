@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : microusb.dra                                  )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Sun Jan 01 11:44:26 2017                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs
+    Name      = microusb.psm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

@@ -2,34 +2,141 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  C:.../BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V142_4layer.brd       |
-|                                                    Fri Dec 30 18:12:04 2016  |
+|  C:.../BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V223_NEW_RULE.brd     |
+|                                                    Wed Jan 04 11:25:04 2017  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  CHR_SET      pins MOVED FROM this net (to net name listed on right)
-                                 U1.13           22.1140 21.9340
-                                                                          TOUCH
+  GND          pins MOVED FROM this net (to net name listed on right)
+                                 Y1.3            27.1275 28.8025
+                                                                        N788503
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 C29.2                          
+                                 C30.1                          
+                                 C31.1                          
+                                 C32.1                          
+                                 C33.1                          
+                                 C34.1                          
+                                 C35.1                          
+                                 C36.1                          
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  OLED_VBAT_SW pins MOVED FROM this net (to net name listed on right)
-                                 U1.28           25.5640 25.3840
-                                                                        CHR_SET
+  INTA         pins ADDED TO this existing net (pins not previously on any net)
+                                 C31.2                          
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  TOUCH        pins MOVED FROM this net (to net name listed on right)
-                                 U1.27           25.5640 24.9840
-                                                                   OLED_VBAT_SW
+  INTB         pins ADDED TO this existing net (pins not previously on any net)
+                                 C32.2                          
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VIN_OK       pins MOVED FROM this net (to net name listed on right)
-                                 U1.22           25.5640 22.9840
-                                                                     VIN_OK_SET
+  INTC         pins ADDED TO this existing net (pins not previously on any net)
+                                 C33.2                          
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VIN_OK_SET   pins MOVED FROM this net (to net name listed on right)
-                                 U1.24           25.5640 23.7840
-                                                                         VIN_OK
+  INTD         pins ADDED TO this existing net (pins not previously on any net)
+                                 C34.2                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N752441      pins ADDED TO this existing net (pins not previously on any net)
+                                 C29.1                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N788503      pins MOVED FROM this net (to net name listed on right)
+                                 Y1.4            27.1275 27.0775
+                                                                            GND
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCC_3V       pins ADDED TO this existing net (pins not previously on any net)
+                                 C30.2                          
+                                 C35.2                          
+                                 C36.2                          
+                                 EXT_3V_A.1                     
+                                 EXT_3V_B.1                     
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
 |------------------------------------------------------------------------------|
-|       Nets changed          :       5                                        |
+|  C:.../BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V223_NEW_RULE.brd     |
+|                                                    Wed Jan 04 11:25:04 2017  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ CAP NP_RESC_0603_2.2U
+ CRYSTAL14_0_OSCCC200X250X90-4N_
+ R_RESC_0402_3K3
+ TEST POINT_TESTPOINT120_VCC_3V
+ TPS62736_PVQFN14_2_QFN14P350X35
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:.../BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V223_NEW_RULE.brd     |
+|                                                    Wed Jan 04 11:25:04 2017  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C29                 CAP NP_RESC_0402_100N 
+ C30                 CAP NP_RESC_0402_100N 
+ C31                 CAP NP_RESC_0402_100N 
+ C32                 CAP NP_RESC_0402_100N 
+ C33                 CAP NP_RESC_0402_100N 
+ C34                 CAP NP_RESC_0402_100N 
+ C35                 CAP NP_RESC_0402_100N 
+ C36                 CAP NP_RESC_0402_100N 
+ EXT_3V_A            TEST POINT_TESTPOINT120_VCC_3V 
+ EXT_3V_B            TEST POINT_TESTPOINT120_VCC_3V 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  C:.../BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V223_NEW_RULE.brd     |
+|                                                    Wed Jan 04 11:25:04 2017  |
+|------------------------------------------------------------------------------|
+| COMPONENTS CHANGED from one device type to another in design                 |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C12                 CAP NP_RESC_0603_1U   12.1920 10.9220 CAP NP_RESC_0402_1U
+ C13                 CAP NP_RESC_0603_4.7U 18.7960 10.9220 CAP NP_RESC_0402_4.7U
+ C14                 CAP NP_RESC_0603_1U   12.1920  9.6520 CAP NP_RESC_0402_1U
+ C15                 CAP NP_RESC_0603_2.2U 18.7960  9.6520 CAP NP_RESC_0402_2.2U
+ R7                  R_RESC_0402_3K3       25.1968 17.0688 R_RESC_0402_10K
+ U5                  TPS62736_PVQFN14_2_QFN14P350X35  4.5720  5.3340 TPS62736_PVQFN14_2_QFN14P350X35
+ Y1                  CRYSTAL14_0_OSCCC200X250X90-4N_ 27.9400 27.9400 CRYSTAL14_OSCCC200X250X90-4N_16
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  C:.../BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_SCH_V223_NEW_RULE.brd     |
+|                                                    Wed Jan 04 11:25:04 2017  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C12.2          12.1920 10.9220 PRIM_FILE      .\pstchip.dat
+ C13.2          18.7960 10.9220 PRIM_FILE      .\pstchip.dat
+ C14.2          12.1920  9.6520 PRIM_FILE      .\pstchip.dat
+ C15.2          18.7960  9.6520 PRIM_FILE      .\pstchip.dat
+ C29.2                          PRIM_FILE      .\pstchip.dat
+ C30.2                          PRIM_FILE      .\pstchip.dat
+ C31.2                          PRIM_FILE      .\pstchip.dat
+ C32.2                          PRIM_FILE      .\pstchip.dat
+ C33.2                          PRIM_FILE      .\pstchip.dat
+ C34.2                          PRIM_FILE      .\pstchip.dat
+ C35.2                          PRIM_FILE      .\pstchip.dat
+ C36.2                          PRIM_FILE      .\pstchip.dat
+ EXT_3V_A.1                     PRIM_FILE      .\pstchip.dat
+ EXT_3V_B.1                     PRIM_FILE      .\pstchip.dat
+ R7.2           25.1968 17.0688 PRIM_FILE      .\pstchip.dat
+ U5.12           4.5720  5.3340 PRIM_FILE      .\pstchip.dat
+ Y1.2           27.9400 27.9400 PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|       Nets changed          :      20                                        |
+|       Comp definitions added:       5                                        |
+|       Components added      :      10                                        |
+|       Components changed    :       7                                        |
+|       Slot property added   :      17                                        |
 |                                                                              |
-|   Total ECO changes reported:       5                                        |
+|   Total ECO changes reported:      59                                        |
 |------------------------------------------------------------------------------|

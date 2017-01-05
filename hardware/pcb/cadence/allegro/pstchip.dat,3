@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Dec-30-2016 at 18:12:04}
+{ Using PSTWRITER 17.2.0 d001Jan-04-2017 at 11:25:04}
 primitive 'ANTENNA_0_ANT700X200-2N_ANTENNA';
   pin
     '1':
@@ -69,51 +69,6 @@ primitive 'CAP NP_RESC_0402_0-75P';
     VALUE='0-75p';
   end_body;
 end_primitive;
-primitive 'CAP NP_RESC_0402_1U';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CAP NP';
-    JEDEC_TYPE='RESC_0402';
-    VALUE='1u';
-  end_body;
-end_primitive;
-primitive 'CAP NP_RESC_0402_4.7U';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CAP NP';
-    JEDEC_TYPE='RESC_0402';
-    VALUE='4.7u';
-  end_body;
-end_primitive;
-primitive 'CAP NP_RESC_0402_2.2U';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CAP NP';
-    JEDEC_TYPE='RESC_0402';
-    VALUE='2.2u';
-  end_body;
-end_primitive;
 primitive 'CAP NP_RESC_0603_1U';
   pin
     '1':
@@ -141,6 +96,36 @@ primitive 'CAP NP_RESC_0603_4.7U';
   body
     PART_NAME='CAP NP';
     JEDEC_TYPE='RESC_0603';
+    VALUE='4.7u';
+  end_body;
+end_primitive;
+primitive 'CAP NP_RESC_0603_2.2U';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP NP';
+    JEDEC_TYPE='RESC_0603';
+    VALUE='2.2u';
+  end_body;
+end_primitive;
+primitive 'CAP NP_RESC_0402_4.7U';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP NP';
+    JEDEC_TYPE='RESC_0402';
     VALUE='4.7u';
   end_body;
 end_primitive;
@@ -262,6 +247,18 @@ primitive 'SW PUSHBUTTON_BUTTON300X400X200';
     PART_NAME='SW PUSHBUTTON';
     JEDEC_TYPE='BUTTON300X400X200-2N';
     VALUE='BUTTON';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTPOINT120_VCC_3V';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='testpoint120';
+    VALUE='VCC_3V';
   end_body;
 end_primitive;
 primitive 'TEST POINT_TESTPOINT120_INTA';
@@ -643,6 +640,21 @@ primitive 'R_RESC_0402_15K';
     PART_NAME='R';
     JEDEC_TYPE='RESC_0402';
     VALUE='15k';
+  end_body;
+end_primitive;
+primitive 'R_RESC_0402_3K3';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='R';
+    JEDEC_TYPE='RESC_0402';
+    VALUE='3K3';
   end_body;
 end_primitive;
 primitive 'TEST POINT_TESTPOINT120_RES';
@@ -1028,7 +1040,7 @@ primitive 'TPS62736_PVQFN14_2_QFN14P350X35';
   end_pin;
   body
     PART_NAME='TPS62736_PVQFN14_2';
-    JEDEC_TYPE='QFN14P350X350X80-15N';
+    JEDEC_TYPE='QFN14P350X350X80-15N_debug';
     VALUE='TPS62736_PVQFN14';
   end_body;
 end_primitive;
@@ -1112,7 +1124,7 @@ primitive 'MPU9250_1_QFN24P300X300X100-25N';
   end_pin;
   body
     PART_NAME='MPU9250_1';
-    JEDEC_TYPE='QFN24P300X300X100-25N';
+    JEDEC_TYPE='QFN24P300X300X100-25N_new';
     VALUE='MPU9250';
   end_body;
 end_primitive;
@@ -1200,7 +1212,7 @@ primitive 'CP2104_QFN24_0_QFN24P400X400X80';
     VALUE='CP2104_QFN24';
   end_body;
 end_primitive;
-primitive 'MICROUSB_1_MICROUSB_MICRO USB';
+primitive 'MICROUSB_1_MICROUSB_NEW_MICRO U';
   pin
     'VBUS':
       PIN_NUMBER='(1)';
@@ -1226,7 +1238,7 @@ primitive 'MICROUSB_1_MICROUSB_MICRO USB';
   end_pin;
   body
     PART_NAME='MICROUSB_1';
-    JEDEC_TYPE='microusb';
+    JEDEC_TYPE='microusb_new';
     VALUE='MICRO USB';
   end_body;
 end_primitive;
@@ -1266,23 +1278,23 @@ primitive 'TEST POINT_TESTPOINT120_VPP';
     VALUE='VPP';
   end_body;
 end_primitive;
-primitive 'CRYSTAL14_OSCCC200X250X90-4N_16';
+primitive 'CRYSTAL14_0_OSCCC200X250X90-4N_';
   pin
     '1':
       PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
-    '4':
-      PIN_NUMBER='(4)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
     '3':
       PIN_NUMBER='(3)';
       PINUSE='UNSPEC';
+    'GND_2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'GND_1':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='CRYSTAL14';
+    PART_NAME='CRYSTAL14_0';
     JEDEC_TYPE='OSCCC200X250X90-4N';
     VALUE='16MHZ';
   end_body;

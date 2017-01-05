@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : d85_22_TOP.dra                                )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Tue Jan 03 19:41:12 2017                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: SHAPE
+    Directory = C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro
+    Name      = d85_22_top.ssm
+    User      = Ninfeion
+    Machine   = NINFEION-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

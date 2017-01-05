@@ -1,0 +1,15 @@
+\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Sun Jan 01 12:16:25 2017
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=12520 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\cadence_spb_17.2-2016\tools\bin\allegro.exe C:\Ninfeion_Git\BBPrisonGod\hardware\pcb\allegro\libs\QFN24P300X300X100-25N\QFN24P300X300X100-25N_Allegro\QFN24P300X300X100-25N.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN24P300X300X100-25N/QFN24P300X300X100-25N_Allegro/QFN24P300X300X100-25N.dra
+\i (00:00:00) trapsize 431
+\i (00:00:00) trapsize 444
+\i (00:00:00) trapsize 444
+\i (00:00:00) trapsize 418
+\i (00:00:01) generaledit 
+\i (00:00:03) exit 
+\t (00:00:03)     Journal end - Sun Jan 01 12:16:28 2017

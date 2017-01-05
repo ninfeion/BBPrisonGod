@@ -1,0 +1,151 @@
+\t (00:00:05) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:05)     Journal start - Tue Jan 03 19:41:05 2017
+\t (00:00:05)         Host=NINFEION-PC User=Ninfeion Pid=5844 CPUs=4
+\t (00:00:05) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe -s C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/QFN40P500X500X80-41N.scr.txt
+\t (00:00:05) 
+\t (00:00:05) Starting new design...
+\i (00:00:05) trapsize 999
+\i (00:00:05) trapsize 1033
+\i (00:00:05) trapsize 1742
+\i (00:00:06) trapsize 1742
+\w (00:00:06) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:00:06) trapsize 44242
+\t (00:00:06) Performing DRC...
+\t (00:00:06) No DRC errors detected.
+\i (00:00:06) trapsize 2746
+\t (00:00:06) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_23_sm.ssm'.
+\t (00:00:06) Starting Create symbol...
+\t (00:00:06) Starting new design...
+\i (00:00:07) trapsize 1380
+\i (00:00:07) trapsize 1427
+\i (00:00:07) trapsize 2746
+\i (00:00:07) trapsize 2746
+\t (00:00:07) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_23_pm.ssm'.
+\t (00:00:07) Starting Create symbol...
+\t (00:00:08) Starting new design...
+\i (00:00:08) trapsize 1380
+\i (00:00:08) trapsize 1427
+\i (00:00:08) trapsize 2746
+\i (00:00:08) trapsize 2746
+\t (00:00:08) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_23_top.ssm'.
+\t (00:00:08) Starting Create symbol...
+\t (00:00:09) Starting new design...
+\i (00:00:09) trapsize 1380
+\i (00:00:09) trapsize 1427
+\i (00:00:09) trapsize 2746
+\i (00:00:09) trapsize 2746
+\t (00:00:09) Starting new design...
+\i (00:00:09) trapsize 1380
+\i (00:00:10) trapsize 1427
+\i (00:00:10) trapsize 2746
+\i (00:00:10) trapsize 2746
+\t (00:00:10) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_22_pm.ssm'.
+\t (00:00:10) Starting Create symbol...
+\t (00:00:10) Starting new design...
+\i (00:00:11) trapsize 1380
+\i (00:00:11) trapsize 1427
+\i (00:00:11) trapsize 2746
+\i (00:00:11) trapsize 2746
+\t (00:00:11) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_22_sm.ssm'.
+\t (00:00:11) Starting Create symbol...
+\t (00:00:12) Starting new design...
+\i (00:00:12) trapsize 1380
+\i (00:00:12) trapsize 1427
+\i (00:00:12) trapsize 2746
+\i (00:00:12) trapsize 2746
+\t (00:00:12) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_22_top.ssm'.
+\t (00:00:12) Starting Create symbol...
+\t (00:00:13) Starting new design...
+\i (00:00:13) trapsize 1380
+\i (00:00:13) trapsize 1427
+\i (00:00:13) trapsize 2746
+\i (00:00:13) trapsize 2746
+\t (00:00:13) Starting new design...
+\i (00:00:14) trapsize 1380
+\i (00:00:14) trapsize 1427
+\i (00:00:14) trapsize 2746
+\i (00:00:14) trapsize 2746
+\t (00:00:14) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_25_pm.ssm'.
+\t (00:00:14) Starting Create symbol...
+\t (00:00:15) Starting new design...
+\i (00:00:15) trapsize 1380
+\i (00:00:15) trapsize 1427
+\i (00:00:15) trapsize 2746
+\i (00:00:15) trapsize 2746
+\t (00:00:15) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_25_top.ssm'.
+\t (00:00:15) Starting Create symbol...
+\t (00:00:16) Starting new design...
+\i (00:00:16) trapsize 1380
+\i (00:00:16) trapsize 1427
+\i (00:00:16) trapsize 2746
+\i (00:00:16) trapsize 2746
+\t (00:00:17) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/d85_25_sm.ssm'.
+\t (00:00:17) Starting Create symbol...
+\t (00:00:17) Starting new design...
+\i (00:00:17) trapsize 1380
+\i (00:00:17) trapsize 1427
+\i (00:00:17) trapsize 2746
+\i (00:00:18) trapsize 2746
+\t (00:00:18) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/dummy.ssm'.
+\t (00:00:18) Starting Create symbol...
+\t (00:00:18) Starting new design...
+\i (00:00:18) trapsize 1380
+\i (00:00:19) trapsize 1427
+\i (00:00:19) trapsize 2746
+\i (00:00:19) trapsize 2746
+\t (00:00:19) Starting new design...
+\i (00:00:19) trapsize 1380
+\i (00:00:19) trapsize 1427
+\i (00:00:19) trapsize 2746
+\i (00:00:20) trapsize 2746
+\t (00:00:20) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/s330c30_top.ssm'.
+\t (00:00:20) Starting Create symbol...
+\t (00:00:20) Starting new design...
+\i (00:00:21) trapsize 1380
+\i (00:00:21) trapsize 1427
+\i (00:00:21) trapsize 2746
+\i (00:00:21) trapsize 2746
+\t (00:00:21) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/s330c30_sm.ssm'.
+\t (00:00:21) Starting Create symbol...
+\t (00:00:22) Starting new design...
+\i (00:00:22) trapsize 1380
+\i (00:00:22) trapsize 1427
+\i (00:00:22) trapsize 2746
+\i (00:00:22) trapsize 2746
+\t (00:00:23) Creating shape symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/s330c30_pm.ssm'.
+\t (00:00:23) Starting Create symbol...
+\t (00:00:23) Starting new design...
+\i (00:00:23) trapsize 1380
+\i (00:00:24) trapsize 1427
+\i (00:00:24) trapsize 2746
+\i (00:00:24) trapsize 2746
+\t (00:00:24) Opening Design "QFN40P500X500X80-41N.dra"
+\t (00:00:24) Starting new design...
+\i (00:00:24) trapsize 1380
+\i (00:00:25) trapsize 1427
+\i (00:00:25) trapsize 2746
+\i (00:00:25) trapsize 2746
+\i (00:00:25) trapsize 2746
+\t (00:00:25) Creating Shapes on Package layers
+\t (00:00:25) Creating Pins
+\t (00:00:25) Creating Vias
+\t (00:00:25) Symbol Created
+\t (00:00:25) Creating package symbol 'C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/qfn40p500x500x80-41n.psm'.
+\t (00:00:25) Starting Create symbol...
+\i (00:00:26) trapsize 735
+   (00:00:26) Loading cmds.cxt 
+   (00:00:26) Loading skillExt.cxt 
+\t (00:00:26) Opening existing design...
+\i (00:00:26) trapsize 710
+\i (00:00:27) trapsize 735
+\i (00:00:27) trapsize 735
+\d (00:00:27) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/libs/QFN40P500X500X80-41N/QFN40P500X500X80-41N_Allegro/QFN40P500X500X80-41N.dra
+\t (00:00:27) Symbol Saved
+   (00:00:27) t
+\i (00:00:27) trapsize 735
+\i (00:00:27) generaledit 
+\i (00:00:45) exit 
+\e (00:00:45) Do you want to save the changes you made to QFN40P500X500X80-41N.dra?
+\i (00:00:46) fillin yes 
+\t (00:00:46) Symbol 'qfn40p500x500x80-41n.psm' created.
+\t (00:00:46)     Journal end - Tue Jan 03 19:41:46 2017

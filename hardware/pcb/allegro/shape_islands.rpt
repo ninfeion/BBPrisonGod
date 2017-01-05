@@ -1,0 +1,19 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Island Report                                              )
+(                                                                     )
+(    Drawing          : PRISON_GOD_PCB_V235_SOMECHANGE.brd            )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Wed Jan 04 12:36:47 2017                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Total islands on design: 2
+
+
+  <<<  ETCH  >>>
+
+    Layer = BOTTOM
+	Point on shape: (29.2336 16.1935)  Net: GND
+	Point on shape: (21.6662 11.3102)  Net: GND

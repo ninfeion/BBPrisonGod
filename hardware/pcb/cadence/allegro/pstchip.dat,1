@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Dec-30-2016 at 12:41:54}
+{ Using PSTWRITER 17.2.0 d001Jan-01-2017 at 12:20:29}
 primitive 'ANTENNA_0_ANT700X200-2N_ANTENNA';
   pin
     '1':
@@ -1112,7 +1112,7 @@ primitive 'MPU9250_1_QFN24P300X300X100-25N';
   end_pin;
   body
     PART_NAME='MPU9250_1';
-    JEDEC_TYPE='QFN24P300X300X100-25N';
+    JEDEC_TYPE='QFN24P300X300X100-25N_new';
     VALUE='MPU9250';
   end_body;
 end_primitive;
@@ -1200,7 +1200,7 @@ primitive 'CP2104_QFN24_0_QFN24P400X400X80';
     VALUE='CP2104_QFN24';
   end_body;
 end_primitive;
-primitive 'MICROUSB_1_MICROUSB_MICRO USB';
+primitive 'MICROUSB_1_MICROUSB_NEW_MICRO U';
   pin
     'VBUS':
       PIN_NUMBER='(1)';
@@ -1226,7 +1226,7 @@ primitive 'MICROUSB_1_MICROUSB_MICRO USB';
   end_pin;
   body
     PART_NAME='MICROUSB_1';
-    JEDEC_TYPE='microusb';
+    JEDEC_TYPE='microusb_new';
     VALUE='MICRO USB';
   end_body;
 end_primitive;
