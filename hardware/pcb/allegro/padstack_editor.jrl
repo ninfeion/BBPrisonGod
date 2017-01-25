@@ -1,0 +1,93 @@
+\t (00:00:00) padstack_editor 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Sat Jan 14 14:56:23 2017
+\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=7188 CPUs=4
+\t (00:00:00) CmdLine= padstack_editor -mpssession Ninfeion -file ./#Taaaaai05792.tmp -pname DRILL_03_LAYER_045_ANTI_055 -data C:/Users/Ninfeion/AppData/Local/Temp/#Taaaaak05792.tmp
+\t (00:00:00) 
+\d (00:00:11) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Regular Pad" 1 +
+\d (00:00:11) QtSignal "Regular Pad" 2 "Regular Pad" 3 "Regular Pad" 4 "Regular Pad"
+\d (00:00:22) QtSignal GuidedTabsParent GuidedTabs currentChanged "Drill Symbol"
+\d (00:00:23) QtSignal GuidedTabsParent GuidedTabs currentChanged "Secondary Drill"
+\d (00:00:24) QtSignal GuidedTabsParent GuidedTabs currentChanged Drill
+\d (00:00:27) QtSignal GuidedTabsParent GuidedTabs currentChanged Start
+\d (00:00:32) QtSignal GuidedTabsParent GuidedTabs currentChanged Drill
+\d (00:00:34) QtSignal GuidedTabsParent GuidedTabs currentChanged "Secondary Drill"
+\d (00:00:34) QtSignal GuidedTabsParent GuidedTabs currentChanged "Drill Symbol"
+\d (00:00:35) QtSignal GuidedTabsParent GuidedTabs currentChanged "Drill Offset"
+\d (00:00:36) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:00:45) QtSignal GuidedDesignLayersTab LayersTable cellClicked 3 "Layer Name" 3 1
+\d (00:00:45) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Layer Name"
+\d (00:00:45) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Layer Name" 2 1
+\d (00:00:46) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 4 "Layer Name"
+\d (00:00:46) QtSignal GuidedDesignLayersTab LayersTable cellClicked 4 "Layer Name" 4 1
+\d (00:01:49) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Thermal Pad" 1 +
+\d (00:01:49) QtSignal "Thermal Pad" 2 "Thermal Pad" 3 "Thermal Pad" 4 "Thermal Pad"
+\d (00:01:57) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Thermal Pad"
+\d (00:01:57) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Thermal Pad" 0 3
+\d (00:01:58) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Anti Pad"
+\d (00:01:58) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Anti Pad" 1 4
+\d (00:01:59) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Anti Pad"
+\d (00:01:59) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:00) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Anti Pad"
+\d (00:02:00) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Anti Pad" 1 4
+\d (00:02:00) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Anti Pad"
+\d (00:02:00) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:01) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Anti Pad"
+\d (00:02:01) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Anti Pad" 1 4
+\d (00:02:01) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Anti Pad"
+\d (00:02:01) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Anti Pad" 0 4
+\d (00:02:02) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Anti Pad"
+\d (00:02:02) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:02) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:03) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Anti Pad"
+\d (00:02:03) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Anti Pad" 1 4
+\d (00:02:03) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Anti Pad"
+\d (00:02:03) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Anti Pad" 0 4
+\d (00:02:03) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Anti Pad"
+\d (00:02:04) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Anti Pad" 1 4
+\d (00:02:04) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Anti Pad"
+\d (00:02:04) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:04) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Anti Pad"
+\d (00:02:05) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Anti Pad" 1 4
+\d (00:02:05) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Anti Pad"
+\d (00:02:05) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Anti Pad" 0 4
+\d (00:02:05) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Anti Pad"
+\d (00:02:05) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:06) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 3 "Anti Pad"
+\d (00:02:06) QtSignal GuidedDesignLayersTab LayersTable cellClicked 3 "Anti Pad" 3 4
+\d (00:02:06) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Anti Pad"
+\d (00:02:06) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:06) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Anti Pad"
+\d (00:02:07) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Anti Pad" 1 4
+\d (00:02:07) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Anti Pad"
+\d (00:02:07) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Anti Pad" 0 4
+\d (00:02:07) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Anti Pad"
+\d (00:02:07) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Anti Pad" 1 4
+\d (00:02:08) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 3 "Anti Pad"
+\d (00:02:08) QtSignal GuidedDesignLayersTab LayersTable cellClicked 3 "Anti Pad" 3 4
+\d (00:02:08) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 4 "Anti Pad"
+\d (00:02:08) QtSignal GuidedDesignLayersTab LayersTable cellClicked 4 "Anti Pad" 4 4
+\d (00:02:08) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Anti Pad"
+\d (00:02:09) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:09) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Anti Pad"
+\d (00:02:09) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Anti Pad" 0 4
+\d (00:02:09) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Anti Pad" 1 "Anti Pad" +
+\d (00:02:09) QtSignal 2 "Anti Pad" 3 "Anti Pad" 4 "Anti Pad"
+\d (00:02:10) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Anti Pad"
+\d (00:02:10) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:10) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 3 "Anti Pad"
+\d (00:02:10) QtSignal GuidedDesignLayersTab LayersTable cellClicked 3 "Anti Pad" 3 4
+\d (00:02:10) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Anti Pad"
+\d (00:02:10) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:11) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Anti Pad"
+\d (00:02:11) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Anti Pad" 1 4
+\d (00:02:11) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Anti Pad"
+\d (00:02:11) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Anti Pad" 0 4
+\d (00:02:11) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 2 "Anti Pad"
+\d (00:02:12) QtSignal GuidedDesignLayersTab LayersTable cellClicked 2 "Anti Pad" 2 4
+\d (00:02:12) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 3 "Anti Pad"
+\d (00:02:12) QtSignal GuidedDesignLayersTab LayersTable cellClicked 3 "Anti Pad" 3 4
+\d (00:02:12) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Anti Pad"
+\d (00:02:12) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Anti Pad" 1 4
+\d (00:02:13) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Anti Pad"
+\d (00:02:13) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Anti Pad" 0 4
+\t (00:02:24)     Journal end - Sat Jan 14 14:58:47 2017

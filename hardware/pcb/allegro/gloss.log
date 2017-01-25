@@ -1,0 +1,699 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Glossing                                                         )
+(                                                                     )
+(    Drawing          : PRISON_GOD_PCB_V235_SOMECHANGE.brd            )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Sat Jan 14 15:00:29 2017                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+**WARNING: Disabling dynamic shapes
+
+
+
+Line Smooth glossing in progress.
+Started on Sat Jan 14 15:00:29 2017
+
+ Smooth Functions  :  bubbles maximize 45 jogs dangling clines add 45s
+ Number of executions  : 1
+ Corner type  : 45
+ Length limit is -0.0001.
+
+ Maximum 45 limit is -0.0001.
+    **INFO - T attached to < 3 clines - removed
+    **INFO - T attached to < 3 clines - removed
+    **INFO - T attached to < 3 clines - removed
+    **INFO - T attached to < 3 clines - removed
+    **INFO - T attached to < 3 clines - removed
+    **INFO - T attached to < 3 clines - removed
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Sat Jan 14 15:00:29 2017
+
+ - 0 - Error(s) from Line smooth Glossing
+
+
+
+Pad and T Fillet glossing in progress.
+Started on Sat Jan 14 15:00:29 2017
+
+ Round pads:          YES   max size: 2.5400
+ Square pads:         YES   max size: 2.5400
+ Rectangular pads:    YES   max size: 2.5400
+ Oblong pads:         YES   max size: 2.5400
+ Octagon pads:        YES   max size: 2.5400
+ Pads as shapes:      NO 
+ Pins:                YES
+ Vias:                YES
+ Bond Fingers:        NO 
+ Ts:                  YES
+ Unused nets:         YES
+ Pads Without Drills: YES
+ Desired Pin Angle:       90
+ Desired Via Angle:       90
+ Desired T Angle:         90
+ Maximum Pin Angle:       90
+ Maximum Via Angle:       90
+ Maximum T Angle:         90
+ Pin Maximum offset:      0.6350
+ Via Maximum offset:      0.6350
+ T Maximum offset:        0.6350
+ Pin minimum line width:  0.0762
+ Via minimum line width:  0.0762
+ T minimum line width:    0.0762
+ Pin maximum line width:  0.6350
+ Via maximum line width:  0.6350
+ T maximum line width:    0.6350
+ Tapers:                  NO 
+ Desired Taper Angle:     60
+ Taper Maximum offset:    0.6350
+ Allow drc:           NO 
+ Dynamic:             NO 
+ Curved lines:        NO 
+
+*WARNING: Can't create fillet at pad (27.1275 28.8025) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (25.2530 8.9100) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (14.2400 4.0640) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (14.2400 4.4640) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (28.0670 22.6568) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (13.1840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (13.6906 10.7696) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (13.6906 10.7696) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (12.6840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (10.4141 8.3820) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (4.4316 7.0977) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (14.2400 3.6640) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (16.2400 4.4640) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (12.1840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (13.4620 11.4300) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (13.4620 11.4300) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (3.4941 4.4102) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (1.2446 4.4444) on subclass TOP.
+          Line width greater than the maximum specified in glossing parameters.
+
+*WARNING: Can't create fillet at pad (11.6840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (10.4140 9.1440) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (10.4140 9.1440) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (5.9316 7.0977) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (17.6840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (17.2720 10.9220) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (17.2720 10.9220) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (11.5030 18.2220) on subclass BOTTOM.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (16.2400 3.6640) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't fillet T at (18.1840 12.1158) on subclass TOP.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (17.2720 12.1158) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (17.2720 12.1158) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (17.2974 13.0302) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (17.2974 13.0302) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (18.1840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (3.4941 6.4102) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (3.4941 7.1628) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (3.4941 7.1628) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (5.9574 9.5199) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (17.1840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (18.9484 7.5946) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (18.9484 7.5946) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (29.1030 10.4100) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (29.9720 12.1920) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (29.9720 12.1920) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (27.6860 21.5180) on subclass TOP.
+          Line width greater than the maximum specified in glossing parameters.
+
+*WARNING: Can't fillet T at (18.4171 29.7688) on subclass TOP.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (26.0096 21.1074) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (23.9383 20.8094) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (1.0160 29.2405) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (27.1169 23.3484) on subclass BOTTOM.
+          Removed due to DRC error.
+
+*WARNING: Can't create fillet at pad (6.8691 6.4102) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (3.4941 5.9102) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (15.5245 10.9220) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (15.6840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't fillet T at (15.5245 10.9670) on subclass BOTTOM.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (14.8590 11.5570) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (14.8590 11.5570) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (9.8330 17.2720) on subclass BOTTOM.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (9.8330 17.2720) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't fillet T at (25.3149 27.8816) on subclass TOP.
+          The 2 line segments must be same width.
+
+*WARNING: Can't fillet T at (24.5140 20.7613) on subclass TOP.
+          The 2 line segments must be same width.
+
+*WARNING: Can't create fillet at pad (24.7193 19.5580) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (27.6860 20.1380) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't fillet T at (24.7193 20.1526) on subclass TOP.
+          The 2 line segments must be same width.
+
+*WARNING: Can't fillet T at (27.7910 20.1380) on subclass TOP.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (25.6250 27.0038) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (18.9099 24.0366) on subclass TOP.
+          Removed due to DRC error.
+
+*WARNING: Can't create fillet at pad (16.2400 3.2640) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (27.2085 6.6040) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (25.9280 8.2350) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (26.4280 8.2350) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (24.7012 4.4602) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (24.7012 4.4602) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (24.1814 1.7780) on subclass BOTTOM.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (24.1814 2.4384) on subclass BOTTOM.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (24.1814 2.4384) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (24.1814 2.4384) on subclass BOTTOM.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't fillet T at (24.4980 5.4000) on subclass TOP.
+          The segments being filleted cannot be arcs.
+
+*WARNING: Can't create fillet at pad (17.7540 2.5140) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (17.7540 2.5140) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (18.7960 1.2700) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (16.9395 1.2700) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (22.8600 4.8260) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (23.4950 5.9690) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (26.4280 7.1120) on subclass BOTTOM.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (26.4280 7.1120) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (6.8515 21.2700) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (23.6138 20.3018) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (20.0965 29.7180) on subclass TOP.
+*WARNING: Can't create fillet at pad (27.4280 12.0850) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (27.9280 12.0850) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (22.7076 28.4734) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (0.5588 23.2715) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (2.7940 23.5172) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (0.5588 15.2705) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (2.7940 15.5670) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (18.2575 23.9776) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (8.8965 20.3200) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (15.1840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (25.2530 9.4100) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (26.9280 8.2350) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't fillet T at (22.6873 19.8933) on subclass TOP.
+          The 2 line segments must be same width.
+
+*WARNING: Can't fillet T at (23.3172 9.4115) on subclass TOP.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (27.9400 7.3660) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (18.0340 6.8326) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (18.0340 6.8326) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (18.9230 6.8580) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (3.4941 5.4102) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (1.2446 7.5444) on subclass TOP.
+          Line width greater than the maximum specified in glossing parameters.
+
+*WARNING: Can't create fillet at pad (1.2446 7.5444) on subclass TOP.
+          Line width greater than the maximum specified in glossing parameters.
+
+*WARNING: Can't fillet T at (23.3680 14.0970) on subclass BOTTOM.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (23.6474 14.0970) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (25.3512 4.4602) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (25.1460 7.1120) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (14.2400 4.8640) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (25.2530 9.9100) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (25.2530 10.4100) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (22.8981 11.3030) on subclass BOTTOM.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (26.0012 4.4602) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (26.0096 6.4516) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (16.2400 4.8640) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (5.9316 3.7227) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't fillet T at (14.9606 16.0050) on subclass BOTTOM.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (14.2400 3.2640) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (11.5030 12.5120) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (8.4405 3.6903) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (9.7405 3.6903) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (12.4460 13.1550) on subclass BOTTOM.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (12.8880 12.5120) on subclass BOTTOM.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (12.4460 11.8690) on subclass BOTTOM.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (15.4178 16.1915) on subclass BOTTOM.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (15.5448 15.5448) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (5.2617 25.2261) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't fillet T at (5.2617 25.5270) on subclass TOP.
+          The fillet does not fit.
+
+*WARNING: Can't fillet T at (3.9370 15.0216) on subclass TOP.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (19.5021 13.2842) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (27.1272 17.7241) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (23.1140 24.3840) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't fillet T at (23.3140 23.3840) on subclass TOP.
+          The 2 line segments must be same width.
+
+*WARNING: Can't create fillet at pad (5.6642 10.2616) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (10.5410 5.9436) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (8.9916 7.2898) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (8.4074 6.7818) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't fillet T at (0.9291 9.9977) on subclass TOP.
+          The fillet does not fit.
+
+*WARNING: Can't fillet T at (0.8890 9.1948) on subclass TOP.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (0.8890 9.9822) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (0.8890 8.5090) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (0.6858 9.1948) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (1.5960 9.1948) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (0.6858 10.7696) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (0.9136 11.5570) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (1.5960 10.7696) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (1.5960 10.7696) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (3.4941 4.9102) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't fillet T at (4.4316 4.9102) on subclass TOP.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (4.4316 3.7227) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (4.4316 3.7227) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (6.8691 5.9102) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (6.8691 5.9102) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (6.8691 5.4102) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (6.8691 4.9102) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (5.1816 5.4102) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (7.5184 4.1148) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (6.8691 4.4102) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't fillet T at (28.7528 29.8196) on subclass TOP.
+          The segments being filleted cannot be arcs.
+
+*WARNING: Can't fillet T at (24.2773 29.4081) on subclass TOP.
+          The fillet does not fit.
+
+*WARNING: Can't create fillet at pad (6.6040 31.7500) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (17.3025 23.9776) on subclass TOP.
+          Removed due to DRC error.
+
+*WARNING: Can't create fillet at pad (28.4785 12.7000) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (16.2400 4.0640) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (6.8515 20.3200) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (14.6840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (14.6840 8.8900) on subclass TOP.
+          Line width exceeds (unrotated) width of destination pad.
+
+*WARNING: Can't create fillet at pad (25.2530 10.9100) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (27.3012 4.4602) on subclass TOP.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (28.7020 13.4620) on subclass BOTTOM.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (17.6420 14.4745) on subclass BOTTOM.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (8.9558 29.3763) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (8.9558 30.0263) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (8.9558 30.0263) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (8.9558 30.0263) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (9.6058 30.0263) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (4.4488 2.2997) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (27.3265 2.8490) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (21.8440 1.2700) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (19.8120 1.2700) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (20.8540 2.4970) on subclass TOP.
+          Line width exceeds (unrotated) height of destination pad.
+
+*WARNING: Can't create fillet at pad (7.7724 20.3200) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (15.5194 1.7526) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (16.3830 1.7526) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (3.9370 15.2146) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (15.9300 2.1040) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (22.0980 9.5250) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (22.7755 7.3235) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (14.6840 7.5438) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (14.6239 10.7123) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (28.9560 6.6040) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (7.3355 18.4520) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (14.0343 21.5646) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (20.1676 8.8900) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (28.9481 6.0881) on subclass BOTTOM.
+          Computed fillet point lies inside pad boundary; required to be outside.
+
+*WARNING: Can't create fillet at pad (19.8120 7.5946) on subclass BOTTOM.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (14.3256 10.0838) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+*WARNING: Can't create fillet at pad (15.9300 1.0160) on subclass TOP.
+          Unable to create fillet, parameters result in fillet entirely within pad.
+
+
+
+
+Total number of fillets added: 463
+
+Number of fillets rejected due to DRC errors: 4
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Sat Jan 14 15:00:29 2017
+
+
+There were 203 errors or warnings reported in logfile.
+
+
+Glossing complete.

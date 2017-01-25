@@ -251,7 +251,7 @@
       (Path "Outputs")
       (Select "Design Resources"
          "c:\ninfeion_git\bbprisongod\hardware\pcb\cadence\prison_god_sch_v110.dsn"
-         "Main" "POWER"))
+         "Main" "INTERACT"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -261,9 +261,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -4 -23 220 1462 220 690")
-        (Scroll "-84 4")
-        (Zoom "102")
+        (Placement "44 2 3 -1 -1 -4 -23 220 1000 220 690")
+        (Scroll "300 544")
+        (Zoom "120")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\PRISON_GOD_SCH_V110.DSN")
@@ -272,9 +272,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 66 1180 66 448")
-        (Scroll "262 149")
-        (Zoom "204")
+        (Placement "44 0 1 -1 -1 -4 -23 66 846 66 448")
+        (Scroll "8 3")
+        (Zoom "102")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\PRISON_GOD_SCH_V110.DSN")
@@ -283,9 +283,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 110 1224 110 492")
-        (Scroll "-203 0")
-        (Zoom "69")
+        (Placement "44 0 1 -1 -1 -4 -23 110 890 110 492")
+        (Scroll "806 849")
+        (Zoom "204")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\PRISON_GOD_SCH_V110.DSN")
@@ -294,8 +294,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 132 1246 132 514")
-        (Scroll "-43 3")
+        (Placement "44 0 1 -1 -1 -4 -23 132 912 132 514")
+        (Scroll "8 3")
         (Zoom "102")
         (Occurrence "/"))
       (Path
@@ -305,9 +305,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 154 1268 154 536")
-        (Scroll "-285 0")
-        (Zoom "52")
+        (Placement "44 0 1 -1 -1 -4 -23 154 934 154 536")
+        (Scroll "16 146")
+        (Zoom "104")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\PRISON_GOD_SCH_V110.DSN")
@@ -316,9 +316,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -23 176 1462 176 532")
-        (Scroll "-129 3")
-        (Zoom "102")
+        (Placement "44 0 1 -1 -1 -4 -23 0 780 0 268")
+        (Scroll "47 380")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\NINFEION_GIT\BBPRISONGOD\HARDWARE\PCB\CADENCE\PRISON_GOD_SCH_V110.DSN")

@@ -1,0 +1,99 @@
+<Footprint name="FPC14N_1350X400X100-14N" >
+ <Units type="millimeters" precision="4" />
+ <Extents minX="-37.6100" minY="-12.6200" width="65.6800" height="27.6800" />
+ <Padstack name="r35_200" type="single" > 
+  <Layers>
+    <Layer name="TOP" >
+     <Pad shape="rectangle" width="0.3500" height="2.0000" />
+    </Layer>
+    <Layer name="SOLDERMASK_TOP" >
+     <Pad shape="rectangle" width="0.3500" height="2.0000" />
+    </Layer>
+    <Layer name="PASTEMASK_TOP" >
+     <Pad shape="rectangle" width="0.3500" height="2.0000" />
+    </Layer>
+  </Layers>
+ </Padstack>
+ <Pins>
+  <Pin number="14" padName="r35_200" originX="0.0000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="13" padName="r35_200" originX="-0.7000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="12" padName="r35_200" originX="-1.4000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="11" padName="r35_200" originX="-2.1000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="10" padName="r35_200" originX="-2.8000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="9" padName="r35_200" originX="-3.5000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="8" padName="r35_200" originX="-4.2000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="7" padName="r35_200" originX="-4.9000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="6" padName="r35_200" originX="-5.6000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="5" padName="r35_200" originX="-6.3000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="4" padName="r35_200" originX="-7.0000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="3" padName="r35_200" originX="-7.7000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="2" padName="r35_200" originX="-8.4000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+  <Pin number="1" padName="r35_200" originX="-9.1000" originY="0.0000" rotation="0" isMechanical="no" textBlk="1" />
+ </Pins>
+ <Vias>
+ </Vias>
+ <Layers>
+  <Layer name="PACKAGE GEOMETRY/PLACE_BOUND_TOP" packageHeight="1.0000" >
+   <Path lineWidth="0.0500" type="shape" >
+    <Point x="-11.5500" y="-1.2500" />
+    <Point x="-11.5500" y="3.2500" />
+    <Point x="2.4500" y="3.2500" />
+    <Point x="2.4500" y="-1.2500" />
+    <Point x="-11.5500" y="-1.2500" />
+   </Path>
+  </Layer>
+  <Layer name="PACKAGE GEOMETRY/DFA_BOUND_TOP" packageHeight="1.0000" >
+   <Path lineWidth="0.0000" type="shape" >
+    <Point x="-11.5500" y="-1.2500" />
+    <Point x="-11.5500" y="3.2500" />
+    <Point x="2.4500" y="3.2500" />
+    <Point x="2.4500" y="-1.2500" />
+    <Point x="-11.5500" y="-1.2500" />
+   </Path>
+  </Layer>
+  <Layer name="MANUFACTURING/NO_PROBE_TOP" packageHeight="1.0000" >
+   <Path lineWidth="0.0000" type="shape" >
+    <Point x="-11.5500" y="-1.2500" />
+    <Point x="-11.5500" y="3.2500" />
+    <Point x="2.4500" y="3.2500" />
+    <Point x="2.4500" y="-1.2500" />
+    <Point x="-11.5500" y="-1.2500" />
+   </Path>
+  </Layer>
+  <Layer name="PACKAGE GEOMETRY/ASSEMBLY_TOP" packageHeight="1.0000" >
+   <Path lineWidth="0.1000" type="line" >
+    <Point x="2.2000" y="3.0000" />
+    <Point x="2.2000" y="-1.0000" />
+    <Point x="-11.3000" y="-1.0000" />
+    <Point x="-11.3000" y="3.0000" />
+    <Point x="2.2000" y="3.0000" />
+   </Path>
+   <Path lineWidth="0.1000" type="line" >
+    <Point x="2.2000" y="3.0000" />
+    <Point x="2.2000" y="-1.0000" />
+    <Point x="-11.3000" y="-1.0000" />
+    <Point x="-11.3000" y="3.0000" />
+    <Point x="2.2000" y="3.0000" />
+   </Path>
+   <Path lineWidth="0.1000" type="line" >
+    <Point x="-0.1750" y="3.0000" />
+    <Point x="0.1750" y="3.0000" />
+    <Point x="0.0000" y="2.8250" />
+    <Point x="-0.1750" y="3.0000" />
+   </Path>
+   <Label layer="REF DES/ASSEMBLY_TOP" textBlock="3" angle="0" x="-4.5500" y="0.3250" text="Ref" />
+  </Layer>
+  <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="1.0000" >
+   <Path lineWidth="0.2000" type="line" >
+    <Point x="-11.3000" y="-1.0000" />
+    <Point x="-11.3000" y="3.0000" />
+    <Point x="2.2000" y="3.0000" />
+    <Point x="2.2000" y="-1.0000" />
+    <Point x="-11.3000" y="-1.0000" />
+   </Path>
+   <Label layer="REF DES/SILKSCREEN_TOP" textBlock="3" angle="0" x="-4.5500" y="3.2750" text="Ref" />
+   <Label layer="DEVICE TYPE/SILKSCREEN_TOP" textBlock="3" angle="0" x="-4.5500" y="2.8250" text="Dev" />
+   <Circle type="shape" lineWidth="0.2000" originX="0.0000" originY="3.7000" radius="0.3000" />
+  </Layer>
+ </Layers>
+</Footprint>

@@ -1,0 +1,214 @@
+Dependencies for Project 'da1458x_template', Target 'Cortex-M0 SDK - Simulator': (DO NOT MODIFY !)
+F (.\startup\startup_CMSDK_CM0.s)(0x5278B22E)(--cpu Cortex-M0 --li -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM--pd "__UVISION_VERSION SETA 520"--list .\out\startup_cmsdk_cm0.lst --xref -o .\hex\startup_cmsdk_cm0.o --depend .\hex\startup_cmsdk_cm0.d)
+F (.\startup\system_CMSDK.c)(0x5396A858)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\system_cmsdk.o --omf_browse .\hex\system_cmsdk.crf --depend .\hex\system_cmsdk.d)
+I (.\include\stdint.h)(0x52FDD27E)
+F (.\src\demo.c)(0x588201A7)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\demo.o --omf_browse .\hex\demo.crf --depend .\hex\demo.d)
+I (.\include\global_io.h)(0x5278B22C)
+I (.\include\datasheet.h)(0x57988474)
+I (.\src\gpio\gpio.h)(0x57988474)
+I (.\src\arch\arch.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (.\src\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x56FE42DC)
+I (.\src\arch\ll\rvds\ll.h)(0x57988472)
+I (.\src\include\reg_intc.h)(0x57988474)
+I (.\src\include\_reg_intc.h)(0x57988474)
+I (.\src\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\include\ARMCM0.h)(0x587F2D42)
+I (.\include\core_cm0.h)(0x57988474)
+I (.\include\core_cmInstr.h)(0x51BA6374)
+I (.\include\core_cmFunc.h)(0x512C1E62)
+I (.\src\i2c\hw_i2c.h)(0x5880B5FF)
+I (.\include\stdint.h)(0x52FDD27E)
+I (.\src\uart\uart.h)(0x58808B14)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x56FE42E0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (.\src\user_setup.h)(0x58820188)
+I (.\src\mpu9250\mpu9250.h)(0x588055A5)
+I (.\src\led\led.h)(0x58805A45)
+I (.\src\oled_dis\oled_dis.h)(0x5881E665)
+I (.\src\console\console.h)(0x5880B5FE)
+I (.\src\uart\reg_uart.h)(0x57988474)
+I (.\src\include\_reg_uart.h)(0x57988474)
+I (.\src\systick\systick.h)(0x58809338)
+I (.\src\touch_detect\touch_detect.h)(0x5882013D)
+F (.\src\user_setup.h)(0x58820188)()
+F (.\misc\serial_out.txt)(0x53969F5A)()
+F (.\src\i2c\hw_i2c.c)(0x58805ABB)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\hw_i2c.o --omf_browse .\hex\hw_i2c.crf --depend .\hex\hw_i2c.d)
+I (src\i2c\hw_i2c.h)(0x5880B5FF)
+I (.\include\stdint.h)(0x52FDD27E)
+I (.\include\datasheet.h)(0x57988474)
+I (.\include\global_io.h)(0x5278B22C)
+I (.\src\arch\ll\rvds\ll.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (.\src\arch\arch.h)(0x57988472)
+I (.\src\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x56FE42DC)
+I (.\src\include\reg_intc.h)(0x57988474)
+I (.\src\include\_reg_intc.h)(0x57988474)
+I (.\src\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\include\ARMCM0.h)(0x587F2D42)
+I (.\include\core_cm0.h)(0x57988474)
+I (.\include\core_cmInstr.h)(0x51BA6374)
+I (.\include\core_cmFunc.h)(0x512C1E62)
+F (.\src\gpio\gpio.c)(0x587FCA18)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\gpio.o --omf_browse .\hex\gpio.crf --depend .\hex\gpio.d)
+I (.\src\arch\arch.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (.\src\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x56FE42DC)
+I (.\src\arch\ll\rvds\ll.h)(0x57988472)
+I (.\src\include\reg_intc.h)(0x57988474)
+I (.\src\include\_reg_intc.h)(0x57988474)
+I (.\src\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\include\ARMCM0.h)(0x587F2D42)
+I (.\include\global_io.h)(0x5278B22C)
+I (.\include\datasheet.h)(0x57988474)
+I (.\include\core_cm0.h)(0x57988474)
+I (.\include\core_cmInstr.h)(0x51BA6374)
+I (.\include\core_cmFunc.h)(0x512C1E62)
+I (src\gpio\gpio.h)(0x57988474)
+F (.\src\mpu9250\mpu9250.c)(0x58805A7A)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\mpu9250.o --omf_browse .\hex\mpu9250.crf --depend .\hex\mpu9250.d)
+I (src\mpu9250\mpu9250.h)(0x588055A5)
+I (.\include\stdint.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x56FE42DC)
+I (.\src\i2c\hw_i2c.h)(0x5880B5FF)
+I (.\include\datasheet.h)(0x57988474)
+I (.\include\global_io.h)(0x5278B22C)
+I (.\src\arch\ll\rvds\ll.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (.\src\arch\arch.h)(0x57988472)
+I (.\src\arch\compiler\rvds\compiler.h)(0x57988472)
+I (.\src\include\reg_intc.h)(0x57988474)
+I (.\src\include\_reg_intc.h)(0x57988474)
+I (.\src\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\include\ARMCM0.h)(0x587F2D42)
+I (.\include\core_cm0.h)(0x57988474)
+I (.\include\core_cmInstr.h)(0x51BA6374)
+I (.\include\core_cmFunc.h)(0x512C1E62)
+I (.\src\gpio\gpio.h)(0x57988474)
+I (.\src\user_setup.h)(0x58820188)
+F (.\src\uart\uart.c)(0x5881EC42)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\uart.o --omf_browse .\hex\uart.crf --depend .\hex\uart.d)
+I (src\uart\uart.h)(0x58808B14)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x56FE42E0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (.\src\gpio\gpio.h)(0x57988474)
+I (.\src\arch\arch.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (.\src\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x56FE42DC)
+I (.\src\arch\ll\rvds\ll.h)(0x57988472)
+I (.\src\include\reg_intc.h)(0x57988474)
+I (.\src\include\_reg_intc.h)(0x57988474)
+I (.\src\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\include\ARMCM0.h)(0x587F2D42)
+I (.\include\global_io.h)(0x5278B22C)
+I (.\include\datasheet.h)(0x57988474)
+I (.\include\core_cm0.h)(0x57988474)
+I (.\include\core_cmInstr.h)(0x51BA6374)
+I (.\include\core_cmFunc.h)(0x512C1E62)
+I (.\src\user_setup.h)(0x58820188)
+F (.\src\console\console.c)(0x5881E69D)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\console.o --omf_browse .\hex\console.crf --depend .\hex\console.d)
+I (src\console\console.h)(0x5880B5FE)
+I (.\src\uart\uart.h)(0x58808B14)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x56FE42E0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (.\src\gpio\gpio.h)(0x57988474)
+I (.\src\arch\arch.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (.\src\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x56FE42DC)
+I (.\src\arch\ll\rvds\ll.h)(0x57988472)
+I (.\src\include\reg_intc.h)(0x57988474)
+I (.\src\include\_reg_intc.h)(0x57988474)
+I (.\src\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\include\ARMCM0.h)(0x587F2D42)
+I (.\include\global_io.h)(0x5278B22C)
+I (.\include\datasheet.h)(0x57988474)
+I (.\include\core_cm0.h)(0x57988474)
+I (.\include\core_cmInstr.h)(0x51BA6374)
+I (.\include\core_cmFunc.h)(0x512C1E62)
+I (.\src\user_setup.h)(0x58820188)
+I (.\src\uart\reg_uart.h)(0x57988474)
+I (.\src\include\_reg_uart.h)(0x57988474)
+I (.\src\systick\systick.h)(0x58809338)
+I (.\src\led\led.h)(0x58805A45)
+I (.\src\oled_dis\oled_dis.h)(0x5881E665)
+I (.\src\i2c\hw_i2c.h)(0x5880B5FF)
+I (.\include\stdint.h)(0x52FDD27E)
+F (.\src\led\led.c)(0x588054FA)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\led.o --omf_browse .\hex\led.crf --depend .\hex\led.d)
+I (src\led\led.h)(0x58805A45)
+I (.\src\gpio\gpio.h)(0x57988474)
+I (.\src\arch\arch.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (.\src\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x56FE42DC)
+I (.\src\arch\ll\rvds\ll.h)(0x57988472)
+I (.\src\include\reg_intc.h)(0x57988474)
+I (.\src\include\_reg_intc.h)(0x57988474)
+I (.\src\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\include\ARMCM0.h)(0x587F2D42)
+I (.\include\global_io.h)(0x5278B22C)
+I (.\include\datasheet.h)(0x57988474)
+I (.\include\core_cm0.h)(0x57988474)
+I (.\include\core_cmInstr.h)(0x51BA6374)
+I (.\include\core_cmFunc.h)(0x512C1E62)
+I (.\src\user_setup.h)(0x58820188)
+F (.\src\systick\systick.c)(0x588090C8)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\systick.o --omf_browse .\hex\systick.crf --depend .\hex\systick.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (src\systick\systick.h)(0x58809338)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x56FE42DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (.\include\ARMCM0.h)(0x587F2D42)
+I (.\include\global_io.h)(0x5278B22C)
+I (.\include\datasheet.h)(0x57988474)
+I (.\include\core_cm0.h)(0x57988474)
+I (.\include\core_cmInstr.h)(0x51BA6374)
+I (.\include\core_cmFunc.h)(0x512C1E62)
+F (.\src\oled_dis\oled_dis.c)(0x5881E667)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\oled_dis.o --omf_browse .\hex\oled_dis.crf --depend .\hex\oled_dis.d)
+I (src\oled_dis\oled_dis.h)(0x5881E665)
+I (.\src\gpio\gpio.h)(0x57988474)
+I (.\src\arch\arch.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (.\src\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x56FE42DC)
+I (.\src\arch\ll\rvds\ll.h)(0x57988472)
+I (.\src\include\reg_intc.h)(0x57988474)
+I (.\src\include\_reg_intc.h)(0x57988474)
+I (.\src\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\include\ARMCM0.h)(0x587F2D42)
+I (.\include\global_io.h)(0x5278B22C)
+I (.\include\datasheet.h)(0x57988474)
+I (.\include\core_cm0.h)(0x57988474)
+I (.\include\core_cmInstr.h)(0x51BA6374)
+I (.\include\core_cmFunc.h)(0x512C1E62)
+I (.\src\i2c\hw_i2c.h)(0x5880B5FF)
+I (.\include\stdint.h)(0x52FDD27E)
+F (.\src\touch_detect\touch_detect.c)(0x58820301)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\src\uart -I .\src\gpio -I .\include -I .\src\sw_i2c -I .\src\systick -I .\src\pwm -I .\src\i2c -I .\src\arch -I .\src\arch\ll\rvds -I .\src\arch\boot\rvds -I .\src\arch\compiler\rvds -I .\src\arch\main -I .\src\include -I .\src\reg -I .\src\gpio -I .\src\mpu9250 -I .\src -I .\src\console -I .\src\led -I .\src\uart -I .\src\oled_dis -I .\src\touch_detect-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\touch_detect.o --omf_browse .\hex\touch_detect.crf --depend .\hex\touch_detect.d)
+I (src\touch_detect\touch_detect.h)(0x5882013D)
+I (.\src\gpio\gpio.h)(0x57988474)
+I (.\src\arch\arch.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (.\src\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x56FE42DC)
+I (.\src\arch\ll\rvds\ll.h)(0x57988472)
+I (.\src\include\reg_intc.h)(0x57988474)
+I (.\src\include\_reg_intc.h)(0x57988474)
+I (.\src\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\include\ARMCM0.h)(0x587F2D42)
+I (.\include\global_io.h)(0x5278B22C)
+I (.\include\datasheet.h)(0x57988474)
+I (.\include\core_cm0.h)(0x57988474)
+I (.\include\core_cmInstr.h)(0x51BA6374)
+I (.\include\core_cmFunc.h)(0x512C1E62)
+I (.\src\led\led.h)(0x58805A45)
+I (.\src\user_setup.h)(0x58820188)
