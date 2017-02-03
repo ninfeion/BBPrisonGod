@@ -1,0 +1,422 @@
+Dependencies for Project 'host_proxr', Target 'Cortex-M0 SDK - Simulator': (DO NOT MODIFY !)
+F (.\startup\startup_CMSDK_CM0.s)(0x5798846A)(--cpu Cortex-M0 --li -g --apcs=interwork -I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 522" --pd "ARMCM0 SETA 1"--list .\out\startup_cmsdk_cm0.lst --xref -o .\out\startup_cmsdk_cm0.o --depend .\out\startup_cmsdk_cm0.d)
+F (.\startup\system_CMSDK.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\system_cmsdk.o --omf_browse .\out\system_cmsdk.crf --depend .\out\system_cmsdk.d)
+I (da14580_config.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+F (.\src\app_task.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\app_task.o --omf_browse .\out\app_task.crf --depend .\out\app_task.d)
+I (da14580_config.h)(0x5798846A)
+I (.\include\app.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapc\gapc_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\rwip\api\rwip_config.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_task.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\compiler\rvds\compiler.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_msg.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\arch.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\arch\ll\rvds\ll.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\include\reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_ble_em_et.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\global_io.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\datasheet.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cm0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmInstr.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmFunc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\system_ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_config.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_list.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gap.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_bt.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gap_cfg.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smpm\smpm.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smp_common.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\rwble_hl\rwble_hl_config.h)(0x57988472)
+I (.\include\user_profiles_config.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_utils.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smpc\smpc_task.h)(0x57988470)
+I (.\include\gap_task.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapm\gapm_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapm\gapm.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\controller\llc\llc_task.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\attm\attm.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_timer.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_error.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\attm\attm_cfg.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\att.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr\proxr_task.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr\proxr.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prf_types.h)(0x57988472)
+I (.\include\app_button_led.h)(0x5798846A)
+I (.\include\ble_msg.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\rwble\rwble_config.h)(0x57988472)
+F (.\src\ble_msg.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\ble_msg.o --omf_browse .\out\ble_msg.crf --depend .\out\ble_msg.d)
+I (da14580_config.h)(0x5798846A)
+I (.\include\ble_msg.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\rwble\rwble_config.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\rwip\api\rwip_config.h)(0x57988472)
+I (.\include\peripherals.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (.\include\queue.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (.\include\app.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapc\gapc_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_task.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\compiler\rvds\compiler.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_msg.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\arch\arch.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\arch\ll\rvds\ll.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\include\reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_ble_em_et.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\global_io.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\datasheet.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cm0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmInstr.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmFunc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\system_ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_config.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_list.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gap.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_bt.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gap_cfg.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smpm\smpm.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smp_common.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\rwble_hl\rwble_hl_config.h)(0x57988472)
+I (.\include\user_profiles_config.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_utils.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smpc\smpc_task.h)(0x57988470)
+I (.\include\gap_task.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapm\gapm_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapm\gapm.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\controller\llc\llc_task.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\attm\attm.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_timer.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_error.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\attm\attm_cfg.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\att.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr\proxr_task.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr\proxr.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prf_types.h)(0x57988472)
+I (.\include\app_task.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\driver\gpio\gpio.h)(0x57988474)
+I (.\include\spi_hci_msg.h)(0x5798846A)
+I (.\include\user_periph_setup.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\driver\spi\spi.h)(0x57988474)
+F (.\src\interrupts.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\interrupts.o --omf_browse .\out\interrupts.crf --depend .\out\interrupts.d)
+I (da14580_config.h)(0x5798846A)
+F (.\src\peripherals.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\peripherals.o --omf_browse .\out\peripherals.crf --depend .\out\peripherals.d)
+I (da14580_config.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\include\global_io.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\datasheet.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\uart\uart.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\driver\gpio\gpio.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\arch\arch.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\arch\compiler\rvds\compiler.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\arch\ll\rvds\ll.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\include\reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_ble_em_et.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cm0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmInstr.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmFunc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\system_ARMCM0.h)(0x57988474)
+I (.\include\peripherals.h)(0x5798846A)
+I (.\include\user_periph_setup.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\driver\spi\spi.h)(0x57988474)
+F (.\src\timer.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\timer.o --omf_browse .\out\timer.crf --depend .\out\timer.d)
+I (da14580_config.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\include\global_io.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\datasheet.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\gpio\gpio.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\arch\arch.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\ll\rvds\ll.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\include\reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_ble_em_et.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cm0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmInstr.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmFunc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\system_ARMCM0.h)(0x57988474)
+F (.\src\queue.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\queue.o --omf_browse .\out\queue.crf --depend .\out\queue.d)
+I (da14580_config.h)(0x5798846A)
+I (.\include\queue.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+F (.\src\app_button_led.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\app_button_led.o --omf_browse .\out\app_button_led.crf --depend .\out\app_button_led.d)
+I (da14580_config.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\include\global_io.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\datasheet.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\gpio\gpio.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\arch\arch.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\ll\rvds\ll.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\include\reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_ble_em_et.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cm0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmInstr.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmFunc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\system_ARMCM0.h)(0x57988474)
+I (.\include\app_button_led.h)(0x5798846A)
+F (.\src\spi_booter.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\spi_booter.o --omf_browse .\out\spi_booter.crf --depend .\out\spi_booter.d)
+I (da14580_config.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (.\include\app.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapc\gapc_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\rwip\api\rwip_config.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_task.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\compiler\rvds\compiler.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_msg.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\arch.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\arch\ll\rvds\ll.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\include\reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_ble_em_et.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\global_io.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\datasheet.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cm0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmInstr.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmFunc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\system_ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_config.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_list.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gap.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_bt.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gap_cfg.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smpm\smpm.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smp_common.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\rwble_hl\rwble_hl_config.h)(0x57988472)
+I (.\include\user_profiles_config.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_utils.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smpc\smpc_task.h)(0x57988470)
+I (.\include\gap_task.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapm\gapm_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapm\gapm.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\controller\llc\llc_task.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\attm\attm.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_timer.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_error.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\attm\attm_cfg.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\att.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr\proxr_task.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr\proxr.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prf_types.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\driver\gpio\gpio.h)(0x57988474)
+I (.\include\queue.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (.\include\user_periph_setup.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\driver\spi\spi.h)(0x57988474)
+I (.\include\peripherals.h)(0x5798846A)
+I (.\include\spi_booter.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\driver\uart\uart.h)(0x57988474)
+I (.\include\prox_reporter_ext_581.h)(0x5798846A)
+F (.\src\app.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\app.o --omf_browse .\out\app.crf --depend .\out\app.d)
+I (da14580_config.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\global_io.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\datasheet.h)(0x57988474)
+I (.\include\peripherals.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (.\include\queue.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\driver\gpio\gpio.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\arch\arch.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\ll\rvds\ll.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\include\reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_ble_em_et.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cm0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmInstr.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmFunc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\system_ARMCM0.h)(0x57988474)
+I (.\include\app_button_led.h)(0x5798846A)
+I (.\include\ble_msg.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\rwble\rwble_config.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\rwip\api\rwip_config.h)(0x57988472)
+I (.\include\gap_task.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapc\gapc_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_task.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_msg.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_config.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_list.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gap.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_bt.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gap_cfg.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smpm\smpm.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smp_common.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\rwble_hl\rwble_hl_config.h)(0x57988472)
+I (.\include\user_profiles_config.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_utils.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapm\gapm_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapm\gapm.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\controller\llc\llc_task.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\attm\attm.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_timer.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_error.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\attm\attm_cfg.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\att.h)(0x5798846E)
+I (.\include\app.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smpc\smpc_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr\proxr_task.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr\proxr.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prf_types.h)(0x57988472)
+I (.\include\spi_booter.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm\proxm.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm\proxm_task.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\atts\atts.h)(0x5798846E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\atts\atts_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\rwip\api\rwip.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc\l2cc_pdu.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc\l2cc.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\driver\spi\spi.h)(0x57988474)
+I (.\include\spi_hci_msg.h)(0x5798846A)
+I (.\include\user_periph_setup.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\driver\uart\uart.h)(0x57988474)
+F (.\..\..\..\..\..\sdk\platform\driver\spi\spi.c)(0x57988474)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\spi.o --omf_browse .\out\spi.crf --depend .\out\spi.d)
+I (da14580_config.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\global_io.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\datasheet.h)(0x57988474)
+I (..\..\..\..\..\sdk\platform\driver\spi\spi.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\gpio\gpio.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\arch\arch.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\ll\rvds\ll.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\include\reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_ble_em_et.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cm0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmInstr.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmFunc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\system_ARMCM0.h)(0x57988474)
+F (.\..\..\..\..\..\sdk\platform\driver\gpio\gpio.c)(0x57988474)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\gpio.o --omf_browse .\out\gpio.crf --depend .\out\gpio.d)
+I (da14580_config.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\arch\arch.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\compiler\rvds\compiler.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\ll\rvds\ll.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\include\reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_ble_em_et.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\global_io.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\datasheet.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cm0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmInstr.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmFunc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\system_ARMCM0.h)(0x57988474)
+I (..\..\..\..\..\sdk\platform\driver\gpio\gpio.h)(0x57988474)
+I (.\include\user_periph_setup.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\driver\spi\spi.h)(0x57988474)
+F (.\src\spi_hci_msg.c)(0x5798846A)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork -I .\..\..\..\..\..\sdk\platform\include -I .\..\..\..\..\..\sdk\ble_stack\host\att -I .\..\..\..\..\..\sdk\ble_stack\host\att\attm -I .\..\..\..\..\..\sdk\ble_stack\host\att\atts -I .\..\..\..\..\..\sdk\ble_stack\host\gap -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapc -I .\..\..\..\..\..\sdk\ble_stack\host\gap\gapm -I .\..\..\..\..\..\sdk\ble_stack\host\\l2c\l2cc -I .\..\..\..\..\..\sdk\ble_stack\host\smp -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpc -I .\..\..\..\..\..\sdk\ble_stack\host\smp\smpm -I .\..\..\..\..\..\sdk\ble_stack\profiles -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxm -I .\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr -I .\..\..\..\..\..\sdk\ble_stack\rwble_hl -I .\..\..\..\..\..\sdk\ble_stack\controller\llc -I .\..\..\..\..\..\sdk\ble_stack\hcic -I .\..\..\..\..\..\sdk\ble_stack\rwble -I .\..\..\..\..\..\sdk\platform\core_modules\common\api -I .\..\..\..\..\..\sdk\platform\core_modules\ke\api -I .\..\..\..\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\..\..\..\sdk\platform\arch -I .\..\..\..\..\..\sdk\platform\arch\compiler\rvds -I .\..\..\..\..\..\sdk\platform\arch\ll\rvds -I .\..\..\..\..\..\sdk\platform\driver\gpio -I .\..\..\..\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\..\..\..\sdk\platform\driver\reg -I .\..\..\..\..\..\sdk\platform\driver\spi -I .\..\..\..\..\..\sdk\platform\driver\systick -I .\..\..\..\..\..\sdk\platform\driver\uart -I .\include --c99 --thumb -c --preinclude da14580_config.h-I"C:\Ninfeion_Git\BBPrisonGod\doc\da14583_documentation_software\Software Development Kit\SDK 5.0.4\DA1458x_SDK\5.0.4\projects\host_apps\da1458x\proximity\reporter\RTE\_Cortex-M0_SDK_-_Simulator"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\out\spi_hci_msg.o --omf_browse .\out\spi_hci_msg.crf --depend .\out\spi_hci_msg.d)
+I (da14580_config.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (.\include\app.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapc\gapc_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\rwip\api\rwip_config.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_task.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\compiler\rvds\compiler.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_msg.h)(0x57988472)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\arch\arch.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\arch\ll\rvds\ll.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\include\reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_intc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\reg\reg_access.h)(0x57988474)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\..\..\..\..\..\sdk\platform\include\_reg_ble_em_et.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\global_io.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\datasheet.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cm0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmInstr.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\core_cmFunc.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\include\system_ARMCM0.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_config.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_list.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gap.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_bt.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gap_cfg.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smpm\smpm.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smp_common.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\rwble_hl\rwble_hl_config.h)(0x57988472)
+I (.\include\user_profiles_config.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_utils.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\smp\smpc\smpc_task.h)(0x57988470)
+I (.\include\gap_task.h)(0x5798846A)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapm\gapm_task.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\host\gap\gapm\gapm.h)(0x57988470)
+I (.\..\..\..\..\..\sdk\ble_stack\controller\llc\llc_task.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\attm\attm.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\platform\core_modules\ke\api\ke_timer.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\core_modules\common\api\co_error.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\attm\attm_cfg.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\host\att\att.h)(0x5798846E)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr\proxr_task.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prox\proxr\proxr.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\ble_stack\profiles\prf_types.h)(0x57988472)
+I (.\..\..\..\..\..\sdk\platform\driver\gpio\gpio.h)(0x57988474)
+I (.\..\..\..\..\..\sdk\platform\driver\spi\spi.h)(0x57988474)
+I (.\include\spi_hci_msg.h)(0x5798846A)
+I (.\include\user_periph_setup.h)(0x5798846A)
+I (.\include\queue.h)(0x5798846A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+F (.\include\app.h)(0x5798846A)()
+F (.\include\app_button_led.h)(0x5798846A)()
+F (.\include\app_task.h)(0x5798846A)()
+F (.\include\ble_msg.h)(0x5798846A)()
+F (.\include\gap_task.h)(0x5798846A)()
+F (.\include\peripherals.h)(0x5798846A)()
+F (.\include\queue.h)(0x5798846A)()
+F (.\include\spi_booter.h)(0x5798846A)()
+F (.\include\user_periph_setup.h)(0x5798846A)()
+F (.\da14580_config.h)(0x5798846A)()
+F (.\include\spi_hci_msg.h)(0x5798846A)()
+F (.\include\prox_reporter_ext.h)(0x5798846A)()
+F (.\include\prox_reporter_ext_581.h)(0x5798846A)()

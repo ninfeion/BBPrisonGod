@@ -1,0 +1,125 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Nin Feion, SZU, LIC=2TTHL-092DB-343ST-RXUVJ-XARN5-8LDT6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.20
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DARMCM1.DLL V1.14.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.20.0
+Dialog DLL:      TARMCM1.DLL V1.10.0.0
+ 
+<h2>Project:</h2>
+C:\Ninfeion_Git\BBPrisonGod\hardware\firmware\DA14583_UCOS_MIRGRATE\da1458x_template.uvproj
+Project File Date:  01/17/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Cortex-M0 SDK - Simulator'
+*** Scatter Error: no default 'Read/Write' range selected
+assembling startup_CMSDK_CM0.s...
+compiling system_CMSDK.c...
+assembling cpu_a.asm...
+uCOS\uC-CPU\Ports\RealView\cpu_a.asm(197): error: A1854E: Unknown opcode 'CLZ', maybe wrong target CPU?
+uCOS\uC-CPU\Ports\RealView\cpu_a.asm(245): error: A1854E: Unknown opcode 'RBIT', maybe wrong target CPU?
+uCOS\uC-CPU\Ports\RealView\cpu_a.asm(246): error: A1854E: Unknown opcode 'CLZ', maybe wrong target CPU?
+uCOS\uC-CPU\Ports\RealView\cpu_a.asm(281): error: A1854E: Unknown opcode 'RBIT', maybe wrong target CPU?
+compiling lib_ascii.c...
+compiling cpu_core.c...
+compiling cpu_c.c...
+compiling lib_math.c...
+compiling lib_mem.c...
+assembling lib_mem_a.asm...
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(125): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(130): error: A1618E: Specified instruction is not supported by the current instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(131): error: A1618E: Specified instruction is not supported by the current instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(135): error: A1911E: Immediate 0x00000004 out of range for this operation. Immediate value must be 0
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(136): error: A1618E: Specified instruction is not supported by the current instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(146): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(147): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(148): error: A1859E: Flag preserving form of this instruction not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(149): error: A1859E: Flag preserving form of this instruction not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(154): error: A1618E: Specified instruction is not supported by the current instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(155): error: A1618E: Specified instruction is not supported by the current instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(164): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(165): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(166): error: A1859E: Flag preserving form of this instruction not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(167): error: A1859E: Flag preserving form of this instruction not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(172): error: A1492E: Immediate 0x00000168 out of range for this operation.  Permitted values are 0x00000000 to 0x000000FF
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(174): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(175): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(176): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(177): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(178): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(179): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(180): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(181): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(182): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(183): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(184): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(185): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(186): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(187): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(188): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(189): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(190): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(191): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(192): error: A1859E: Flag preserving form of this instruction not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(198): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(199): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(200): error: A1859E: Flag preserving form of this instruction not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(206): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(207): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(208): error: A1859E: Flag preserving form of this instruction not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(215): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(216): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(217): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(218): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(219): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(220): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(221): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(222): error: A1879E: Specified addressing mode not available
+uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm(223): error: A1879E: Specified addressing mode not available
+compiling lib_str.c...
+compiling os_cfg_app.c...
+compiling os_dbg.c...
+compiling os_core.c...
+compiling os_mem.c...
+compiling os_int.c...
+compiling os_flag.c...
+compiling os_pend_multi.c...
+compiling os_msg.c...
+compiling os_mutex.c...
+compiling os_q.c...
+compiling os_prio.c...
+compiling os_sem.c...
+compiling os_stat.c...
+compiling os_task.c...
+compiling os_tick.c...
+compiling os_time.c...
+compiling os_var.c...
+assembling os_cpu_a.s...
+uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_a.s(141): error: A1854E: Unknown opcode 'CBZ', maybe wrong target CPU?
+uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_a.s(144): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_a.s(155): error: A1875E: Register Rn must be from R0 to R7 in this instruction
+uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_a.s(168): error: A1874E: Specified register list cannot be loaded or stored in target instruction set
+uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_a.s(171): error: A1618E: Specified instruction is not supported by the current instruction set
+compiling os_tmr.c...
+compiling os_cpu_c.c...
+".\hex\da1458x_template.axf" - 59 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

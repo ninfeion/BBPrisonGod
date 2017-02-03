@@ -1,0 +1,10 @@
+Dependencies for Project 'demo1_blinky', Target 'Blinky': (DO NOT MODIFY !)
+F (.\Startup\system_CMSDK.c)(0x5396A858)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I .\Source -I .\Startup -I .\Include-IC:\Ninfeion_Git\BBPrisonGod\hardware\firmware\KEIL_V5\DEMO1_BLINKY\RTE\_Blinky-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\output\system_cmsdk.o --omf_browse .\output\system_cmsdk.crf --depend .\output\system_cmsdk.d)
+I (.\Include\stdint.h)(0x52FDD27E)
+F (.\Startup\startup_CMSDK_CM0.s)(0x5278B22E)(--cpu Cortex-M0 --li -g --apcs=interwork -IC:\Ninfeion_Git\BBPrisonGod\hardware\firmware\KEIL_V5\DEMO1_BLINKY\RTE\_Blinky-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 522" --pd "ARMCM0 SETA 1"--list .\listings\startup_cmsdk_cm0.lst --xref -o .\output\startup_cmsdk_cm0.o --depend .\output\startup_cmsdk_cm0.d)
+F (.\Source\main.c)(0x5870B0E6)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections -I .\Source -I .\Startup -I .\Include-IC:\Ninfeion_Git\BBPrisonGod\hardware\firmware\KEIL_V5\DEMO1_BLINKY\RTE\_Blinky-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="522" -DARMCM0-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+I (.\Include\global_io.h)(0x5278B22C)
+I (.\Include\datasheet.h)(0x5278B22C)
+I (.\Include\peripherals.h)(0x5396A82C)
+I (.\Include\stdint.h)(0x52FDD27E)
+I (.\Include\gpio.h)(0x5278B22C)

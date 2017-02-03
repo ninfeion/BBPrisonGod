@@ -1,0 +1,9 @@
+--cpu Cortex-M0
+".\hex\startup_cmsdk_cm0.o"
+".\hex\system_cmsdk.o"
+".\hex\demo.o"
+".\hex\peripherals.o"
+--strict --scatter ".\hex\da1458x_template.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Out\da1458x_template.map" -o .\hex\da1458x_template.axf

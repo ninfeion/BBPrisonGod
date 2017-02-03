@@ -13,6 +13,9 @@
 
 #include "touch_detect.h"
 
+void breakDetectInit(GPIO_PORT undo_port, GPIO_PIN undo_pin,
+                     GPIO_PORT cut_port, GPIO_PIN cut_pin);
+
 int main (void)
 {
     long i;
@@ -45,15 +48,33 @@ int main (void)
 
     oledPowerOn();
     
-    systickStart(SYSTEM_TIME_PERIOD * 1000, TRUE); // 100ms trigger once isr
+    //systickStart(SYSTEM_TIME_PERIOD * 1000, TRUE); // 100ms trigger once isr
     
-    uartConsoleInit();
+    //uartConsoleInit();
     
     touchModuleInit(TOUCH_IO_PORT, TOUCH_IO_PIN);
     
     oledFill(0x55, 0xaa);
+    
 
-    while(1);
+    breakDetectInit(GPIO_PORT_2, GPIO_PIN_9,
+                    GPIO_PORT_2, GPIO_PIN_3);
+                    
+    //GPIO_RegisterCallback(GPIO0_IRQn, undoDetectIRQ);
+    //GPIO_RegisterCallback(GPIO1_IRQn, cutDetectIRQ);
+
+    while(1)
+    {
+        if(GPIO_GetPinStatus(GPIO_PORT_2, GPIO_PIN_9))
+        {
+            ledGreenOn();
+        }
+        
+        if(GPIO_GetPinStatus(GPIO_PORT_2, GPIO_PIN_3))
+        {
+            ledRedOn();
+        }
+    }
     
 	while(1)
 	{
@@ -81,7 +102,31 @@ int main (void)
 	}
 }
 
+void undoDetectIRQ(void)
+{
+    ledGreenOff();
+}
 
+void cutDetectIRQ(void)
+{
+    ledRedOff();
+}
+
+void breakDetectInit(GPIO_PORT undo_port, GPIO_PIN undo_pin,
+                     GPIO_PORT cut_port, GPIO_PIN cut_pin)
+{
+    RESERVE_GPIO(UNDO_DETECT, undo_port, undo_pin, PID_GPIO);
+    RESERVE_GPIO(CUT_DETECT, cut_port, cut_pin, PID_GPIO);
+    
+    GPIO_ConfigurePin(undo_port, undo_pin, INPUT, PID_GPIO, false);
+    GPIO_ConfigurePin(cut_port, cut_pin, INPUT, PID_GPIO, false);
+
+    GPIO_EnableIRQ(undo_port, undo_pin, GPIO0_IRQn, true, true, 10);
+    GPIO_EnableIRQ(cut_port, cut_pin, GPIO1_IRQn, true, true, 10);
+    
+    GPIO_RegisterCallback(GPIO0_IRQn, undoDetectIRQ);
+    GPIO_RegisterCallback(GPIO1_IRQn, cutDetectIRQ);
+}
 
 
 

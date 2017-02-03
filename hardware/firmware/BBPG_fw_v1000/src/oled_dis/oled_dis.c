@@ -204,6 +204,8 @@ void oledInit(GPIO_PORT oled_PowerControlPort,GPIO_PIN oled_PowerControlPin,
     
     GPIO_ConfigurePin(oled_I2CPort, oled_I2CSCL, OUTPUT, PID_GPIO, false);
     GPIO_ConfigurePin(oled_I2CPort, oled_I2CSDA, OUTPUT, PID_GPIO, false);
+    
+    oledPowerOn();
 
     oledSSD1306Initialization();
 }

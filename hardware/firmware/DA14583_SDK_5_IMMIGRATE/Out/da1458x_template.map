@@ -1,0 +1,895 @@
+Product: MDK-ARM Professional 5.10
+Component: ARM Compiler 5.04 update 1 (build 49)
+Tool: armlink [5040049]
+
+==============================================================================
+
+Section Cross References
+
+    boot_vectors.o(RESET) refers to boot_vectors.o(STACK) for __initial_sp
+    boot_vectors.o(RESET) refers to boot_vectors.o(.text) for Reset_Handler
+    boot_vectors.o(RESET) refers to systick.o(.text) for SysTick_Handler
+    boot_vectors.o(RESET) refers to rwble.o(.text) for BLE_WAKEUP_LP_Handler
+    boot_vectors.o(RESET) refers to pwm.o(.text) for SWTIM_Handler
+    boot_vectors.o(RESET) refers to wkupct_quadec.o(.text) for WKUP_QUADEC_Handler
+    boot_vectors.o(RESET) refers to uart2.o(.text) for UART2_Handler
+    boot_vectors.o(RESET) refers to gpio.o(.text) for GPIO0_Handler
+    boot_vectors.o(.text) refers to system_armcm0.o(.text) for SystemInit
+    boot_vectors.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    boot_vectors.o(.text) refers to nmi_handler.o(.text) for NMI_HandlerC
+    boot_vectors.o(.text) refers to hardfault_handler.o(.text) for HardFault_HandlerC
+    boot_vectors.o(.text) refers to arch_patch.o(.text) for SVC_Handler_c
+    nvds.o(.text) refers to memcmp.o(.text) for memcmp
+    nvds.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    nvds.o(.text) refers to nvds.o(retention_mem_area0) for dev_bdaddr
+    arch_main.o(.text) refers to arch_system.o(.text) for system_init
+    arch_main.o(.text) refers to rwip.o(.text) for rwip_sleep
+    arch_main.o(.text) refers to arch_system.o(.text) for read_rcx_freq
+    arch_main.o(.text) refers to arch_main.o(.constdata) for user_app_main_loop_callbacks
+    arch_main.o(.text) refers to rwble.o(retention_mem_area0) for fine_hit
+    arch_main.o(.text) refers to arch_system.o(retention_mem_area0) for lp_clk_sel
+    arch_main.o(.text) refers to jump_table.o(jump_table_mem_area) for jump_table_base
+    arch_main.o(.constdata) refers to app_default_handlers.o(.text) for default_app_on_init
+    jump_table.o(jump_table_mem_area) refers to arch_main.o(.text) for main_func
+    jump_table.o(jump_table_mem_area) refers to rf_580.o(.text) for rf_init_func
+    jump_table.o(jump_table_mem_area) refers to jump_table.o(.text) for dummyf
+    jump_table.o(jump_table_mem_area) refers to arch_system.o(.text) for uart_flow_off_func
+    jump_table.o(jump_table_mem_area) refers to rwble.o(.text) for lld_sleep_compensate_func_patched
+    jump_table.o(jump_table_mem_area) refers to jump_table.o(heap_mem_area_not_ret) for rwip_heap_non_ret
+    jump_table.o(jump_table_mem_area) refers to jump_table.o(heap_env_area) for rwip_heap_env_ret
+    jump_table.o(jump_table_mem_area) refers to jump_table.o(heap_db_area) for rwip_heap_db_ret
+    jump_table.o(jump_table_mem_area) refers to jump_table.o(heap_msg_area) for rwip_heap_msg_ret
+    jump_table.o(jump_table_mem_area) refers to ke_task.obj(.text) for ke_task_init_func
+    jump_table.o(jump_table_mem_area) refers to nvds.o(.text) for custom_nvds_get_func
+    jump_table.o(jump_table_mem_area) refers to jump_table.o(.constdata) for LUT_CFG
+    arch_sleep.o(.text) refers to arch_sleep.o(retention_mem_area0) for sleep_md
+    arch_sleep.o(.text) refers to arch_sleep.o(.text) for arch_set_extended_sleep
+    arch_sleep.o(.text) refers to arch_sleep.o(retention_mem_area0) for sleep_cnt
+    arch_sleep.o(.text) refers to arch_sleep.o(.text) for arch_get_sleep_mode
+    arch_sleep.o(.text) refers to arch_sleep.o(.text) for arch_disable_sleep
+    arch_sleep.o(.text) refers to arch_sleep.o(retention_mem_area0) for sleep_cnt
+    arch_sleep.o(.text) refers to arch_sleep.o(retention_mem_area0) for sleep_ext_force
+    arch_sleep.o(.text) refers to arch_sleep.o(retention_mem_area0) for sleep_ext_force
+    arch_sleep.o(.text) refers to rwble.o(retention_mem_area0) for arch_rwble_last_event
+    arch_system.o(.text) refers to arch_system.o(retention_mem_area0) for cal_enable
+    arch_system.o(.text) refers to arch_system.o(retention_mem_area0) for lp_clk_sel
+    arch_system.o(.text) refers to arch_system.o(.text) for select_lp_clk
+    arch_system.o(.text) refers to arch_system.o(.text) for lld_sleep_us_2_lpcycles_rcx_func
+    arch_system.o(.text) refers to arch_system.o(.text) for lld_sleep_lpcycles_2_us_rcx_func
+    arch_system.o(.text) refers to trng.o(.text) for trng_acquire
+    arch_system.o(.text) refers to rand.o(.text) for srand
+    arch_system.o(.text) refers to arch_system.o(retention_mem_area0) for force_rf_cal
+    arch_system.o(.text) refers to arch_main.o(retention_mem_area0) for sys_startup_flag
+    arch_system.o(.text) refers to arch_system.o(.data) for startup_sleep_delay
+    arch_system.o(.text) refers to gpio.o(.text) for GPIO_init
+    arch_system.o(.text) refers to nvds.o(.text) for nvds_read_bdaddr_from_otp
+    arch_system.o(.text) refers to user_periph_setup.o(.text) for periph_init
+    arch_system.o(.text) refers to rf_580.o(.text) for iq_trim_from_otp
+    arch_system.o(.text) refers to arch_patch.o(.text) for patch_llm_task
+    arch_system.o(.text) refers to llc.obj(.text) for patch_llc_task
+    arch_system.o(.text) refers to atts_task.obj(.text) for patch_atts_task
+    arch_system.o(.text) refers to gapc_task.obj(.text) for patch_gapc_task
+    arch_system.o(.text) refers to arch_system.o(.text) for calibrate_rcx20
+    arch_system.o(.text) refers to arch_system.o(.text) for read_rcx_freq
+    arch_system.o(.text) refers to arch_sleep.o(.text) for arch_disable_sleep
+    arch_system.o(.text) refers to app.o(.text) for app_init
+    arch_system.o(.text) refers to arch_system.o(.constdata) for user_app_main_loop_callbacks
+    arch_system.o(.text) refers to arch_system.o(.text) for arch_clk_is_RCX20
+    arch_system.o(.text) refers to arch_system.o(retention_mem_area0) for rcx_freq
+    arch_system.o(.constdata) refers to app_default_handlers.o(.text) for default_app_on_init
+    arch_patch.o(.text) refers to atts_task.obj(i.__ARM_common_switch8) for __ARM_common_switch8
+    arch_patch.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    arch_patch.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    arch_patch.o(.text) refers to arch_patch.o(.constdata) for TASK_DESC_LLM
+    arch_patch.o(.text) refers to jump_table.o(jump_table_mem_area) for jump_table_base
+    arch_patch.o(.constdata) refers to atts_util.obj(.text) for atts_read_resp_patch
+    arch_patch.o(.constdata) refers to arch_patch.o(.text) for llm_rom_default_handler
+    arch_patch.o(.constdata) refers to smpc.obj(.text) for smpc_send_pairing_req_ind
+    arch_patch.o(.constdata) refers to smpc_task.obj(.text) for smpc_pairing_cfm_handler
+    arch_patch.o(.constdata) refers to llc_con_update_ind.obj(.text) for patched_llc_con_update_ind
+    arch_patch.o(.constdata) refers to gapm_util.obj(.text) for patched_gapm_adv_op_sanity
+    atts_task.obj(.text) refers to atts_task.obj(i.__ARM_common_switch8) for __ARM_common_switch8
+    atts_task.obj(.text) refers to arch_patch.o(.constdata) for atts_read_resp_impl
+    atts_task.obj(.text) refers to atts_task.obj(.constdata) for .constdata
+    atts_task.obj(.constdata) refers to atts_task.obj(.text) for my_l2cc_pdu_recv_ind_handler
+    atts_task.obj(.constdata) refers to atts_task.obj(.constdata) for my_atts_default_state
+    atts_task.obj(.constdata) refers to atts_task.obj(.constdata) for my_atts_state_handler
+    atts_task.obj(.constdata) refers to atts_task.obj(.constdata) for my_atts_default_handler
+    atts_util.obj(.text) refers to llshl.o(.text) for __aeabi_llsl
+    atts_util.obj(.text) refers to atts_util.obj(retention_mem_area0) for retention_mem_area0
+    atts_util.obj(.text) refers to llshl.o(.text) for __aeabi_llsl
+    atts_util.obj(.text) refers to atts_util.obj(retention_mem_area0) for retention_mem_area0
+    atts_util.obj(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    atts_util.obj(.text) refers to llshl.o(.text) for __aeabi_llsl
+    atts_util.obj(.text) refers to atts_util.obj(retention_mem_area0) for retention_mem_area0
+    ch_map.obj(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    ch_map.obj(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    gapm_util.obj(.text) refers to atts_task.obj(i.__ARM_common_switch8) for __ARM_common_switch8
+    ke_task.obj(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    smpc.obj(.text) refers to atts_task.obj(i.__ARM_common_switch8) for __ARM_common_switch8
+    smpc_task.obj(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    smpc_task.obj(.text) refers to smpc.obj(.text) for smpc_send_pairing_req_ind
+    llc.obj(.text) refers to rand.o(.text) for rand
+    llc.obj(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    llc.obj(.text) refers to ch_map.obj(.text) for my_llc_con_update_req_ind
+    llc.obj(.text) refers to jump_table.o(jump_table_mem_area) for jump_table_base
+    llc.obj(.text) refers to llc.obj(retention_mem_area0) for retention_mem_area0
+    llc.obj(.text) refers to llc.obj(.constdata) for .constdata
+    llc.obj(.constdata) refers to llc.obj(.text) for llc_rom_default_handler
+    llc.obj(.constdata) refers to llc.obj(.text) for my_lld_stop_ind_handler
+    llc.obj(.constdata) refers to llc.obj(.constdata) for my_llc_stopping
+    llc.obj(.constdata) refers to llc.obj(.constdata) for my_llc_default_state
+    llc.obj(.constdata) refers to llc.obj(.constdata) for my_llc_state_handler
+    llc.obj(.constdata) refers to llc.obj(.constdata) for my_llc_default_handler
+    ke_mem.obj(.text) refers to ke_mem.obj(.data) for .data
+    ke_mem.obj(.text) refers to arch_patch.o(retention_mem_area0) for mem_log
+    gapc_task.obj(.text) refers to jump_table.o(jump_table_mem_area) for jump_table_base
+    gapc_task.obj(.text) refers to gapc_task.obj(.constdata) for .constdata
+    gapc_task.obj(.constdata) refers to gapc_task.obj(.text) for gapc_rom_default_handler
+    gapc_task.obj(.constdata) refers to gapc_task.obj(.constdata) for patched_gapc_default_state
+    gapc_task.obj(.constdata) refers to gapc_task.obj(.constdata) for patched_gapc_default_handler
+    gpio.o(.text) refers to user_periph_setup.o(.text) for GPIO_reservations
+    gpio.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    gpio.o(.text) refers to gpio.o(.bss) for GPIO
+    gpio.o(.text) refers to gpio.o(.constdata) for p_mask
+    gpio.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    gpio.o(.text) refers to gpio.o(.bss) for GPIO_status
+    gpio.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    gpio.o(.text) refers to gpio.o(.bss) for GPIO_status
+    gpio.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    gpio.o(.text) refers to gpio.o(.bss) for GPIO_status
+    gpio.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    gpio.o(.text) refers to gpio.o(.text) for GPIO_SetActive
+    gpio.o(.text) refers to gpio.o(.text) for GPIO_SetInactive
+    gpio.o(.text) refers to gpio.o(.text) for GPIO_SetPinFunction
+    gpio.o(.text) refers to gpio.o(.bss) for GPIO_status
+    gpio.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    gpio.o(.text) refers to gpio.o(.bss) for GPIO_status
+    gpio.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    gpio.o(.text) refers to gpio.o(.bss) for GPIO_status
+    gpio.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    gpio.o(.text) refers to gpio.o(.text) for gpioshift16
+    gpio.o(.text) refers to gpio.o(.text) for NVIC_SetPriority
+    gpio.o(.text) refers to gpio.o(.bss) for GPIO_status
+    gpio.o(.text) refers to gpio.o(.text) for gpioshift16
+    gpio.o(.text) refers to gpio.o(.bss) for GPIOHandlerFunction
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(retention_mem_area0) for wkupct_quad_IRQ_status
+    wkupct_quadec.o(.text) refers to syscntl.o(.text) for syscntl_use_highest_amba_clocks
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(retention_mem_area0) for wkupct_quad_IRQ_status
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(.text) for NVIC_ClearPendingIRQ
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(.text) for NVIC_SetPriority
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(.text) for NVIC_EnableIRQ
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(retention_mem_area0) for wkupct_quad_IRQ_status
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(.text) for wkupct_quad_disable_IRQ
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(retention_mem_area0) for wkupct_quad_IRQ_status
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(retention_mem_area0) for WKUPCT_callback
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(retention_mem_area0) for QUADDEC_callback
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(.text) for wkupct_quad_disable_IRQ
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(retention_mem_area0) for wkupct_quad_IRQ_status
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(.text) for quad_decoder_disable_irq
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(.text) for NVIC_ClearPendingIRQ
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(.text) for NVIC_SetPriority
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(.text) for NVIC_EnableIRQ
+    wkupct_quadec.o(.text) refers to wkupct_quadec.o(retention_mem_area0) for wkupct_quad_IRQ_status
+    battery.o(.text) refers to idiv.o(.text) for __aeabi_idivmod
+    battery.o(.text) refers to idiv.o(.text) for __aeabi_idivmod
+    battery.o(.text) refers to idiv.o(.text) for __aeabi_idivmod
+    battery.o(.text) refers to adc.o(.text) for adc_calibrate
+    battery.o(.text) refers to adc.o(.text) for adc_get_vbat_sample
+    battery.o(.text) refers to battery.o(.text) for battery_filter_value
+    battery.o(.text) refers to battery.o(.text) for batt_cal_cr2032
+    battery.o(.text) refers to battery.o(.text) for batt_cal_cr1225
+    battery.o(.text) refers to battery.o(.text) for batt_cal_aaa
+    battery.o(.text) refers to battery.o(retention_mem_area0) for old_value
+    adc.o(.text) refers to adc.o(.text) for adc_disable
+    adc.o(.text) refers to adc.o(.text) for adc_usDelay
+    trng.o(.text) refers to rf_580.o(.text) for rf_regs
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for spi_flash_size
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_transaction
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_status_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_low
+    spi_flash.o(.text) refers to spi.o(.text) for spi_access
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_high
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_read_flash_jedec_id
+    spi_flash.o(.text) refers to spi_flash.o(.constdata) for SPI_FLASH_KNOWN_DEVICES_PARAMETERS_LIST
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for spi_flash_device_index
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_transaction
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_status_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_transaction
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_status_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_transaction
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_status_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_transaction
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_low
+    spi_flash.o(.text) refers to spi.o(.text) for spi_access
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_high
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for spi_flash_size
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_set_write_enable
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_low
+    spi_flash.o(.text) refers to spi.o(.text) for spi_access
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_high
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for spi_flash_page_size
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_set_write_enable
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_transaction
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_set_write_enable
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_transaction
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_low
+    spi_flash.o(.text) refers to spi.o(.text) for spi_access
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_high
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_low
+    spi_flash.o(.text) refers to spi.o(.text) for spi_access
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_high
+    spi_flash.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_page_program
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for spi_flash_page_size
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_transaction
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_transaction
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_set_write_enable
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_status_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_status_reg
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for spi_flash_detected_device
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_configure_memory_protection
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_chip_erase
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for spi_flash_detected_device
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_set_write_enable
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_low
+    spi_flash.o(.text) refers to spi.o(.text) for spi_access
+    spi_flash.o(.text) refers to spi.o(.text) for spi_cs_high
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for spi_flash_page_size
+    spi_flash.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    spi_flash.o(.text) refers to spi.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_page_fill
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for spi_flash_page_size
+    spi_flash.o(.text) refers to spi.o(.text) for spi_init
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_release_from_power_down
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_auto_detect
+    spi.o(.text) refers to gpio.o(.text) for GPIO_SetInactive
+    spi.o(.text) refers to spi.o(.bss) for spi_driver_cs_pad
+    spi.o(.text) refers to gpio.o(.text) for GPIO_SetActive
+    spi.o(.text) refers to spi.o(.bss) for spi_driver_cs_pad
+    spi.o(.text) refers to spi.o(.text) for spi_cs_high
+    spi.o(.text) refers to spi.o(.bss) for spi_driver_cs_pad
+    spi.o(.text) refers to gpio.o(.text) for GPIO_SetActive
+    spi.o(.text) refers to spi.o(.bss) for spi_driver_cs_pad
+    spi.o(.text) refers to spi.o(.text) for spi_cs_low
+    spi.o(.text) refers to spi.o(.text) for spi_access
+    spi.o(.text) refers to spi.o(.text) for spi_cs_high
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.bss) for mem_address_size
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.bss) for mem_address_size
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_wait_until_eeprom_ready
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for __get_PRIMASK
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_wait_until_eeprom_ready
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for read_data_single
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_wait_until_eeprom_ready
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for __get_PRIMASK
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_wait_until_eeprom_ready
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for __get_PRIMASK
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_eeprom_write_page
+    pwm.o(.text) refers to pwm.o(.text) for NVIC_SetPriority
+    pwm.o(.text) refers to pwm.o(.ARM.__AT_0x50003400) for timer0_ctrl_reg
+    pwm.o(.text) refers to pwm.o(.bss) for TIMER0_callback
+    pwm.o(.text) refers to pwm.o(i.timer2_enable) for timer2_enable
+    pwm.o(.text) refers to pwm.o(i.timer2_set_hw_pause) for timer2_set_hw_pause
+    pwm.o(.text) refers to pwm.o(i.timer2_set_sw_pause) for timer2_set_sw_pause
+    pwm.o(.text) refers to pwm.o(i.timer2_set_pwm_frequency) for timer2_set_pwm_frequency
+    systick.o(.text) refers to systick.o(.bss) for callback_function
+    systick.o(.text) refers to systick.o(.bss) for callback_function
+    systick.o(.text) refers to systick.o(.text) for systick_start
+    systick.o(.text) refers to systick.o(.text) for systick_stop
+    uart2.o(.text) refers to uart2.o(retention_mem_area0) for uart2_env
+    uart2.o(.text) refers to uart2.o(.text) for NVIC_SetPriority
+    uart2.o(.text) refers to uart2.o(retention_mem_area0) for uart2_env
+    uart2.o(.text) refers to uart2.o(.text) for uart2_is_rx_fifo_empty
+    uart2.o(.text) refers to uart2.o(.text) for uart2_flow_on
+    uart2.o(.text) refers to uart2.o(retention_mem_area0) for uart2_env
+    uart2.o(.text) refers to uart2.o(.text) for uart2_thr_empty_isr
+    uart2.o(.text) refers to uart2.o(retention_mem_area0) for uart2_env
+    rf_580.o(.text) refers to rf_580.o(.text) for rf_nfm_is_enabled
+    rf_580.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    rf_580.o(.text) refers to arch_system.o(retention_mem_area0) for lp_clk_sel
+    rf_580.o(.text) refers to jump_table.o(jump_table_mem_area) for jump_table_base
+    rf_580.o(.text) refers to rf_580.o(retention_mem_area0) for near_field_mode
+    rf_580.o(.text) refers to rf_580.o(retention_mem_area0) for near_field_mode
+    rf_580.o(.text) refers to rf_580.o(retention_mem_area0) for near_field_mode
+    rwble.o(.text) refers to arch_system.o(.text) for lld_sleep_lpcycles_2_us_sel_func
+    rwble.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    rwble.o(.text) refers to user_periph_setup.o(.text) for periph_init
+    rwble.o(.text) refers to syscntl.o(.text) for syscntl_use_lowest_amba_clocks
+    rwble.o(.text) refers to arch_system.o(.text) for calibrate_rcx20
+    rwble.o(.text) refers to adc.o(.text) for adc_get_vbat_sample
+    rwble.o(.text) refers to rwip.o(retention_mem_area0) for slp_period_retained
+    rwble.o(.text) refers to jump_table.o(jump_table_mem_area) for jump_table_base
+    rwble.o(.text) refers to rwble.o(retention_mem_area0) for prev_rx
+    rwble.o(.text) refers to arch_system.o(retention_mem_area0) for lp_clk_sel
+    rwip.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    rwip.o(.text) refers to rwip.o(i.__ARM_common_ll_muluu) for __ARM_common_ll_muluu
+    rwip.o(.text) refers to arch_sleep.o(.text) for arch_ble_ext_wakeup_get
+    rwip.o(.text) refers to arch_system.o(.text) for check_sys_startup_period
+    rwip.o(.text) refers to syscntl.o(.text) for syscntl_use_highest_amba_clocks
+    rwip.o(.text) refers to arch_system.o(retention_mem_area0) for rcx_slot_duration_num
+    rwip.o(.text) refers to jump_table.o(jump_table_mem_area) for jump_table_base
+    rwip.o(.text) refers to rwble.o(retention_mem_area0) for set_boost_low_vbat1v_overhead
+    rwip.o(.text) refers to rwip.o(retention_mem_area0) for sleep_lp_cycles
+    attm_db_128.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    attm_db_128.o(.text) refers to memcmp.o(.text) for memcmp
+    app_default_handlers.o(.text) refers to app.o(.text) for app_easy_gap_undirected_advertise_start
+    app_default_handlers.o(.text) refers to app.o(.text) for app_easy_gap_undirected_advertise_with_timeout_start
+    app_default_handlers.o(.text) refers to app_default_handlers.o(.constdata) for user_default_hnd_conf
+    app_default_handlers.o(.text) refers to app.o(.text) for prf_init_srv_perm
+    app_default_handlers.o(.text) refers to arch_sleep.o(.text) for arch_set_sleep_mode
+    app_default_handlers.o(.text) refers to app.o(.text) for app_easy_gap_advertise_with_timeout_stop
+    app_default_handlers.o(.text) refers to app_easy_security.o(.text) for app_easy_security_request
+    app_default_handlers.o(.text) refers to app_easy_security.o(.text) for app_easy_security_send_pairing_rsp
+    app_default_handlers.o(.text) refers to app_security.o(.text) for app_sec_gen_tk
+    app_default_handlers.o(.text) refers to app.o(retention_mem_area0) for app_env
+    app_default_handlers.o(.text) refers to app_default_handlers.o(.constdata) for user_default_hnd_conf
+    app_default_handlers.o(.text) refers to app_security.o(retention_mem_area0) for app_sec_env
+    app_default_handlers.o(.constdata) refers to app_default_handlers.o(.text) for default_advertise_operation
+    app.o(.text) refers to malloc.o(i.malloc) for malloc
+    app.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    app.o(.text) refers to malloc.o(i.free) for free
+    app.o(.text) refers to rand.o(.text) for rand
+    app.o(.text) refers to memseta.o(.text) for __aeabi_memclr
+    app.o(.text) refers to app.o(.constdata) for user_prf_funcs
+    app.o(.text) refers to app.o(retention_mem_area0) for k
+    app.o(.text) refers to app.o(.text) for app_easy_gap_advertise_stop
+    app.o(.text) refers to app.o(retention_mem_area0) for app_env
+    app.o(.text) refers to app.o(retention_mem_area0) for app_env
+    app.o(.text) refers to app.o(.text) for app_easy_gap_undirected_advertise_start_create_msg
+    app.o(.text) refers to app.o(.text) for app_easy_gap_directed_advertise_start_create_msg
+    app.o(.text) refers to app.o(.text) for app_easy_gap_directed_advertise_start_create_msg
+    app.o(.text) refers to app.o(retention_mem_area0) for adv_cmd
+    app.o(.text) refers to app.o(.text) for app_easy_gap_non_connectable_advertise_start_create_msg
+    app.o(.text) refers to app.o(.text) for app_easy_gap_non_connectable_advertise_start_create_msg
+    app.o(.text) refers to app.o(retention_mem_area0) for adv_cmd
+    app.o(.text) refers to app_easy_timer.o(.text) for app_easy_timer_cancel
+    app.o(.text) refers to app_easy_timer.o(.text) for app_easy_timer
+    app.o(.text) refers to app.o(.text) for app_easy_gap_undirected_advertise_start
+    app.o(.text) refers to app.o(retention_mem_area0) for adv_timer_id
+    app.o(.text) refers to app_easy_timer.o(.text) for app_easy_timer_cancel
+    app.o(.text) refers to app.o(retention_mem_area0) for adv_timer_id
+    app.o(.text) refers to app.o(.text) for app_easy_gap_param_update_msg_create
+    app.o(.text) refers to app.o(.text) for app_easy_gap_param_update_msg_create
+    app.o(.text) refers to app.o(retention_mem_area0) for param_update_cmd
+    app.o(.text) refers to app.o(.text) for app_easy_gap_start_connection_to_msg_create
+    app.o(.text) refers to app.o(.text) for app_easy_gap_start_connection_to_msg_create
+    app.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    app.o(.text) refers to app.o(.text) for app_easy_gap_start_connection_to_msg_create
+    app.o(.text) refers to app.o(retention_mem_area0) for start_connection_cmd
+    app.o(.text) refers to app.o(.text) for app_easy_gap_dev_config_create_msg
+    app.o(.text) refers to app.o(retention_mem_area0) for app_prf_srv_perm
+    app.o(.text) refers to app.o(retention_mem_area0) for app_prf_srv_perm
+    app.o(.constdata) refers to app_task.o(.constdata) for app_default_handler
+    app.o(.constdata) refers to app_task.o(retention_mem_area0) for app_state
+    app_task.o(.text) refers to app.o(.text) for app_easy_gap_dev_configure
+    app_task.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    app_task.o(.text) refers to app_entry_point.o(.text) for app_std_process_event
+    app_task.o(.text) refers to app_task.o(.constdata) for user_app_callbacks
+    app_task.o(.text) refers to app.o(retention_mem_area0) for app_env
+    app_task.o(.text) refers to app_security.o(retention_mem_area0) for app_sec_env
+    app_task.o(.constdata) refers to user_main.o(.text) for user_on_connection
+    app_task.o(.constdata) refers to app_default_handlers.o(.text) for default_app_on_set_dev_config_complete
+    app_task.o(.constdata) refers to app_task.o(.text) for gapm_device_ready_ind_handler
+    app_task.o(.constdata) refers to app_entry_point.o(.text) for app_entry_point_handler
+    app_security.o(.text) refers to rand.o(.text) for rand
+    app_security.o(.text) refers to idiv.o(.text) for __aeabi_idivmod
+    app_security.o(.text) refers to app_security.o(retention_mem_area0) for app_sec_env
+    app_security_task.o(.text) refers to atts_task.obj(i.__ARM_common_switch8) for __ARM_common_switch8
+    app_security_task.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    app_security_task.o(.text) refers to app.o(.text) for app_easy_gap_disconnect
+    app_security_task.o(.text) refers to app_entry_point.o(.text) for app_std_process_event
+    app_security_task.o(.text) refers to app_security_task.o(.constdata) for user_app_callbacks
+    app_security_task.o(.text) refers to app_security.o(retention_mem_area0) for app_sec_env
+    app_security_task.o(.text) refers to app.o(retention_mem_area0) for app_env
+    app_security_task.o(.constdata) refers to user_main.o(.text) for user_on_connection
+    app_security_task.o(.constdata) refers to app_default_handlers.o(.text) for default_app_on_set_dev_config_complete
+    app_security_task.o(.constdata) refers to app_security_task.o(.text) for gapc_bond_req_ind_handler
+    app_entry_point.o(.text) refers to app_entry_point.o(.constdata) for app_process_handlers
+    app_entry_point.o(.constdata) refers to app_task.o(.text) for app_gap_process_handler
+    app_entry_point.o(.constdata) refers to app_easy_timer.o(.text) for app_timer_api_process_handler
+    app_entry_point.o(.constdata) refers to app_easy_msg_utils.o(.text) for app_msg_utils_api_process_handler
+    app_entry_point.o(.constdata) refers to app_security_task.o(.text) for app_sec_process_handler
+    app_msg_utils.o(.text) refers to app_msg_utils.o(.text) for app_check_BLE_active
+    app_msg_utils.o(.text) refers to arch_sleep.o(.text) for arch_ble_force_wakeup
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(retention_mem_area0) for msg_util_callbacks
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(.text) for app_easy_msg_find_idx
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(retention_mem_area0) for msg_util_callbacks
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(.text) for app_easy_msg_set_callback
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(.text) for app_easy_msg_find_idx
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(retention_mem_area0) for msg_util_callbacks
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(.text) for app_easy_msg_set
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(.text) for app_easy_msg_modify
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(retention_mem_area0) for wakeup_id
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(.text) for app_easy_msg_free_callback
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(retention_mem_area0) for wakeup_id
+    app_easy_msg_utils.o(.text) refers to app_easy_msg_utils.o(retention_mem_area0) for wakeup_id
+    app_easy_security.o(.text) refers to memseta.o(.text) for __aeabi_memclr
+    app_easy_security.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    app_easy_security.o(.text) refers to app_security.o(.text) for app_sec_gen_csrk
+    app_easy_security.o(.text) refers to memcmp.o(.text) for memcmp
+    app_easy_security.o(.text) refers to app_easy_security.o(retention_mem_area0) for gapc_bond_cfm_pairing_rsp
+    app_easy_security.o(.text) refers to app_easy_security.o(.constdata) for user_security_conf
+    app_easy_security.o(.text) refers to app_security.o(retention_mem_area0) for app_sec_env
+    app_easy_security.o(.text) refers to app_easy_security.o(.text) for app_easy_security_pairing_rsp_create_msg
+    app_easy_security.o(.text) refers to app_easy_security.o(.text) for app_easy_security_tk_exch_create_msg
+    app_easy_security.o(.text) refers to app_easy_security.o(.text) for app_easy_security_csrk_exch_create_msg
+    app_easy_security.o(.text) refers to app_easy_security.o(.text) for app_easy_security_bond_cfm_ltk_exch_create_msg
+    app_easy_security.o(.text) refers to app_easy_security.o(.text) for app_easy_security_bond_cfm_ltk_exch_create_msg
+    app_easy_security.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    app_easy_security.o(.text) refers to app_easy_security.o(.text) for app_easy_security_encrypt_cfm_create_msg
+    app_easy_security.o(.text) refers to app_easy_security.o(retention_mem_area0) for gapc_security_req
+    app_easy_security.o(.text) refers to app_easy_security.o(.constdata) for user_security_conf
+    app_easy_security.o(.text) refers to app_easy_security.o(.text) for app_easy_security_request_get_active
+    app_easy_security.o(.text) refers to app_easy_security.o(retention_mem_area0) for gapc_security_req
+    app_easy_timer.o(.text) refers to app_msg_utils.o(.text) for app_check_BLE_active
+    app_easy_timer.o(.text) refers to arch_sleep.o(.text) for arch_ble_force_wakeup
+    app_easy_timer.o(.text) refers to app_easy_timer.o(retention_mem_area0) for timer_callbacks
+    app_easy_timer.o(.text) refers to app_easy_timer.o(.text) for set_callback
+    app_easy_timer.o(.text) refers to app_easy_timer.o(retention_mem_area0) for timer_callbacks
+    app_easy_timer.o(.text) refers to app_easy_timer.o(.text) for timer_canceled_handler
+    app_easy_timer.o(.text) refers to app_easy_timer.o(retention_mem_area0) for timer_callbacks
+    app_easy_timer.o(.text) refers to app_easy_timer.o(.text) for timer_modified_handler
+    app_easy_timer.o(.text) refers to app_easy_timer.o(.text) for app_easy_timer_cancel
+    app_easy_timer.o(.text) refers to app_easy_timer.o(retention_mem_area0) for timer_callbacks
+    app_easy_timer.o(.text) refers to app_easy_timer.o(.text) for timer_canceled_handler
+    user_periph_setup.o(.text) refers to arch_patch.o(.text) for patch_func
+    user_periph_setup.o(.text) refers to user_periph_setup.o(.text) for set_pad_functions
+    user_main.o(.text) refers to app_default_handlers.o(.text) for default_app_on_connection
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    idiv.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    rand.o(.text) refers to rand.o(.data) for .data
+    malloc.o(i.free) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to boot_vectors.o(HEAP) for __heap_base
+    mallocr.o(i.__free$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.__malloc$realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocr.o(i.__malloc$realloc) refers to boot_vectors.o(HEAP) for __heap_base
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocr.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.realloc) refers to mallocr.o(i.__free$realloc) for __free$realloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.__malloc$realloc) for __malloc$realloc
+    mallocr.o(i.realloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloca.o(i.__aligned_malloc) refers to boot_vectors.o(HEAP) for __heap_base
+    malloca.o(i.__free$memalign) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__malloc$memalign) refers to malloca.o(i.__aligned_malloc) for __aligned_malloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to boot_vectors.o(HEAP) for __heap_base
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocra.o(i.__free$realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__malloc$realloc$memalign) refers to mallocra.o(i.__aligned_malloc$realloc) for __aligned_malloc$realloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__free$realloc$memalign) for __free$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__malloc$realloc$memalign) for __malloc$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocra.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to boot_vectors.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to boot_vectors.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    pwm.o(i.set_tmr_enable) refers to pwm.o(.ARM.__AT_0x50000004) for clk_per_reg
+    pwm.o(i.set_tmr_div) refers to pwm.o(.ARM.__AT_0x50000004) for clk_per_reg
+    pwm.o(i.timer0_start) refers to pwm.o(.ARM.__AT_0x50003400) for timer0_ctrl_reg
+    pwm.o(i.timer0_stop) refers to pwm.o(.ARM.__AT_0x50003400) for timer0_ctrl_reg
+    pwm.o(i.timer0_release) refers to pwm.o(i.timer0_stop) for timer0_stop
+    pwm.o(i.timer0_register_callback) refers to pwm.o(.bss) for TIMER0_callback
+    pwm.o(i.timer2_enable) refers to pwm.o(.ARM.__AT_0x50003410) for triple_pwm_ctrl_reg
+    pwm.o(i.timer2_set_hw_pause) refers to pwm.o(.ARM.__AT_0x50003410) for triple_pwm_ctrl_reg
+    pwm.o(i.timer2_set_sw_pause) refers to pwm.o(.ARM.__AT_0x50003410) for triple_pwm_ctrl_reg
+    pwm.o(i.timer2_stop) refers to pwm.o(i.timer2_enable) for timer2_enable
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing nvds.o(nvds_data_storage_area), (164 bytes).
+    Removing arch_sleep.o(.text), (40 bytes).
+    Removing arch_sleep.o(.text), (136 bytes).
+    Removing arch_sleep.o(.text), (48 bytes).
+    Removing arch_sleep.o(.text), (12 bytes).
+    Removing arch_sleep.o(.text), (12 bytes).
+    Removing arch_sleep.o(.text), (12 bytes).
+    Removing arch_system.o(.text), (36 bytes).
+    Removing arch_system.o(.text), (24 bytes).
+    Removing arch_system.o(.text), (156 bytes).
+    Removing arch_system.o(.text), (84 bytes).
+    Removing arch_system.o(.text), (120 bytes).
+    Removing arch_patch.o(retention_mem_area0), (32 bytes).
+    Removing atts_util.obj(.text), (32 bytes).
+    Removing atts_util.obj(.text), (36 bytes).
+    Removing ke_mem.obj(.text), (508 bytes).
+    Removing ke_mem.obj(.data), (1 bytes).
+    Removing syscntl.o(.text), (24 bytes).
+    Removing gpio.o(.text), (100 bytes).
+    Removing gpio.o(.text), (96 bytes).
+    Removing gpio.o(.text), (96 bytes).
+    Removing gpio.o(.text), (100 bytes).
+    Removing gpio.o(.text), (132 bytes).
+    Removing gpio.o(.text), (96 bytes).
+    Removing gpio.o(.text), (316 bytes).
+    Removing gpio.o(.text), (340 bytes).
+    Removing gpio.o(.text), (52 bytes).
+    Removing gpio.o(.text), (24 bytes).
+    Removing gpio.o(.text), (120 bytes).
+    Removing wkupct_quadec.o(.text), (120 bytes).
+    Removing wkupct_quadec.o(.text), (40 bytes).
+    Removing wkupct_quadec.o(.text), (188 bytes).
+    Removing wkupct_quadec.o(.text), (48 bytes).
+    Removing wkupct_quadec.o(.text), (12 bytes).
+    Removing wkupct_quadec.o(.text), (12 bytes).
+    Removing wkupct_quadec.o(.text), (44 bytes).
+    Removing wkupct_quadec.o(.text), (52 bytes).
+    Removing wkupct_quadec.o(.text), (36 bytes).
+    Removing wkupct_quadec.o(.text), (92 bytes).
+    Removing wkupct_quadec.o(.text), (20 bytes).
+    Removing wkupct_quadec.o(.text), (20 bytes).
+    Removing battery.o(.text), (136 bytes).
+    Removing battery.o(.text), (44 bytes).
+    Removing battery.o(.text), (92 bytes).
+    Removing battery.o(.text), (124 bytes).
+    Removing battery.o(.text), (168 bytes).
+    Removing battery.o(retention_mem_area0), (8 bytes).
+    Removing adc.o(.text), (128 bytes).
+    Removing spi_flash.o(.text), (20 bytes).
+    Removing spi_flash.o(.text), (20 bytes).
+    Removing spi_flash.o(.text), (40 bytes).
+    Removing spi_flash.o(.text), (66 bytes).
+    Removing spi_flash.o(.text), (140 bytes).
+    Removing spi_flash.o(.text), (80 bytes).
+    Removing spi_flash.o(.text), (80 bytes).
+    Removing spi_flash.o(.text), (76 bytes).
+    Removing spi_flash.o(.text), (42 bytes).
+    Removing spi_flash.o(.text), (128 bytes).
+    Removing spi_flash.o(.text), (112 bytes).
+    Removing spi_flash.o(.text), (42 bytes).
+    Removing spi_flash.o(.text), (38 bytes).
+    Removing spi_flash.o(.text), (54 bytes).
+    Removing spi_flash.o(.text), (72 bytes).
+    Removing spi_flash.o(.text), (136 bytes).
+    Removing spi_flash.o(.text), (32 bytes).
+    Removing spi_flash.o(.text), (18 bytes).
+    Removing spi_flash.o(.text), (64 bytes).
+    Removing spi_flash.o(.text), (32 bytes).
+    Removing spi_flash.o(.text), (108 bytes).
+    Removing spi_flash.o(.text), (132 bytes).
+    Removing spi_flash.o(.text), (48 bytes).
+    Removing spi_flash.o(.bss), (16 bytes).
+    Removing spi_flash.o(.constdata), (80 bytes).
+    Removing spi.o(.text), (20 bytes).
+    Removing spi.o(.text), (20 bytes).
+    Removing spi.o(.text), (184 bytes).
+    Removing spi.o(.text), (48 bytes).
+    Removing spi.o(.text), (52 bytes).
+    Removing spi.o(.text), (20 bytes).
+    Removing spi.o(.text), (80 bytes).
+    Removing spi.o(.text), (26 bytes).
+    Removing spi.o(.bss), (2 bytes).
+    Removing i2c_eeprom.o(.text), (120 bytes).
+    Removing i2c_eeprom.o(.text), (28 bytes).
+    Removing i2c_eeprom.o(.text), (84 bytes).
+    Removing i2c_eeprom.o(.text), (272 bytes).
+    Removing i2c_eeprom.o(.text), (124 bytes).
+    Removing i2c_eeprom.o(.text), (96 bytes).
+    Removing i2c_eeprom.o(.text), (104 bytes).
+    Removing i2c_eeprom.o(.text), (168 bytes).
+    Removing i2c_eeprom.o(.text), (102 bytes).
+    Removing i2c_eeprom.o(.bss), (2 bytes).
+    Removing pwm.o(.text), (84 bytes).
+    Removing pwm.o(.text), (16 bytes).
+    Removing pwm.o(.text), (20 bytes).
+    Removing pwm.o(.text), (20 bytes).
+    Removing pwm.o(.text), (34 bytes).
+    Removing pwm.o(.text), (120 bytes).
+    Removing systick.o(.text), (12 bytes).
+    Removing systick.o(.text), (84 bytes).
+    Removing systick.o(.text), (28 bytes).
+    Removing systick.o(.text), (40 bytes).
+    Removing systick.o(.text), (16 bytes).
+    Removing uart2.o(.text), (148 bytes).
+    Removing uart2.o(.text), (12 bytes).
+    Removing uart2.o(.text), (96 bytes).
+    Removing uart2.o(.text), (72 bytes).
+    Removing uart2.o(.text), (36 bytes).
+    Removing uart2.o(.text), (60 bytes).
+    Removing uart2.o(.text), (120 bytes).
+    Removing rf_580.o(.text), (24 bytes).
+    Removing rf_580.o(.text), (28 bytes).
+    Removing rwble.o(.bss), (8 bytes).
+    Removing gapm.o(timeout_table_area), (100 bytes).
+    Removing attm_db_128.o(.text), (384 bytes).
+    Removing app.o(.text), (48 bytes).
+    Removing app.o(.text), (68 bytes).
+    Removing app.o(.text), (8 bytes).
+    Removing app.o(.text), (8 bytes).
+    Removing app.o(.text), (40 bytes).
+    Removing app.o(.text), (8 bytes).
+    Removing app.o(.text), (60 bytes).
+    Removing app.o(.text), (12 bytes).
+    Removing app.o(.text), (44 bytes).
+    Removing app.o(.text), (40 bytes).
+    Removing app.o(.text), (8 bytes).
+    Removing app.o(.text), (40 bytes).
+    Removing app.o(.text), (32 bytes).
+    Removing app.o(.text), (8 bytes).
+    Removing app.o(.text), (40 bytes).
+    Removing app.o(.text), (56 bytes).
+    Removing app_findme_task.o(.constdata), (12 bytes).
+    Removing app_msg_utils.o(.text), (24 bytes).
+    Removing app_easy_msg_utils.o(.text), (44 bytes).
+    Removing app_easy_msg_utils.o(.text), (28 bytes).
+    Removing app_easy_msg_utils.o(.text), (48 bytes).
+    Removing app_easy_msg_utils.o(.text), (40 bytes).
+    Removing app_easy_msg_utils.o(.text), (24 bytes).
+    Removing app_easy_msg_utils.o(.text), (28 bytes).
+    Removing app_easy_security.o(.text), (22 bytes).
+    Removing app_easy_security.o(.text), (22 bytes).
+    Removing app_easy_security.o(.text), (22 bytes).
+    Removing app_easy_security.o(.text), (22 bytes).
+    Removing app_easy_security.o(.text), (60 bytes).
+    Removing app_easy_security.o(.text), (22 bytes).
+    Removing app_easy_timer.o(.text), (168 bytes).
+    Removing app_easy_timer.o(.text), (52 bytes).
+    Removing user_custs_config.o(.constdata), (28 bytes).
+    Removing user_custs1_def.o(.bss), (16 bytes).
+    Removing wkupct_quadec.o(i.quad_decoder_get_z_counter), (12 bytes).
+    Removing wkupct_quadec.o(i.quad_decoder_get_y_counter), (12 bytes).
+    Removing wkupct_quadec.o(i.quad_decoder_get_x_counter), (12 bytes).
+    Removing pwm.o(i.set_tmr_enable), (28 bytes).
+    Removing pwm.o(i.set_tmr_div), (24 bytes).
+    Removing pwm.o(i.timer0_start), (20 bytes).
+    Removing pwm.o(i.timer0_stop), (20 bytes).
+    Removing pwm.o(i.timer0_release), (8 bytes).
+    Removing pwm.o(i.timer0_set_pwm_on_counter), (12 bytes).
+    Removing pwm.o(i.timer0_set_pwm_high_counter), (12 bytes).
+    Removing pwm.o(i.timer0_set_pwm_low_counter), (12 bytes).
+    Removing pwm.o(i.timer0_register_callback), (12 bytes).
+    Removing pwm.o(i.timer2_enable), (24 bytes).
+    Removing pwm.o(i.timer2_set_hw_pause), (28 bytes).
+    Removing pwm.o(i.timer2_set_sw_pause), (28 bytes).
+    Removing pwm.o(i.timer2_set_pwm_frequency), (12 bytes).
+    Removing pwm.o(i.timer2_stop), (10 bytes).
+    Removing pwm.o(i.timer2_set_pwm2_duty_cycle), (12 bytes).
+    Removing pwm.o(i.timer2_set_pwm3_duty_cycle), (12 bytes).
+    Removing pwm.o(i.timer2_set_pwm4_duty_cycle), (12 bytes).
+
+169 unused section(s) (total 10647 bytes) removed from the image.
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_IROM1 (Base: 0x20000000, Size: 0x000056c4, Max: 0x00008000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x20000000, Size: 0x000056b4, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x000000a0   Data   RO          190    RESET               boot_vectors.o
+    0x200000a0   0x00000000   Code   RO         3070  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x200000a0   0x00000004   Code   RO         3118    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x200000a4   0x00000004   Code   RO         3121    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x200000a8   0x00000000   Code   RO         3123    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x200000a8   0x00000000   Code   RO         3125    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x200000a8   0x00000008   Code   RO         3126    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x200000b0   0x00000000   Code   RO         3128    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x200000b0   0x00000000   Code   RO         3130    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x200000b0   0x00000004   Code   RO         3119    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x200000b4   0x00000064   Code   RO            1    .text               system_armcm0.o
+    0x20000118   0x0000006c   Code   RO          191    .text               boot_vectors.o
+    0x20000184   0x0000008c   Code   RO          196    .text               hardfault_handler.o
+    0x20000210   0x000000e0   Code   RO          221    .text               nmi_handler.o
+    0x200002f0   0x000000f0   Code   RO          251    .text               nvds.o
+    0x200003e0   0x00000370   Code   RO          271    .text               arch_main.o
+    0x20000750   0x00000002   Code   RO          489    .text               jump_table.o
+    0x20000752   0x00000002   PAD
+    0x20000754   0x000000f4   Code   RO          581    .text               arch_sleep.o
+    0x20000848   0x00000010   Code   RO          636    .text               arch_system.o
+    0x20000858   0x00000002   Code   RO          637    .text               arch_system.o
+    0x2000085a   0x00000002   PAD
+    0x2000085c   0x0000000c   Code   RO          638    .text               arch_system.o
+    0x20000868   0x000005cc   Code   RO          639    .text               arch_system.o
+    0x20000e34   0x0000000c   Code   RO          641    .text               arch_system.o
+    0x20000e40   0x0000000c   Code   RO          642    .text               arch_system.o
+    0x20000e4c   0x00000324   Code   RO          777    .text               arch_patch.o
+    0x20001170   0x00000120   Code   RO          844    .text               atts_task.obj
+    0x20001290   0x000000c0   Code   RO          855    .text               atts_util.obj
+    0x20001350   0x000000c4   Code   RO          860    .text               ch_map.obj
+    0x20001414   0x00000180   Code   RO          862    .text               gapm_util.obj
+    0x20001594   0x000000d0   Code   RO          864    .text               ke_task.obj
+    0x20001664   0x0000015c   Code   RO          866    .text               smpc.obj
+    0x200017c0   0x00000214   Code   RO          868    .text               smpc_task.obj
+    0x200019d4   0x000004d4   Code   RO          870    .text               llc.obj
+    0x20001ea8   0x00000160   Code   RO          881    .text               gapc_task.obj
+    0x20002008   0x00000090   Code   RO          886    .text               llc_con_update_ind.obj
+    0x20002098   0x0000003c   Code   RO          904    .text               syscntl.o
+    0x200020d4   0x00000238   Code   RO          924    .text               gpio.o
+    0x2000230c   0x000000d4   Code   RO         1013    .text               wkupct_quadec.o
+    0x200023e0   0x000000f8   Code   RO         1167    .text               adc.o
+    0x200024d8   0x0000000c   Code   RO         1168    .text               adc.o
+    0x200024e4   0x00000258   Code   RO         1194    .text               trng.o
+    0x2000273c   0x00000018   Code   RO         1488    .text               pwm.o
+    0x20002754   0x00000018   Code   RO         1653    .text               systick.o
+    0x2000276c   0x0000016c   Code   RO         1700    .text               uart2.o
+    0x200028d8   0x000003f0   Code   RO         1761    .text               rf_580.o
+    0x20002cc8   0x0000000c   Code   RO         1762    .text               rf_580.o
+    0x20002cd4   0x0000056c   Code   RO         1807    .text               rwble.o
+    0x20003240   0x00000358   Code   RO         1920    .text               rwip.o
+    0x20003598   0x0000002c   Code   RO         2468    .text               app_default_handlers.o
+    0x200035c4   0x00000150   Code   RO         2469    .text               app_default_handlers.o
+    0x20003714   0x00000848   Code   RO         2498    .text               app.o
+    0x20003f5c   0x0000002c   Code   RO         2499    .text               app.o
+    0x20003f88   0x0000003c   Code   RO         2507    .text               app.o
+    0x20003fc4   0x00000028   Code   RO         2508    .text               app.o
+    0x20003fec   0x000002c0   Code   RO         2654    .text               app_task.o
+    0x200042ac   0x000000e4   Code   RO         2682    .text               app_security.o
+    0x20004390   0x000001e8   Code   RO         2700    .text               app_security_task.o
+    0x20004578   0x000000a8   Code   RO         2791    .text               app_entry_point.o
+    0x20004620   0x00000034   Code   RO         2809    .text               app_msg_utils.o
+    0x20004654   0x000000a0   Code   RO         2831    .text               app_easy_msg_utils.o
+    0x200046f4   0x00000370   Code   RO         2881    .text               app_easy_security.o
+    0x20004a64   0x00000054   Code   RO         2888    .text               app_easy_security.o
+    0x20004ab8   0x0000002c   Code   RO         2889    .text               app_easy_security.o
+    0x20004ae4   0x00000240   Code   RO         2950    .text               app_easy_timer.o
+    0x20004d24   0x0000003c   Code   RO         2951    .text               app_easy_timer.o
+    0x20004d60   0x00000070   Code   RO         2952    .text               app_easy_timer.o
+    0x20004dd0   0x00000054   Code   RO         3037    .text               user_periph_setup.o
+    0x20004e24   0x00000002   Code   RO         3038    .text               user_periph_setup.o
+    0x20004e26   0x0000001c   Code   RO         3055    .text               user_main.o
+    0x20004e42   0x0000002c   Code   RO         3073    .text               mc_p.l(uidiv.o)
+    0x20004e6e   0x00000028   Code   RO         3075    .text               mc_p.l(idiv.o)
+    0x20004e96   0x00000020   Code   RO         3077    .text               mc_p.l(llshl.o)
+    0x20004eb6   0x00000002   PAD
+    0x20004eb8   0x00000024   Code   RO         3079    .text               mc_p.l(rand.o)
+    0x20004edc   0x00000024   Code   RO         3082    .text               mc_p.l(memcpya.o)
+    0x20004f00   0x00000024   Code   RO         3084    .text               mc_p.l(memseta.o)
+    0x20004f24   0x0000001a   Code   RO         3086    .text               mc_p.l(memcmp.o)
+    0x20004f3e   0x00000002   PAD
+    0x20004f40   0x00000024   Code   RO         3134    .text               mc_p.l(init.o)
+    0x20004f64   0x00000030   Code   RO         1932    i.__ARM_common_ll_muluu  rwip.o
+    0x20004f94   0x0000001a   Code   RO          851    i.__ARM_common_switch8  atts_task.obj
+    0x20004fae   0x00000002   PAD
+    0x20004fb0   0x00000054   Code   RO         3090    i.free              mc_p.l(malloc.o)
+    0x20005004   0x0000006c   Code   RO         3091    i.malloc            mc_p.l(malloc.o)
+    0x20005070   0x00000028   Data   RO          272    .constdata          arch_main.o
+    0x20005098   0x00000016   Data   RO          490    .constdata          jump_table.o
+    0x200050ae   0x00000002   PAD
+    0x200050b0   0x00000028   Data   RO          647    .constdata          arch_system.o
+    0x200050d8   0x0000008c   Data   RO          778    .constdata          arch_patch.o
+    0x20005164   0x00000030   Data   RO          845    .constdata          atts_task.obj
+    0x20005194   0x00000028   Data   RO          846    .constdata          atts_task.obj
+    0x200051bc   0x00000008   Data   RO          847    .constdata          atts_task.obj
+    0x200051c4   0x00000010   Data   RO          848    .constdata          atts_task.obj
+    0x200051d4   0x00000048   Data   RO          871    .constdata          llc.obj
+    0x2000521c   0x00000010   Data   RO          872    .constdata          llc.obj
+    0x2000522c   0x000000b0   Data   RO          873    .constdata          llc.obj
+    0x200052dc   0x00000008   Data   RO          874    .constdata          llc.obj
+    0x200052e4   0x00000010   Data   RO          875    .constdata          llc.obj
+    0x200052f4   0x00000018   Data   RO          882    .constdata          gapc_task.obj
+    0x2000530c   0x00000008   Data   RO          883    .constdata          gapc_task.obj
+    0x20005314   0x00000010   Data   RO          884    .constdata          gapc_task.obj
+    0x20005324   0x00000008   Data   RO          937    .constdata          gpio.o
+    0x2000532c   0x00000018   Data   RO         2470    .constdata          app_default_handlers.o
+    0x20005344   0x000000b4   Data   RO         2518    .constdata          app.o
+    0x200053f8   0x000000b4   Data   RO         2655    .constdata          app_task.o
+    0x200054ac   0x00000084   Data   RO         2701    .constdata          app_security_task.o
+    0x20005530   0x0000001c   Data   RO         2792    .constdata          app_entry_point.o
+    0x2000554c   0x00000007   Data   RO         2890    .constdata          app_easy_security.o
+    0x20005553   0x00000001   PAD
+    0x20005554   0x00000000   Data   RO         3136    Region$$Table       anon$$obj.o
+    0x20005554   0x00000160   Data   RO          495    jump_table_mem_area  jump_table.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20008000, Size: 0x00001de4, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20008000   0x00000004   Data   RW          648    .data               arch_system.o
+    0x20008004   0x00000004   Data   RW         3080    .data               mc_p.l(rand.o)
+    0x20008008   0x00000004   Data   RW         3132    .data               mc_p.l(mvars.o)
+    0x2000800c   0x00000004   Data   RW         3133    .data               mc_p.l(mvars.o)
+    0x20008010   0x000000bc   Zero   RW          936    .bss                gpio.o
+    0x200080cc   0x00000004   Zero   RW         1494    .bss                pwm.o
+    0x200080d0   0x00000004   Zero   RW         1658    .bss                systick.o
+    0x200080d4   0x000005de   Zero   RW          273    BLE_exchange_memory  arch_main.o
+    0x200086b2   0x00000006   PAD
+    0x200086b8   0x00000100   Zero   RW          189    HEAP                boot_vectors.o
+    0x200087b8   0x00000600   Zero   RW          188    STACK               boot_vectors.o
+    0x20008db8   0x0000040c   Zero   RW          491    heap_db_area        jump_table.o
+    0x200091c4   0x00000154   Zero   RW          492    heap_env_area       jump_table.o
+    0x20009318   0x0000040c   Zero   RW          493    heap_mem_area_not_ret  jump_table.o
+    0x20009724   0x0000052c   Zero   RW          494    heap_msg_area       jump_table.o
+    0x20009c50   0x00000006   Zero   RW          253    retention_mem_area0  nvds.o
+    0x20009c56   0x00000001   Zero   RW          274    retention_mem_area0  arch_main.o
+    0x20009c57   0x00000004   Zero   RW          588    retention_mem_area0  arch_sleep.o
+    0x20009c5b   0x00000001   PAD
+    0x20009c5c   0x0000001c   Zero   RW          649    retention_mem_area0  arch_system.o
+    0x20009c78   0x00000008   Zero   RW          856    retention_mem_area0  atts_util.obj
+    0x20009c80   0x00000018   Zero   RW          876    retention_mem_area0  llc.obj
+    0x20009c98   0x0000000c   Zero   RW         1024    retention_mem_area0  wkupct_quadec.o
+    0x20009ca4   0x0000001c   Zero   RW         1708    retention_mem_area0  uart2.o
+    0x20009cc0   0x00000001   Zero   RW         1765    retention_mem_area0  rf_580.o
+    0x20009cc1   0x00000001   PAD
+    0x20009cc2   0x00000008   Zero   RW         1809    retention_mem_area0  rwble.o
+    0x20009cca   0x00000002   PAD
+    0x20009ccc   0x00000008   Zero   RW         1921    retention_mem_area0  rwip.o
+    0x20009cd4   0x00000040   Zero   RW         2519    retention_mem_area0  app.o
+    0x20009d14   0x00000001   Zero   RW         2656    retention_mem_area0  app_task.o
+    0x20009d15   0x00000001   PAD
+    0x20009d16   0x0000004c   Zero   RW         2683    retention_mem_area0  app_security.o
+    0x20009d62   0x00000002   PAD
+    0x20009d64   0x00000016   Zero   RW         2838    retention_mem_area0  app_easy_msg_utils.o
+    0x20009d7a   0x00000002   PAD
+    0x20009d7c   0x00000018   Zero   RW         2891    retention_mem_area0  app_easy_security.o
+    0x20009d94   0x00000050   Zero   RW         2955    retention_mem_area0  app_easy_timer.o
+
+
+
+  Load Region LR$$.ARM.__AT_0x50000004 (Base: 0x50000004, Size: 0x00000000, Max: 0x00000004, ABSOLUTE)
+
+    Execution Region ER$$.ARM.__AT_0x50000004 (Base: 0x50000004, Size: 0x00000000, Max: 0x00000004, ABSOLUTE, UNINIT)
+
+    **** No section assigned to this execution region ****
+
+
+
+  Load Region LR$$.ARM.__AT_0x50003400 (Base: 0x50003400, Size: 0x00000000, Max: 0x00000004, ABSOLUTE)
+
+    Execution Region ER$$.ARM.__AT_0x50003400 (Base: 0x50003400, Size: 0x00000000, Max: 0x00000004, ABSOLUTE, UNINIT)
+
+    **** No section assigned to this execution region ****
+
+
+
+  Load Region LR$$.ARM.__AT_0x50003410 (Base: 0x50003410, Size: 0x00000000, Max: 0x00000004, ABSOLUTE)
+
+    Execution Region ER$$.ARM.__AT_0x50003410 (Base: 0x50003410, Size: 0x00000000, Max: 0x00000004, ABSOLUTE, UNINIT)
+
+    **** No section assigned to this execution region ****
+

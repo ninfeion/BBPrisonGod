@@ -1,0 +1,120 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    STEP Export                                                      )
+(                                                                     )
+(    Software Version : 17.2S004                                      )
+(    Date/Time        : Wed Jan 25 21:04:55 2017                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+
+WARNING: Design outline is missing on the layer "BOARD GEOMETRY/DESIGN_OUTLINE".
+
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (0.5334 17.4498)
+  End (-0.2540 16.6624)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (-0.2540 16.6624)
+  End (-0.2540 0.2286)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  ARC
+  Start (-0.2540 0.2286)
+  End (0.0254 -0.0508)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (0.0254 -0.0508)
+  End (0.1778 -0.0508)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (0.1778 -0.0508)
+  End (30.3022 -0.0508)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  ARC
+  Start (30.3022 -0.0508)
+  End (30.5562 0.2032)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (30.5562 0.2032)
+  End (30.5562 4.9905)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (30.5562 4.9905)
+  End (29.5656 4.9905)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (29.5656 4.9905)
+  End (29.5656 7.6454)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (29.5656 7.6454)
+  End (30.5562 8.6360)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (30.5562 8.6360)
+  End (30.5562 32.9438)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  ARC
+  Start (30.5562 32.9438)
+  End (30.3784 33.1216)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (30.3784 33.1216)
+  End (0.0508 33.1216)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  ARC
+  Start (0.0508 33.1216)
+  End (-0.1016 32.9692)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (-0.1016 32.9692)
+  End (-0.1016 30.1244)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (-0.1016 30.1244)
+  End (-0.1016 26.8732)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (-0.1016 26.8732)
+  End (-0.1016 19.7358)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (-0.1016 19.7358)
+  End (0.5080 19.1262)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (0.4572 19.1770)
+  End (0.8382 18.7960)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (0.8382 18.7960)
+  End (0.8382 17.7546)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (0.8382 17.7546)
+  End (0.3556 17.2720)
+WARNING: Discarding unconnected item on Board Geometry / Outline:
+  LINE
+  Start (29.5656 4.9905)
+  End (29.5656 7.6454)
+
+
+STEP file: PRISON_GOD_PCB_V238_VBUS_CHANGE
+Design file: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_PCB_V238_VBUS_CHANGE.brd
+Export units: Millimeter
+STEP protocol: AP-214
+Source identification: allegro_17.2S004
+Export selected and highlighted parts?: NO
+Export secondary parts?: NO
+Export parts with mapped STEP Models?: NO
+Export parts without mapped STEP Models?: NO
+Export assemblies and enclosures parts?: NO
+Export mechanical drills?: YES
+Export electrical through pin drills?: YES
+Export electrical through via drills?: NO
+Export bare board only?: YES
+Export external copper?: YES
+step_out complete.

@@ -1,0 +1,11 @@
+.\hex\lib_mem.o: uCOS\uC-LIB\Source\lib_mem.c
+.\hex\lib_mem.o: .\uCOS\uC-LIB\Source\lib_mem.h
+.\hex\lib_mem.o: .\uCOS\uC-CPU\Ports\IAR\cpu.h
+.\hex\lib_mem.o: .\uCOS\uC-CPU\Source\cpu_def.h
+.\hex\lib_mem.o: .\uCOS\uC-CPU\Cfg\cpu_cfg.h
+.\hex\lib_mem.o: .\uCOS\uC-CPU\Source\cpu_core.h
+.\hex\lib_mem.o: .\uCOS\uC-LIB\Source\lib_def.h
+.\hex\lib_mem.o: .\uCOS\uC-LIB\Source\lib_mem.h
+.\hex\lib_mem.o: .\uCOS\uC-LIB\Source\lib_str.h
+.\hex\lib_mem.o: .\uCOS\uC-LIB\Source\lib_ascii.h
+.\hex\lib_mem.o: .\uCOS\uC-LIB\Cfg\lib_cfg.h
