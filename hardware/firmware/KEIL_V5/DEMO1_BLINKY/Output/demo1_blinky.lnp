@@ -1,8 +1,0 @@
---cpu Cortex-M0
-".\output\system_cmsdk.o"
-".\output\startup_cmsdk_cm0.o"
-".\output\main.o"
---strict --scatter ".\Output\demo1_blinky.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
---info sizes --info totals --info unused --info veneers
---list ".\Listings\demo1_blinky.map" -o .\Output\demo1_blinky.axf

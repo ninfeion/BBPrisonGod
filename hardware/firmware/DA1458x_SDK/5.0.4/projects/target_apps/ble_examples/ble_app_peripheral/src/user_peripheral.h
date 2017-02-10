@@ -138,6 +138,8 @@ void user_catch_rest_hndl(ke_msg_id_t const msgid,
 /// @} APP
 
 /*BBPG*/
+#include "bbpg_user_setup.h"                          
+                          
 void start_advertise_user_define_cb(void);
 void connection_build_user_define_cb(void);
 void disconnection_occur_user_define_sb(void);                          
@@ -147,7 +149,28 @@ void ui_refresh_timer_cb_handler(void);
 
 extern ke_msg_id_t undo_detect_timer;
 void undo_detect_timer_cb_handler(void);
-
-uint32_t adcGetP00VbatVal(void);                          
                           
+void battery_state_update_timer_cb_handler(void);                          
+                             
+void waitConnect_1_cb(void);
+void waitConnect_2_cb(void);
+void identify_1_cb(void);     
+void identify_2_cb(void);
+void identify_fail_1(void);
+void identify_fail_2(void);
+void identify_success_1(void);
+void identify_success_2(void);
+void connect_loss_1(void);
+void connect_loss_2(void);
+void undo_alarm_1(void);
+void undo_alarm_2(void);
+void battery_alarm(void);
+void wake_up_time_show(void);
+
+void identifySuccessUiUpdateCallBack(void);
+
+void uiRegisterFrame(UI_FRAME_CLASS* tarFrame);
+void uiUnregisterFrame(uint8_t frameNum);
+void undoDetectUiUpdateCallBack(bool isCancel); 
+ 
 #endif // _USER_PERIPHERAL_H_

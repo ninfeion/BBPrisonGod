@@ -1,119 +1,15 @@
-\t (00:00:00) allegro 17.2 S004 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Fri Feb 03 00:48:14 2017
-\t (00:00:00)         Host=NINFEION-PC User=Ninfeion Pid=7360 CPUs=4
-\t (00:00:00) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
-\t (00:00:00) 
-   (00:00:00) Loading axlcore.cxt 
-\t (00:00:01) Opening existing design...
-\d (00:00:01) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_PCB_V238_VBUS_CHANGE.brd
-\i (00:00:01) trapsize 6487
-\i (00:00:01) trapsize 6731
-\i (00:00:01) trapsize 6731
-\i (00:00:01) trapsize 6562
-\i (00:00:01) generaledit 
-\i (00:00:03) zoom in 1 
-\i (00:00:03) setwindow pcb
-\i (00:00:03) zoom in 30.7952 12.7529
-\i (00:00:03) trapsize 3281
-\i (00:00:03) zoom in 1 
-\i (00:00:03) setwindow pcb
-\i (00:00:03) zoom in 30.7952 12.7529
-\i (00:00:03) trapsize 1641
-\i (00:00:04) zoom in 1 
-\i (00:00:04) setwindow pcb
-\i (00:00:04) zoom in 26.3330 14.9840
-\i (00:00:04) trapsize 820
-\i (00:00:18) zoom out 1 
-\i (00:00:18) setwindow pcb
-\i (00:00:18) zoom out 29.4499 15.6238
-\i (00:00:18) trapsize 1641
-\i (00:00:18) zoom in 1 
-\i (00:00:18) setwindow pcb
-\i (00:00:18) zoom in 25.2830 22.3173
-\i (00:00:18) trapsize 820
-\i (00:00:19) zoom in 1 
-\i (00:00:19) setwindow pcb
-\i (00:00:19) zoom in 23.9870 22.3009
-\i (00:00:19) trapsize 410
-\i (00:00:20) zoom in 1 
-\i (00:00:20) setwindow pcb
-\i (00:00:20) zoom in 23.9788 22.0384
-\i (00:00:20) trapsize 205
-\i (00:00:25) xhilite 
-\i (00:00:25) xNet Inta 
-\i (00:00:25) xname_flush 
-\i (00:00:25) trapsize 968
-\t (00:00:25) Net "Inta" highlighted.
-\i (00:00:25) done 
-\i (00:00:26) generaledit 
-\i (00:00:27) xdehilite 
-\i (00:00:27) xNet Inta 
-\i (00:00:27) xname_flush 
-\t (00:00:27) Net "Inta" dehighlighted.
-\i (00:00:27) done 
-\i (00:00:27) generaledit 
-\i (00:15:21) zoom out 1 
-\i (00:15:21) setwindow pcb
-\i (00:15:21) zoom out 30.7350 17.3697
-\i (00:15:21) trapsize 1937
-\i (00:15:21) zoom out 1 
-\i (00:15:21) setwindow pcb
-\i (00:15:21) zoom out 30.7351 17.3697
-\i (00:15:21) trapsize 3874
-\i (00:15:22) zoom in 1 
-\i (00:15:22) setwindow pcb
-\i (00:15:22) zoom in 31.7514 11.7918
-\i (00:15:22) trapsize 1937
-\i (00:15:22) zoom in 1 
-\i (00:15:22) setwindow pcb
-\i (00:15:22) zoom in 31.0929 14.7358
-\i (00:15:22) trapsize 968
-\i (00:15:23) zoom in 1 
-\i (00:15:23) setwindow pcb
-\i (00:15:23) zoom in 31.0929 14.7358
-\i (00:15:23) trapsize 484
-\i (00:15:23) zoom in 1 
-\i (00:15:23) setwindow pcb
-\i (00:15:23) zoom in 31.0929 14.7359
-\i (00:15:23) trapsize 242
-\i (00:15:23) zoom out 1 
-\i (00:15:23) setwindow pcb
-\i (00:15:23) zoom out 31.0930 14.7408
-\i (00:15:23) trapsize 484
-\i (00:15:28) zoom out 1 
-\i (00:15:28) setwindow pcb
-\i (00:15:28) zoom out 29.5532 15.5445
-\i (00:15:28) trapsize 968
-\i (00:15:29) zoom in 1 
-\i (00:15:29) setwindow pcb
-\i (00:15:29) zoom in 29.3788 16.8228
-\i (00:15:29) trapsize 484
-\i (00:15:33) zoom out 1 
-\i (00:15:33) setwindow pcb
-\i (00:15:33) zoom out 29.0205 15.8060
-\i (00:15:33) trapsize 968
-\i (00:15:33) zoom out 1 
-\i (00:15:33) setwindow pcb
-\i (00:15:33) zoom out 29.0205 15.8061
-\i (00:15:33) trapsize 1937
-\i (00:15:34) zoom in 1 
-\i (00:15:34) setwindow pcb
-\i (00:15:34) zoom in 29.0592 17.3555
-\i (00:15:34) trapsize 968
-\i (00:15:34) zoom in 1 
-\i (00:15:34) setwindow pcb
-\i (00:15:34) zoom in 29.0786 17.3168
-\i (00:15:34) trapsize 484
-\i (00:15:38) flipdesign 
-\i (00:15:40) zoom out 1 
-\i (00:15:40) setwindow pcb
-\i (00:15:40) zoom out 26.3962 15.7771
-\i (00:15:40) trapsize 968
-\i (00:15:40) zoom in 1 
-\i (00:15:40) setwindow pcb
-\i (00:15:40) zoom in 26.0669 18.2368
-\i (00:15:41) trapsize 484
-\i (16:06:47) exit 
-\e (16:06:47) Do you want to save the changes you made to PRISON_GOD_PCB_V238_VBUS_CHANGE.brd?
-\i (16:06:49) fillin no 
-\t (16:06:49)     Journal end - Fri Feb 03 16:55:03 2017
+\t (00:00:15) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:15)     Journal start - Thu Feb 09 00:38:53 2017
+\t (00:00:15)         Host=NINFEION-PC User=Ninfeion Pid=7044 CPUs=4
+\t (00:00:15) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
+\t (00:00:15) 
+   (00:00:15) Loading axlcore.cxt 
+\t (00:00:16) Opening existing design...
+\d (00:00:18) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_PCB_V238_VBUS_CHANGE.brd
+\i (00:00:19) trapsize 6487
+\i (00:00:19) trapsize 6731
+\i (00:00:19) trapsize 6731
+\i (00:00:19) trapsize 6562
+\i (00:00:19) generaledit 
+\i (03:44:25) exit 
+\t (03:44:27)     Journal end - Thu Feb 09 04:23:05 2017

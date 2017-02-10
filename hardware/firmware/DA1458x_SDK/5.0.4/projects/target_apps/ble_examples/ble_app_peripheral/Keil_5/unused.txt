@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 5060183: Last Updated: Sat Feb 04 00:46:11 2017
+;#<FEEDBACK># ARM Linker, 5060183: Last Updated: Sat Feb 11 00:27:09 2017
 ;VERSION 0.2
 ;FILE adc.o
 ;FILE app.o
@@ -95,27 +95,10 @@ set_xtal16m_trim_value <= USED 0
 ;FILE atts_util.obj
 dg_register_task_for_read_request <= USED 0
 dg_unregister_task_from_read_request <= USED 0
-;FILE battery.o
-batt_cal_aaa <= USED 0
-batt_cal_cr1225 <= USED 0
-batt_cal_cr2032 <= USED 0
-battery_get_lvl <= USED 0
+;FILE bbpg_adc.o
 ;FILE bbpg_alarm.o
 pwm234Pause <= USED 0
 timer0Start <= USED 0
-;FILE bbpg_led.o
-ledGreenOff <= USED 0
-ledGreenOn <= USED 0
-ledIOInit <= USED 0
-ledRedOff <= USED 0
-ledRedOn <= USED 0
-;FILE bbpg_uart.o
-printf_byte <= USED 0
-printf_string <= USED 0
-uart1Init <= USED 0
-uart1Printf <= USED 0
-uart_receive_byte <= USED 0
-uart_send_byte <= USED 0
 ;FILE boot_vectors.o
 ;FILE ch_map.obj
 ;FILE custom_common.o
@@ -156,8 +139,6 @@ delay_ms <= USED 0
 getMPU9250ID <= USED 0
 mpu9250Check <= USED 0
 readMPU9250AccelRaw <= USED 0
-readMPU9250GyroRaw <= USED 0
-readMPU9250TempRaw <= USED 0
 readMPUFIFO <= USED 0
 readMPUFIFOCount <= USED 0
 ;FILE nmi_handler.o
@@ -167,6 +148,7 @@ oledFillTest <= USED 0
 write_d <= USED 0
 write_d_multiple <= USED 0
 ;FILE oled_draw.o
+oledDrawHorizontalStringRefresh <= USED 0
 oledDrawHorizontalStringSet <= USED 0
 oledDrawPointTest <= USED 0
 ;FILE prf_utils.o
@@ -218,7 +200,6 @@ spi_read_flash_unique_id <= USED 0
 syscntl_set_dcdc_vbat3v_level <= USED 0
 ;FILE system_armcm0.o
 ;FILE touch_detect.o
-touchDetectIRQ <= USED 0
 ;FILE trng.o
 ;FILE uart2.o
 uart2_finish_transfers <= USED 0

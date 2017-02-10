@@ -1,24 +1,0 @@
-Dependencies for Project 'da1458x_template', Target 'Cortex-M0 SDK - Simulator': (DO NOT MODIFY !)
-F (.\startup\startup_CMSDK_CM0.s)(0x5278B22E)(--cpu Cortex-M0 --li -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ARM--pd "__UVISION_VERSION SETA 522"--list .\out\startup_cmsdk_cm0.lst --xref -o .\hex\startup_cmsdk_cm0.o --depend .\hex\startup_cmsdk_cm0.d)
-F (.\startup\system_CMSDK.c)(0x5396A858)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="522"-o .\hex\system_cmsdk.o --omf_browse .\hex\system_cmsdk.crf --depend .\hex\system_cmsdk.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-F (.\src\demo.c)(0x5870B2E5)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="522"-o .\hex\demo.o --omf_browse .\hex\demo.crf --depend .\hex\demo.d)
-I (src\../include/global_io.h)(0x5278B22C)
-I (src\../include/datasheet.h)(0x5278B22C)
-I (src\../include/peripherals.h)(0x5396A82C)
-I (src\../include/stdint.h)(0x52FDD27E)
-I (src\../include/gpio.h)(0x5278B22C)
-F (.\src\peripherals.c)(0x5396B4F0)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="522"-o .\hex\peripherals.o --omf_browse .\hex\peripherals.crf --depend .\hex\peripherals.d)
-I (src\../include/global_io.h)(0x5278B22C)
-I (src\../include/datasheet.h)(0x5278B22C)
-I (src\../include/gpio.h)(0x5278B22C)
-I (src\../include/core_cm0.h)(0x512C1E62)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559CDD8A)
-I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559CDD8A)
-F (.\include\datasheet.h)(0x5278B22C)()
-F (.\include\global_io.h)(0x5278B22C)()
-F (.\include\gpio.h)(0x5278B22C)()
-F (.\include\peripherals.h)(0x5396A82C)()
-F (.\include\core_cm0.h)(0x512C1E62)()
-F (.\misc\serial_out.txt)(0x53969F5A)()

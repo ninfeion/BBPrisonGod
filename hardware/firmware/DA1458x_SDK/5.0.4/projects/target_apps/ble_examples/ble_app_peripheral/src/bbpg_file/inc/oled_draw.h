@@ -11,9 +11,13 @@ typedef enum
     WAIT_CONNECT_PIC,
     INDENTIFY_1_PIC,
     INDENTIFY_2_PIC,
+
+    INDENTIFY_FAIL_PIC,
     
     CONNECT_OK_PIC,
     CONNECT_LOSS_PIC,
+    
+    UNDO_ALARM_PIC,
 
 }PIC_SELECT;
 

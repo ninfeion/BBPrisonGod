@@ -6,8 +6,10 @@
 #include "wait_connect_64X32_lib.h"
 #include "identify_1_64X32_lib.h"
 #include "identify_2_64X32_lib.h"
+#include "identify_fail_64X32_lib.h"
 #include "connect_ok_64X32_lib.h"
 #include "connect_loss_64X32_lib.h"
+#include "undo_alarm_64X32_lib.h"
 
 static uint8_t oled_virtual_ram[OLED_VIRTUAL_RAM_SIZE];
 
@@ -44,12 +46,21 @@ void oledDrawPicture(PIC_SELECT pictype)
         case(INDENTIFY_2_PIC):
             oledDrawFullWrite(identify2BitmapDot);
             break;        
+
+        case(INDENTIFY_FAIL_PIC):
+            oledDrawFullWrite(identifyFailBitmapDot);
+            break;
+
         case(CONNECT_OK_PIC):
             oledDrawFullWrite(connectOkBitmapDot);
             break;
         
         case(CONNECT_LOSS_PIC):
             oledDrawFullWrite(connectLossBitmapDot);
+            break;
+        
+        case(UNDO_ALARM_PIC):
+            oledDrawFullWrite(undoAlarmBitmapDot);
             break;
         
         default:
@@ -152,7 +163,7 @@ uint8_t oledDrawCnChar(uint8_t x, uint8_t y, uint8_t* cnstr)
 
 void oledDrawAsciiChar(uint8_t x, uint8_t y, uint8_t ascii)
 {
-    oledDraw12X24Pic(x, y, ASCII_LIB + (ascii-0x20)*36);
+    oledDraw12X24Pic(x, y, ASCII_LIB + (ascii-0x20-0x10)*36);
 }
 
 static uint8_t *horizontalStringBuffer; 

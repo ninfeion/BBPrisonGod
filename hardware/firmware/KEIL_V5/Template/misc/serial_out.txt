@@ -1,4 +1,0 @@
-This is a demo program:
-* led is blinking
-* message ' *puls* ' is send to the UART
-

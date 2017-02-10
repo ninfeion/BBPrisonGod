@@ -48,26 +48,44 @@
 #define CUT_DETECT_PORT     GPIO_PORT_2
 #define CUT_DETECT_PIN      GPIO_PIN_3
 
-#define SYSTEM_TIME_PERIOD  100 // unit ms
+#define BAT_ADC_PORT        GPIO_PORT_0
+#define BAT_ADC_PIN         GPIO_PIN_0
 
-#define BBPG_IDENTIFY_TIME  1000 // 10s
+#define SYSTEM_TIME_PERIOD  100     // unit ms
+
+#define BBPG_IDENTIFY_TIME  1000    // 10s
+
+#define BBPG_UI_MAX_FRAME   8
+
+#define BBPG_TIMEZONE_SET(n) (n*3600)
+
+#define BBPG_BAT_CAL_K      2.0
+#define BBPG_BAT_OK_VAL     4200.0  // mv
+#define BBPG_BAT_WORRY_VAL  4000.0  // mv
+#define BBPG_BAT_OMG_VAL    3700.0  // mv
+
+#define BBPG_MOTOR_DELAY_PAR 1000000
 
 typedef enum
 {
     BBPG_UI_LAUNCH = 0,
-    BBPG_UI_WAIT_CONNECT_1,
-    BBPG_UI_WAIT_CONNECT_2,
-    BBPG_UI_IDENTIFY_1,
-    BBPG_UI_IDENTIFY_2,
-    BBPG_UI_CONNECT_OK_1,
-    BBPG_UI_CONNECT_OK_2,
-    //BBPG_UI_ON_CONNECTION,
+
+    BBPG_UI_WORK,
+
+    //////////////////////
+
+    //BBPG_UI_WAIT_CONNECT_1,
+    //BBPG_UI_WAIT_CONNECT_2,
+    //BBPG_UI_IDENTIFY_1,
+    //BBPG_UI_IDENTIFY_2,
+    //BBPG_UI_CONNECT_OK_1,
+    //BBPG_UI_CONNECT_OK_2,
     
-    BBPG_UI_IDENTIFY_SUCCESS,
-    BBPG_UI_IDENTIFY_FAIL,
+    //BBPG_UI_IDENTIFY_SUCCESS,
+    //BBPG_UI_IDENTIFY_FAIL,
     
-    BBPG_UI_CONNECT_LOSS_1,
-    BBPG_UI_CONNECT_LOSS_2,
+    //BBPG_UI_CONNECT_LOSS_1,
+    //BBPG_UI_CONNECT_LOSS_2,
     
     BBPG_UI_SLEEP,
     BBPG_UI_WAKE_UP,
@@ -93,9 +111,43 @@ typedef enum
     BBPG_UNDO_DETECT_ALARM,
 }BBPG_UNDO_DETECT_STATE_T;
 
+typedef enum
+{
+    BBPG_BAT_UNINIT,
+    
+    BBPG_BAT_OK,
+    BBPG_BAT_WORRY, // 5%-15%
+    
+    BBPG_BAT_OMG,   // 0%-5%
+}BBPG_BATTERY_STATE_T;
+
+typedef enum
+{
+    BBPG_OPTION_UNDO_ALARM,
+}BBPG_OPTION_STATE_T;
+
+typedef void (* UI_FRAME_CALLBACK)(void);
+
+typedef struct 
+{
+    uint8_t priority;
+    uint16_t showTime;
+    UI_FRAME_CALLBACK ui_frame_cb;
+}UI_FRAME_CLASS;
+
+enum
+{
+    BBPG_COM_TYPE_IDENTIFY,
+    BBPG_COM_TYPE_UNDO_ALARM_ENABLE,
+    BBPG_COM_TYPE_JUST_UPDATE_TIME,
+};
+
 extern BBPG_STATE_T BBPG_STATE;
 extern BBPG_UI_STATE_T BBPG_UI_STATE;
 extern BBPG_UNDO_DETECT_STATE_T BBPG_UNDO_STATE;
+extern BBPG_BATTERY_STATE_T BBPG_BAT_STATE;
+
+extern uint32_t UNIX_TIMESTAMP;
 
 #endif
 

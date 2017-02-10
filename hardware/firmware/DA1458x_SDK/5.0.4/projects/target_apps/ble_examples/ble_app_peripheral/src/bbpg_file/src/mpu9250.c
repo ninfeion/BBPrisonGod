@@ -124,6 +124,7 @@ void readMPU9250AccelRaw(int16_t *ACCELDATA)
 	ACCELDATA[2] = (int16_t)((BUF[4] << 8) | BUF[5]);
 }
 
+/*
 void readMPU9250GyroRaw(int16_t *GYRODATA)
 {
 	uint8_t BUF[6];
@@ -144,7 +145,6 @@ int16_t readMPU9250TempRaw(void)
 	return TEMPDATA;
 }
 
-/*
 void READ_MPU9250_Bypass_MAG_RAW(int16_t *MAGDATA)
 { 
 	uint8_t BUF[6];

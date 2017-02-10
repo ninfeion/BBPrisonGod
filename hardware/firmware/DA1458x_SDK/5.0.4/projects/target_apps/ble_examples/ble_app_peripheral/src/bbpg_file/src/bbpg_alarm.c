@@ -5,9 +5,15 @@ volatile struct __TIMER0_CTRL_REG timer0_ctrl_reg __attribute__((at(TIMER0_CTRL_
 volatile struct __TRIPLE_PWM_CTRL_REG triple_pwm_ctrl_reg __attribute__((at(TRIPLE_PWM_CTRL_REG)));
 */
 
-static uint16_t timerMVal;
-static uint16_t timerNVal;
+//static uint16_t timerMVal;
+//static uint16_t timerNVal;
 static uint16_t pwm234Frequency;
+
+static GPIO_PORT motorPort;
+static GPIO_PIN motorPin;
+
+static GPIO_PORT sounderPort;
+static GPIO_PIN sounderPin;
 
 static GPIO_PORT undoPort;
 static GPIO_PIN undoPin;
@@ -19,19 +25,27 @@ void timerAndLedSounderMotorPwmInit(GPIO_PORT red_port, GPIO_PIN red_pin,
                                     uint16_t timer_m_val, uint16_t timer_n_val,
                                     uint16_t pwm234_frequency)
 {
-    timerMVal = timer_m_val;
-    timerNVal = timer_n_val;
+    motorPort = motor_port;
+    motorPin  = motor_pin;
+    
+    sounderPort = sounder_port;
+    sounderPin = sounder_pin;
+    
+    //timerMVal = timer_m_val;
+    //timerNVal = timer_n_val;
     pwm234Frequency = pwm234_frequency;
     
     RESERVE_GPIO(SOUNDER_PWM, sounder_port, sounder_pin, PID_PWM4);
     RESERVE_GPIO(RED_LED, red_port, red_pin, PID_PWM2);
     RESERVE_GPIO(GREEN_LED, green_port, green_pin, PID_PWM3);
-    RESERVE_GPIO(MOTOR_PWM, motor_port, motor_pin, PID_PWM0);
+    //RESERVE_GPIO(MOTOR_PWM, motor_port, motor_pin, PID_PWM0);
+    RESERVE_GPIO(MOTOR_GPIO, motor_port, motor_pin, PID_GPIO);
     
     GPIO_ConfigurePin(sounder_port, sounder_pin, OUTPUT, PID_PWM4, false);
     GPIO_ConfigurePin(red_port, red_pin, OUTPUT, PID_PWM2, true);
     GPIO_ConfigurePin(green_port, green_pin, OUTPUT, PID_PWM3, true);  
-    GPIO_ConfigurePin(motor_port, motor_pin, OUTPUT, PID_PWM0, false);    
+    //GPIO_ConfigurePin(motor_port, motor_pin, OUTPUT, PID_PWM0, false);    
+    GPIO_ConfigurePin(motor_port, motor_pin, OUTPUT, PID_GPIO, false);
 
     // global clock set
     SetBits16(CLK_PER_REG, TMR_DIV, 0x03); // divided by 8, 16MHZ/8 = 2MHZ
@@ -62,6 +76,16 @@ void timerAndLedSounderMotorPwmInit(GPIO_PORT red_port, GPIO_PIN red_pin,
     SetBits16(TRIPLE_PWM_CTRL_REG, SW_PAUSE_EN, 0x01); // PWM2,3,4 PAUSE
 }
 
+void enableMotorGPIO(void)
+{
+    GPIO_SetActive(motorPort, motorPin);
+}
+
+void disableMotorGPIO(void)
+{
+    GPIO_SetInactive(motorPort, motorPin);
+}
+
 void timer0Start(void)
 {
     SetBits16(TIMER0_CTRL_REG, TIM0_CTRL, 0x01); // timer0 on
@@ -85,6 +109,16 @@ void setPwm3Duty(uint8_t val)
 
 void setPwm4Duty(uint8_t val)
 {
+    if(val == 0)
+    {
+        RESERVE_GPIO(SOUNDER_PWM, sounderPort, sounderPin, PID_GPIO);
+        GPIO_ConfigurePin(sounderPort, sounderPin, OUTPUT, PID_GPIO, false);
+    }
+    else
+    {
+        RESERVE_GPIO(SOUNDER_PWM, sounderPort, sounderPin, PID_PWM4);
+        GPIO_ConfigurePin(sounderPort, sounderPin, OUTPUT, PID_PWM4, false);
+    }        
     SetBits16(PWM4_DUTY_CYCLE, DUTY_CYCLE, ((uint16_t)val)*pwm234Frequency/100 +1);
 }
 

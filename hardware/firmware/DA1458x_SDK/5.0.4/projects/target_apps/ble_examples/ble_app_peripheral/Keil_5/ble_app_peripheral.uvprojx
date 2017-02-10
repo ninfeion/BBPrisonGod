@@ -500,117 +500,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>sdk_patches_581</GroupName>
-          <GroupOption>
-            <CommonProperty>
-              <UseCPPCompiler>0</UseCPPCompiler>
-              <RVCTCodeConst>0</RVCTCodeConst>
-              <RVCTZI>0</RVCTZI>
-              <RVCTOtherData>0</RVCTOtherData>
-              <ModuleSelection>0</ModuleSelection>
-              <IncludeInBuild>0</IncludeInBuild>
-              <AlwaysBuild>2</AlwaysBuild>
-              <GenerateAssemblyFile>2</GenerateAssemblyFile>
-              <AssembleAssemblyFile>2</AssembleAssemblyFile>
-              <PublicsOnly>2</PublicsOnly>
-              <StopOnExitCode>11</StopOnExitCode>
-              <CustomArgument></CustomArgument>
-              <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>1</ComprImg>
-            </CommonProperty>
-            <GroupArmAds>
-              <Cads>
-                <interw>2</interw>
-                <Optim>0</Optim>
-                <oTime>2</oTime>
-                <SplitLS>2</SplitLS>
-                <OneElfS>2</OneElfS>
-                <Strict>2</Strict>
-                <EnumInt>2</EnumInt>
-                <PlainCh>2</PlainCh>
-                <Ropi>2</Ropi>
-                <Rwpi>2</Rwpi>
-                <wLevel>2</wLevel>
-                <uThumb>2</uThumb>
-                <uSurpInc>2</uSurpInc>
-                <uC99>2</uC99>
-                <useXO>2</useXO>
-                <v6Lang>0</v6Lang>
-                <v6LangP>0</v6LangP>
-                <vShortEn>2</vShortEn>
-                <vShortWch>2</vShortWch>
-                <v6Lto>0</v6Lto>
-                <v6WtE>0</v6WtE>
-                <VariousControls>
-                  <MiscControls></MiscControls>
-                  <Define></Define>
-                  <Undefine></Undefine>
-                  <IncludePath></IncludePath>
-                </VariousControls>
-              </Cads>
-              <Aads>
-                <interw>2</interw>
-                <Ropi>2</Ropi>
-                <Rwpi>2</Rwpi>
-                <thumb>2</thumb>
-                <SplitLS>2</SplitLS>
-                <SwStkChk>2</SwStkChk>
-                <NoWarn>2</NoWarn>
-                <uSurpInc>2</uSurpInc>
-                <useXO>2</useXO>
-                <VariousControls>
-                  <MiscControls></MiscControls>
-                  <Define></Define>
-                  <Undefine></Undefine>
-                  <IncludePath></IncludePath>
-                </VariousControls>
-              </Aads>
-            </GroupArmAds>
-          </GroupOption>
-          <Files>
-            <File>
-              <FileName>atts_util.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\atts_util.obj</FilePath>
-            </File>
-            <File>
-              <FileName>lld.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\lld.obj</FilePath>
-            </File>
-            <File>
-              <FileName>llm_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\llm_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>smpc_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\smpc_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>ke_mem.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\ke_mem.obj</FilePath>
-            </File>
-            <File>
-              <FileName>ke_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\ke_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>gapc_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>.\..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\gapc_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>llc_con_update_ind.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>.\..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\llc_con_update_ind.obj</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>sdk_driver</GroupName>
           <Files>
             <File>
@@ -627,11 +516,6 @@
               <FileName>wkupct_quadec.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\..\..\..\..\..\sdk\platform\driver\wkupct_quadec\wkupct_quadec.c</FilePath>
-            </File>
-            <File>
-              <FileName>battery.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\..\..\..\..\..\sdk\platform\driver\battery\battery.c</FilePath>
             </File>
             <File>
               <FileName>adc.c</FileName>
@@ -859,29 +743,14 @@
               <FilePath>..\..\..\..\..\sdk\platform\driver\adc\adc.h</FilePath>
             </File>
             <File>
-              <FileName>battery.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\driver\battery\battery.h</FilePath>
-            </File>
-            <File>
               <FileName>gpio.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\..\..\..\sdk\platform\driver\gpio\gpio.h</FilePath>
             </File>
             <File>
-              <FileName>i2c_core.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\driver\i2c_core\i2c_core.h</FilePath>
-            </File>
-            <File>
               <FileName>i2c_eeprom.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\..\..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.h</FilePath>
-            </File>
-            <File>
-              <FileName>pwm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\driver\pwm\pwm.h</FilePath>
             </File>
             <File>
               <FileName>spi.h</FileName>
@@ -1124,19 +993,14 @@
               <FilePath>..\src\bbpg_file\src\touch_detect.c</FilePath>
             </File>
             <File>
-              <FileName>bbpg_led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\bbpg_file\src\bbpg_led.c</FilePath>
-            </File>
-            <File>
-              <FileName>bbpg_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\bbpg_file\src\bbpg_uart.c</FilePath>
-            </File>
-            <File>
               <FileName>bbpg_alarm.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\bbpg_file\src\bbpg_alarm.c</FilePath>
+            </File>
+            <File>
+              <FileName>bbpg_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\bbpg_file\src\bbpg_adc.c</FilePath>
             </File>
             <File>
               <FileName>bbpg_user_setup.h</FileName>
@@ -4850,51 +4714,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>sdk_patches_581</GroupName>
-          <Files>
-            <File>
-              <FileName>atts_util.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\atts_util.obj</FilePath>
-            </File>
-            <File>
-              <FileName>lld.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\lld.obj</FilePath>
-            </File>
-            <File>
-              <FileName>llm_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\llm_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>smpc_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\smpc_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>ke_mem.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\ke_mem.obj</FilePath>
-            </File>
-            <File>
-              <FileName>ke_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\ke_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>gapc_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>.\..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\gapc_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>llc_con_update_ind.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>.\..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\llc_con_update_ind.obj</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>sdk_driver</GroupName>
           <Files>
             <File>
@@ -4911,11 +4730,6 @@
               <FileName>wkupct_quadec.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\..\..\..\..\..\sdk\platform\driver\wkupct_quadec\wkupct_quadec.c</FilePath>
-            </File>
-            <File>
-              <FileName>battery.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\..\..\..\..\..\sdk\platform\driver\battery\battery.c</FilePath>
             </File>
             <File>
               <FileName>adc.c</FileName>
@@ -5143,29 +4957,14 @@
               <FilePath>..\..\..\..\..\sdk\platform\driver\adc\adc.h</FilePath>
             </File>
             <File>
-              <FileName>battery.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\driver\battery\battery.h</FilePath>
-            </File>
-            <File>
               <FileName>gpio.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\..\..\..\sdk\platform\driver\gpio\gpio.h</FilePath>
             </File>
             <File>
-              <FileName>i2c_core.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\driver\i2c_core\i2c_core.h</FilePath>
-            </File>
-            <File>
               <FileName>i2c_eeprom.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\..\..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.h</FilePath>
-            </File>
-            <File>
-              <FileName>pwm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\driver\pwm\pwm.h</FilePath>
             </File>
             <File>
               <FileName>spi.h</FileName>
@@ -5408,19 +5207,14 @@
               <FilePath>..\src\bbpg_file\src\touch_detect.c</FilePath>
             </File>
             <File>
-              <FileName>bbpg_led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\bbpg_file\src\bbpg_led.c</FilePath>
-            </File>
-            <File>
-              <FileName>bbpg_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\bbpg_file\src\bbpg_uart.c</FilePath>
-            </File>
-            <File>
               <FileName>bbpg_alarm.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\bbpg_file\src\bbpg_alarm.c</FilePath>
+            </File>
+            <File>
+              <FileName>bbpg_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\bbpg_file\src\bbpg_adc.c</FilePath>
             </File>
             <File>
               <FileName>bbpg_user_setup.h</FileName>
@@ -9068,117 +8862,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>sdk_patches_581</GroupName>
-          <GroupOption>
-            <CommonProperty>
-              <UseCPPCompiler>0</UseCPPCompiler>
-              <RVCTCodeConst>0</RVCTCodeConst>
-              <RVCTZI>0</RVCTZI>
-              <RVCTOtherData>0</RVCTOtherData>
-              <ModuleSelection>0</ModuleSelection>
-              <IncludeInBuild>0</IncludeInBuild>
-              <AlwaysBuild>2</AlwaysBuild>
-              <GenerateAssemblyFile>2</GenerateAssemblyFile>
-              <AssembleAssemblyFile>2</AssembleAssemblyFile>
-              <PublicsOnly>2</PublicsOnly>
-              <StopOnExitCode>11</StopOnExitCode>
-              <CustomArgument></CustomArgument>
-              <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>1</ComprImg>
-            </CommonProperty>
-            <GroupArmAds>
-              <Cads>
-                <interw>2</interw>
-                <Optim>0</Optim>
-                <oTime>2</oTime>
-                <SplitLS>2</SplitLS>
-                <OneElfS>2</OneElfS>
-                <Strict>2</Strict>
-                <EnumInt>2</EnumInt>
-                <PlainCh>2</PlainCh>
-                <Ropi>2</Ropi>
-                <Rwpi>2</Rwpi>
-                <wLevel>2</wLevel>
-                <uThumb>2</uThumb>
-                <uSurpInc>2</uSurpInc>
-                <uC99>2</uC99>
-                <useXO>2</useXO>
-                <v6Lang>0</v6Lang>
-                <v6LangP>0</v6LangP>
-                <vShortEn>2</vShortEn>
-                <vShortWch>2</vShortWch>
-                <v6Lto>0</v6Lto>
-                <v6WtE>0</v6WtE>
-                <VariousControls>
-                  <MiscControls></MiscControls>
-                  <Define></Define>
-                  <Undefine></Undefine>
-                  <IncludePath></IncludePath>
-                </VariousControls>
-              </Cads>
-              <Aads>
-                <interw>2</interw>
-                <Ropi>2</Ropi>
-                <Rwpi>2</Rwpi>
-                <thumb>2</thumb>
-                <SplitLS>2</SplitLS>
-                <SwStkChk>2</SwStkChk>
-                <NoWarn>2</NoWarn>
-                <uSurpInc>2</uSurpInc>
-                <useXO>2</useXO>
-                <VariousControls>
-                  <MiscControls></MiscControls>
-                  <Define></Define>
-                  <Undefine></Undefine>
-                  <IncludePath></IncludePath>
-                </VariousControls>
-              </Aads>
-            </GroupArmAds>
-          </GroupOption>
-          <Files>
-            <File>
-              <FileName>atts_util.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\atts_util.obj</FilePath>
-            </File>
-            <File>
-              <FileName>lld.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\lld.obj</FilePath>
-            </File>
-            <File>
-              <FileName>llm_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\llm_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>smpc_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\smpc_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>ke_mem.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\ke_mem.obj</FilePath>
-            </File>
-            <File>
-              <FileName>ke_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\ke_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>gapc_task.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>.\..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\gapc_task.obj</FilePath>
-            </File>
-            <File>
-              <FileName>llc_con_update_ind.obj</FileName>
-              <FileType>3</FileType>
-              <FilePath>.\..\..\..\..\..\sdk\platform\patch_code\DA14581\obj\llc_con_update_ind.obj</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>sdk_driver</GroupName>
           <Files>
             <File>
@@ -9195,11 +8878,6 @@
               <FileName>wkupct_quadec.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\..\..\..\..\..\sdk\platform\driver\wkupct_quadec\wkupct_quadec.c</FilePath>
-            </File>
-            <File>
-              <FileName>battery.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\..\..\..\..\..\sdk\platform\driver\battery\battery.c</FilePath>
             </File>
             <File>
               <FileName>adc.c</FileName>
@@ -9427,29 +9105,14 @@
               <FilePath>..\..\..\..\..\sdk\platform\driver\adc\adc.h</FilePath>
             </File>
             <File>
-              <FileName>battery.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\driver\battery\battery.h</FilePath>
-            </File>
-            <File>
               <FileName>gpio.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\..\..\..\sdk\platform\driver\gpio\gpio.h</FilePath>
             </File>
             <File>
-              <FileName>i2c_core.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\driver\i2c_core\i2c_core.h</FilePath>
-            </File>
-            <File>
               <FileName>i2c_eeprom.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\..\..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.h</FilePath>
-            </File>
-            <File>
-              <FileName>pwm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\..\sdk\platform\driver\pwm\pwm.h</FilePath>
             </File>
             <File>
               <FileName>spi.h</FileName>
@@ -9692,19 +9355,14 @@
               <FilePath>..\src\bbpg_file\src\touch_detect.c</FilePath>
             </File>
             <File>
-              <FileName>bbpg_led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\bbpg_file\src\bbpg_led.c</FilePath>
-            </File>
-            <File>
-              <FileName>bbpg_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\bbpg_file\src\bbpg_uart.c</FilePath>
-            </File>
-            <File>
               <FileName>bbpg_alarm.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\bbpg_file\src\bbpg_alarm.c</FilePath>
+            </File>
+            <File>
+              <FileName>bbpg_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\bbpg_file\src\bbpg_adc.c</FilePath>
             </File>
             <File>
               <FileName>bbpg_user_setup.h</FileName>

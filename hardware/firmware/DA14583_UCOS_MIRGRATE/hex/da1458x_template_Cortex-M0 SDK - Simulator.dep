@@ -1,329 +1,0 @@
-Dependencies for Project 'da1458x_template', Target 'Cortex-M0 SDK - Simulator': (DO NOT MODIFY !)
-F (.\startup\startup_CMSDK_CM0.s)(0x5278B22E)(--cpu Cortex-M0 --li -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM--pd "__UVISION_VERSION SETA 520"--list .\out\startup_cmsdk_cm0.lst --xref -o .\hex\startup_cmsdk_cm0.o --depend .\hex\startup_cmsdk_cm0.d)
-F (.\startup\system_CMSDK.c)(0x5396A858)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\system_cmsdk.o --omf_browse .\hex\system_cmsdk.crf --depend .\hex\system_cmsdk.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
-F (.\uCOS\uC-CPU\Ports\RealView\cpu_a.asm)(0x57C165C1)(--cpu Cortex-M0 --li -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM--pd "__UVISION_VERSION SETA 520"--list .\out\cpu_a.lst --xref -o .\hex\cpu_a.o --depend .\hex\cpu_a.d)
-F (.\uCOS\uC-CPU\Ports\RealView\cpu_c.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\cpu_c.o --omf_browse .\hex\cpu_c.crf --depend .\hex\cpu_c.d)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-F (.\uCOS\uC-CPU\Source\cpu_core.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\cpu_core.o --omf_browse .\hex\cpu_core.crf --depend .\hex\cpu_core.d)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-F (.\uCOS\uC-LIB\Source\lib_ascii.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\lib_ascii.o --omf_browse .\hex\lib_ascii.crf --depend .\hex\lib_ascii.d)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-F (.\uCOS\uC-LIB\Source\lib_math.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\lib_math.o --omf_browse .\hex\lib_math.crf --depend .\hex\lib_math.d)
-I (.\uCOS\uC-LIB\Source\lib_math.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-F (.\uCOS\uC-LIB\Source\lib_mem.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\lib_mem.o --omf_browse .\hex\lib_mem.crf --depend .\hex\lib_mem.d)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-F (.\uCOS\uC-LIB\Source\lib_str.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\lib_str.o --omf_browse .\hex\lib_str.crf --depend .\hex\lib_str.d)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-F (.\uCOS\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm)(0x57C165C1)(--cpu Cortex-M0 --li -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM--pd "__UVISION_VERSION SETA 520"--list .\out\lib_mem_a.lst --xref -o .\hex\lib_mem_a.o --depend .\hex\lib_mem_a.d)
-F (.\uCOS\uCOS-III\Source\os_cfg_app.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_cfg_app.o --omf_browse .\hex\os_cfg_app.crf --depend .\hex\os_cfg_app.d)
-I (.\uCOS\uCOS-III\Cfg\os_cfg_app.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_core.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_core.o --omf_browse .\hex\os_core.crf --depend .\hex\os_core.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_dbg.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_dbg.o --omf_browse .\hex\os_dbg.crf --depend .\hex\os_dbg.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_flag.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_flag.o --omf_browse .\hex\os_flag.crf --depend .\hex\os_flag.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_int.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_int.o --omf_browse .\hex\os_int.crf --depend .\hex\os_int.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_mem.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_mem.o --omf_browse .\hex\os_mem.crf --depend .\hex\os_mem.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_msg.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_msg.o --omf_browse .\hex\os_msg.crf --depend .\hex\os_msg.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_mutex.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_mutex.o --omf_browse .\hex\os_mutex.crf --depend .\hex\os_mutex.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_pend_multi.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_pend_multi.o --omf_browse .\hex\os_pend_multi.crf --depend .\hex\os_pend_multi.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_prio.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_prio.o --omf_browse .\hex\os_prio.crf --depend .\hex\os_prio.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_q.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_q.o --omf_browse .\hex\os_q.crf --depend .\hex\os_q.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_sem.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_sem.o --omf_browse .\hex\os_sem.crf --depend .\hex\os_sem.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_stat.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_stat.o --omf_browse .\hex\os_stat.crf --depend .\hex\os_stat.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_task.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_task.o --omf_browse .\hex\os_task.crf --depend .\hex\os_task.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_tick.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_tick.o --omf_browse .\hex\os_tick.crf --depend .\hex\os_tick.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_time.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_time.o --omf_browse .\hex\os_time.crf --depend .\hex\os_time.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_tmr.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_tmr.o --omf_browse .\hex\os_tmr.crf --depend .\hex\os_tmr.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Source\os_var.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_var.o --omf_browse .\hex\os_var.crf --depend .\hex\os_var.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)
-F (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_a.s)(0x57C165C1)(--cpu Cortex-M0 --li -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM--pd "__UVISION_VERSION SETA 520"--list .\out\os_cpu_a.lst --xref -o .\hex\os_cpu_a.o --depend .\hex\os_cpu_a.d)
-F (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_c.c)(0x57C165C1)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\startup -I .\uCOS\uC-CPU\Cfg -I .\uCOS\uC-CPU\Ports\IAR -I .\uCOS\uC-CPU\Source -I .\uCOS\uC-LIB\Cfg -I .\uCOS\uC-LIB\Ports\ARM-Cortex-M3\IAR -I .\uCOS\uC-LIB\Source -I .\uCOS\uCOS-III\Cfg -I .\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR -I .\uCOS\uCOS-III\Source-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ARM-D__UVISION_VERSION="520"-o .\hex\os_cpu_c.o --omf_browse .\hex\os_cpu_c.crf --depend .\hex\os_cpu_c.d)
-I (.\uCOS\uCOS-III\Source\os.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Cfg\os_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Ports\IAR\cpu.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_def.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Cfg\cpu_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-CPU\Source\cpu_core.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_def.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_mem.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Cfg\lib_cfg.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_str.h)(0x57C165C1)
-I (.\uCOS\uC-LIB\Source\lib_ascii.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Source\os_type.h)(0x57C165C1)
-I (.\uCOS\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\os_cpu.h)(0x57C165C1)

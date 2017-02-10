@@ -35,6 +35,7 @@
 #include "touch_detect.h"
 #include "bbpg_uart.h"
 #include "bbpg_alarm.h"
+#include "bbpg_adc.h"
 
 #include "oled_draw.h"
 
@@ -106,9 +107,9 @@ void periph_init(void)
     pwm234Continue();
     setPwm2Duty(100); // disable red led
     setPwm3Duty(100); // disable green led
-    setPwm4Duty(0);   // disable sounder
+    setPwm4Duty(0); // disable sounder
     
-    timer0Stop();     // disable motor
+    timer0Stop();     // disable motor, but now use gpio to drive motor
     
     //uart1Init(UART1_BAUDRATE, UART1_DATALENGTH);    
     
@@ -124,10 +125,12 @@ void periph_init(void)
              
     oledSSD1306Initialization();
 
-    breakDetectInit(UNDO_DETECT_PORT, UNDO_DETECT_PIN,
-                    CUT_DETECT_PORT, CUT_DETECT_PIN);
+    breakDetectInit(CUT_DETECT_PORT, CUT_DETECT_PIN,
+                    UNDO_DETECT_PORT, UNDO_DETECT_PIN);
     
     touchModuleInit(TOUCH_IO_PORT, TOUCH_IO_PIN);    
+    
+    adcIOInit();
                     
     GPIO_RegisterCallback(GPIO0_IRQn, undo_detect_irq_handler);          
     GPIO_RegisterCallback(GPIO2_IRQn, touch_detect_irq_handler); 

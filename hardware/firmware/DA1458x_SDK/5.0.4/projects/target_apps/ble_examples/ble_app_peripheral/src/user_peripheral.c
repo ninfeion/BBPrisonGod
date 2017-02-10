@@ -34,12 +34,10 @@
 #include "user_custs1_def.h"
 #include "gap.h"
 
+#include "bbpg_adc.h"
 #include "bbpg_alarm.h"
 #include "oled_draw.h"
-
 #include "bbpg_user_setup.h"
-
-#include "adc.h"
 
 /*
  * TYPE DEFINITIONS
@@ -71,6 +69,8 @@ timer_hnd app_param_update_request_timer_used;
 ke_msg_id_t ui_refresh_timer;
 ke_msg_id_t identify_timer;
 ke_msg_id_t undo_detect_timer;
+ke_msg_id_t battery_monitor_timer;
+ke_msg_id_t timer_counter_timer;
 
 // Manufacturer Specific Data
 struct mnf_specific_data_ad_structure mnf_data __attribute__((section("retention_mem_area0"),zero_init)); //@RETENTION MEMORY
@@ -290,43 +290,7 @@ void user_catch_rest_hndl(ke_msg_id_t const msgid,
                     break;
             }
         } break;
-        
-        /*
-        case CUSTS1_VAL_NTF_CFM:
-        {
-            struct custs1_val_ntf_cfm const *msg_param = (struct custs1_val_ntf_cfm const *)(param);
-
-            switch (msg_param->handle)
-            {
-                case CUST1_IDX_ADC_VAL_1_VAL:
-                    break;
-
-                case CUST1_IDX_BUTTON_STATE_VAL:
-                    break;
-
-                case CUST1_IDX_LONG_VALUE_VAL:
-                    break;
-
-                default:
-                    break;
-            }
-        } break;
-
-        case CUSTS1_VAL_IND_CFM:
-        {
-            struct custs1_val_ind_cfm const *msg_param = (struct custs1_val_ind_cfm const *)(param);
-
-            switch (msg_param->handle)
-            {
-                case CUST1_IDX_INDICATEABLE_VAL:
-                    break;
-
-                default:
-                    break;
-             }
-         } break;
-        */
-        
+              
         case GAPC_PARAM_UPDATED_IND:
         {
             // Cast the void pointer to the appropriate message structure
@@ -346,62 +310,357 @@ void user_catch_rest_hndl(ke_msg_id_t const msgid,
     }
 }
 
-void undo_detect_timer_cb_handler(void)
+/*
+ ***** BBPG *****
+ */
+
+UI_FRAME_CLASS frame_waitConnect_1 =
 {
-    switch(BBPG_UNDO_STATE)
+    .priority = 0,
+    .showTime = 200,
+    .ui_frame_cb = waitConnect_1_cb
+};
+
+void waitConnect_1_cb(void)
+{
+    oledDrawClear();
+    oledDrawCnChar(0, 8, "等"); 
+    oledDrawCnChar(16,8, "待");
+    oledDrawCnChar(32,8, "配");
+    oledDrawCnChar(48,8, "对");
+}
+
+UI_FRAME_CLASS frame_waitConnect_2 =
+ {
+    .priority = 1,
+    .showTime = 200,
+    .ui_frame_cb = waitConnect_2_cb
+};
+
+void waitConnect_2_cb(void)
+{
+    oledDrawPicture(WAIT_CONNECT_PIC);
+}
+
+UI_FRAME_CLASS frame_identify_1 = 
+{
+    .priority = 0,
+    .showTime = 200,
+    .ui_frame_cb = identify_1_cb
+};
+
+void identify_1_cb(void)
+{
+    oledDrawPicture(INDENTIFY_1_PIC);
+}
+
+UI_FRAME_CLASS frame_identify_2 = 
+{
+    .priority = 1,
+    .showTime = 200,
+    .ui_frame_cb = identify_2_cb
+};
+
+void identify_2_cb(void)
+{
+    oledDrawPicture(INDENTIFY_2_PIC);
+}
+
+UI_FRAME_CLASS frame_identify_fail_1 = 
+{
+    .priority = 0,
+    .showTime = 200,
+    .ui_frame_cb = identify_fail_1
+};
+
+void identify_fail_1(void)
+{
+    oledDrawClear();
+    oledDrawCnChar(0, 8, "设"); 
+    oledDrawCnChar(16,8, "备");
+    oledDrawCnChar(32,8, "异");
+    oledDrawCnChar(48,8, "常");    
+}
+
+UI_FRAME_CLASS frame_identify_fail_2 = 
+{
+    .priority = 1,
+    .showTime = 200,
+    .ui_frame_cb = identify_fail_2
+};
+
+void identify_fail_2(void)
+{
+    oledDrawPicture(INDENTIFY_FAIL_PIC);
+}
+
+UI_FRAME_CLASS frame_identify_success_1 =
+{
+    .priority = 0,
+    .showTime = 200,
+    .ui_frame_cb = identify_success_1
+};
+
+void identify_success_1(void)
+{
+    oledDrawClear();
+    oledDrawCnChar(0, 8, "配"); 
+    oledDrawCnChar(16,8, "对");
+    oledDrawCnChar(32,8, "成");
+    oledDrawCnChar(48,8, "功");
+}
+
+UI_FRAME_CLASS frame_identify_success_2 = 
+{
+    .priority = 1,
+    .showTime = 200,
+    .ui_frame_cb = identify_success_2
+};
+
+void identify_success_2(void)
+{
+    oledDrawPicture(CONNECT_OK_PIC);
+}
+
+UI_FRAME_CLASS frame_connect_loss_1 = 
+{
+    .priority = 0,
+    .showTime = 200,
+    .ui_frame_cb = connect_loss_1 
+};
+
+void connect_loss_1(void)
+{
+    oledDrawClear();
+    oledDrawCnChar(0, 8, "配"); 
+    oledDrawCnChar(16,8, "对");
+    oledDrawCnChar(32,8, "丢");
+    oledDrawCnChar(48,8, "失");    
+}
+
+UI_FRAME_CLASS frame_connect_loss_2 = 
+{
+    .priority = 1,
+    .showTime = 200,
+    .ui_frame_cb = connect_loss_2 
+};
+
+void connect_loss_2(void)
+{
+    oledDrawPicture(CONNECT_LOSS_PIC);
+}
+
+UI_FRAME_CLASS frame_undo_alarm_1 =
+{
+    .priority = 2,
+    .showTime = 200,
+    .ui_frame_cb = undo_alarm_1
+};
+
+void undo_alarm_1(void)
+{
+    oledDrawClear();
+    oledDrawCnChar(0, 8, "破"); 
+    oledDrawCnChar(16,8, "拆");
+    oledDrawCnChar(32,8, "警");
+    oledDrawCnChar(48,8, "报");
+}
+
+UI_FRAME_CLASS frame_undo_alarm_2 =
+{
+    .priority = 3,
+    .showTime = 200,
+    .ui_frame_cb = undo_alarm_2
+};
+
+void undo_alarm_2(void)
+{
+    oledDrawPicture(UNDO_ALARM_PIC);
+}
+
+UI_FRAME_CLASS frame_battery_alarm =
+{
+    .priority = 4,
+    .showTime = 200,
+    .ui_frame_cb = battery_alarm
+};
+
+void battery_alarm(void)
+{
+    oledDrawClear();
+    oledDrawCnChar(0, 8, "电"); 
+    oledDrawCnChar(16,8, "量");
+    oledDrawCnChar(32,8, "警");
+    oledDrawCnChar(48,8, "报");
+}
+
+UI_FRAME_CLASS frame_wake_up_time_show =
+{
+    .priority = 5,
+    .showTime = 200,
+    .ui_frame_cb = wake_up_time_show
+};
+
+void wake_up_time_show(void)
+{
+    #include <time.h>
+    struct tm *time_ptr;  
+
+    time_ptr=localtime(&UNIX_TIMESTAMP); 
+                    
+    oledDrawClear();
+    oledDrawAsciiChar(2 ,4,((uint8_t)(time_ptr->tm_hour/10)+0x30));
+    oledDrawAsciiChar(14,4,((uint8_t)(time_ptr->tm_hour%10)+0x30));
+    oledDrawAsciiChar(26,4,0x3a);
+    oledDrawAsciiChar(38,4,((uint8_t)(time_ptr->tm_min/10)+0x30));
+    oledDrawAsciiChar(50,4,((uint8_t)(time_ptr->tm_min%10)+0x30));
+}
+   
+static UI_FRAME_CLASS* ui_frame_list[BBPG_UI_MAX_FRAME] = {0};
+
+void uiRegisterFrame(UI_FRAME_CLASS* tarFrame)
+{
+    ui_frame_list[tarFrame->priority] = tarFrame;
+}
+
+void uiUnregisterFrame(uint8_t frameNum)
+{
+    ui_frame_list[frameNum] = NULL;
+}
+ 
+void ui_refresh_timer_cb_handler(void)
+{
+    static uint8_t frame_count = 0;    
+    
+    switch(BBPG_UI_STATE)
     {
+        case(BBPG_UI_LAUNCH):
+            uiRegisterFrame(&frame_waitConnect_1);
+            uiRegisterFrame(&frame_waitConnect_2);
+
+            ui_refresh_timer = app_easy_timer(50/*0.5s*/, ui_refresh_timer_cb_handler);
+            
+            // refister first two frame
+            // wait for touch trigger ui start fresh frame of 0.5ms frequency
+            break;   
+
+        case(BBPG_UI_WORK):
+            if(ui_frame_list[frame_count] != NULL)
+            {
+                ui_frame_list[frame_count]->ui_frame_cb();
+                ui_refresh_timer = app_easy_timer(ui_frame_list[frame_count]->showTime, ui_refresh_timer_cb_handler);
+                
+                frame_count = (frame_count<BBPG_UI_MAX_FRAME-1)?(frame_count+1):(0);
+            }
+            else
+            {
+                while(1)
+                {
+                    frame_count = (frame_count<BBPG_UI_MAX_FRAME-1)?(frame_count+1):(0);
+
+                    if(ui_frame_list[frame_count] != NULL)
+                    {
+                        ui_frame_list[frame_count]->ui_frame_cb();
+                        ui_refresh_timer = app_easy_timer(ui_frame_list[frame_count]->showTime, ui_refresh_timer_cb_handler);
+                        
+                        frame_count = (frame_count<BBPG_UI_MAX_FRAME-1)?(frame_count+1):(0);
+
+                        break;
+                    }   
+                }
+            }
+            break;
+            
+        case(BBPG_UI_SLEEP):
+            oledEnterSleep();
+            
+            uiUnregisterFrame(0);
+            uiUnregisterFrame(1);
+            uiUnregisterFrame(4);
+            uiUnregisterFrame(5);
+        
+            BBPG_STATE = BBPG_HAVE_CONNECTION_OLED_SLEEP; //
+            break;
+        
+        case(BBPG_UI_WAKE_UP):
+            //BBPG_UI_STATE = BBPG_UI_SLEEP;
+            BBPG_UI_STATE = BBPG_UI_WORK;
+            uiRegisterFrame(&frame_wake_up_time_show); 
+            oledExitingSleep();
+        
+            ui_refresh_timer = app_easy_timer(1, ui_refresh_timer_cb_handler); 
+            break;
+        
+        default:
+            break;
+     }
+ }
+
+void undo_detect_timer_cb_handler(void)
+{  
+    struct custs1_val_ntf_req* req;
+    uint8_t breakNotify[32];
+    
+    static uint8_t ledCount;
+    
+    switch(BBPG_UNDO_STATE)
+    {   
         case(BBPG_UNDO_DETECT_NO_WORK):
             if(isUndoDetectAlarm())
             {
                 BBPG_UNDO_STATE = BBPG_UNDO_DETECT_ALARM;
                 setUndoDetectTheConnection();
                 undo_detect_timer = app_easy_timer(50/*0.5s*/, undo_detect_timer_cb_handler);
+
+                uiRegisterFrame(&frame_undo_alarm_1);
+                uiRegisterFrame(&frame_undo_alarm_2);
             }
             else
             {
                 BBPG_UNDO_STATE = BBPG_UNDO_DETECT_SAFE;
                 setUndoDetectTheDisconnection();
+                
             }
             break;
+            
         //case(BBPG_UNDO_DETECT_SAFE):
         case(BBPG_UNDO_DETECT_ALARM):
-            struct custs1_val_ntf_req* req = KE_MSG_ALLOC_DYN(CUSTS1_VAL_NTF_REQ,
-                                                              TASK_CUSTS1,
-                                                              TASK_APP,
-                                                              custs1_val_ntf_req,
-                                                              DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN);
-            uint8_t breakNotify[32];
-            static uint8_t ledCount;
 
             breakNotify[0] = 0x01;
 
-            req->conhdl = app_env->conhdl;
-            req->handle = CUST1_IDX_BBPG_BREAK_CHECK_VAL;
-            req->length = DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN;
-            
-            memcpy(req->value, &breakNotify, DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN);
-
             if((BBPG_STATE != BBPG_NO_CONNECTION) && (BBPG_STATE != BBPG_IDENTIFY))
             {
+                req = KE_MSG_ALLOC_DYN(CUSTS1_VAL_NTF_REQ,
+                                       TASK_CUSTS1,
+                                       TASK_APP,
+                                       custs1_val_ntf_req,
+                                       DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN);
+
+                req->conhdl = app_env->conhdl;
+                req->handle = CUST1_IDX_BBPG_BREAK_CHECK_VAL;
+                req->length = DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN;
+            
+                memcpy(req->value, &breakNotify, DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN);
+                
                 ke_msg_send(req);
             }
-
-            undo_detect_timer = app_easy_timer(100/*1s*/, undo_detect_timer_cb_handler);
 
             if(ledCount)
             {
                 ledCount = ~ledCount;
 
                 setPwm2Duty(0); // flash the led
-                setPwm4Duty(100); // disable the sounder
+                setPwm4Duty(50); // disable the sounder
             }
             else
             {
                 ledCount = ~ledCount;
 
                 setPwm2Duty(100);
-                setPwm4Duty(100);                 
+                setPwm4Duty(50);                 
             }
+
+            undo_detect_timer = app_easy_timer(100/*1s*/, undo_detect_timer_cb_handler);
 
             break;
 
@@ -409,109 +668,6 @@ void undo_detect_timer_cb_handler(void)
             break;
     }
 }
-
-void ui_refresh_timer_cb_handler(void)
-{
-    switch(BBPG_UI_STATE)
-    {
-        case(BBPG_UI_LAUNCH):
-            ui_refresh_timer = app_easy_timer(50/*0.5ms*/, ui_refresh_timer_cb_handler);
-            // wait for touch trigger wait connect ui of 0.5ms frequency
-            break;   
-        
-        case(BBPG_UI_WAIT_CONNECT_1):
-            BBPG_UI_STATE = BBPG_UI_WAIT_CONNECT_2;
-            oledDrawClear();
-            oledDrawCnChar(0, 8, "等"); 
-            oledDrawCnChar(16,8, "待");
-            oledDrawCnChar(32,8, "配");
-            oledDrawCnChar(48,8, "对");
-            ui_refresh_timer = app_easy_timer(200, ui_refresh_timer_cb_handler);
-            break;
-        
-        case(BBPG_UI_WAIT_CONNECT_2):
-            BBPG_UI_STATE = BBPG_UI_WAIT_CONNECT_1;
-            //oledDrawClear();
-            oledDrawPicture(WAIT_CONNECT_PIC);
-            ui_refresh_timer = app_easy_timer(200, ui_refresh_timer_cb_handler);
-            break;
-        
-        case(BBPG_UI_IDENTIFY_1):
-            BBPG_UI_STATE = BBPG_UI_IDENTIFY_2;
-            oledDrawPicture(INDENTIFY_1_PIC);
-            ui_refresh_timer = app_easy_timer(200, ui_refresh_timer_cb_handler);
-            break;
-        
-        case(BBPG_UI_IDENTIFY_2):
-            BBPG_UI_STATE = BBPG_UI_IDENTIFY_1;
-            oledDrawPicture(INDENTIFY_2_PIC);
-            ui_refresh_timer = app_easy_timer(200, ui_refresh_timer_cb_handler);
-            break;
-        
-        case(BBPG_UI_IDENTIFY_FAIL):
-            BBPG_UI_STATE = BBPG_UI_WAIT_CONNECT_1;
-            oledDrawClear();
-            oledDrawCnChar(0, 8, "设"); 
-            oledDrawCnChar(16,8, "备");
-            oledDrawCnChar(32,8, "异");
-            oledDrawCnChar(48,8, "常");
-            ui_refresh_timer = app_easy_timer(500, ui_refresh_timer_cb_handler);
-            break;
-        
-        case(BBPG_UI_IDENTIFY_SUCCESS):
-            BBPG_UI_STATE = BBPG_UI_CONNECT_OK_1;
-            oledDrawClear();
-            oledDrawCnChar(0, 8, "配"); 
-            oledDrawCnChar(16,8, "对");
-            oledDrawCnChar(32,8, "成");
-            oledDrawCnChar(48,8, "功");
-            ui_refresh_timer = app_easy_timer(200, ui_refresh_timer_cb_handler);
-            break;
-        
-        case(BBPG_UI_CONNECT_OK_1):
-            BBPG_UI_STATE = BBPG_UI_IDENTIFY_SUCCESS;
-            oledDrawPicture(CONNECT_OK_PIC);
-            ui_refresh_timer = app_easy_timer(200, ui_refresh_timer_cb_handler);
-            break;
-        
-        case(BBPG_UI_CONNECT_LOSS_1):
-            BBPG_UI_STATE = BBPG_UI_CONNECT_LOSS_2;
-            oledDrawClear();
-            oledDrawCnChar(0, 8, "配"); 
-            oledDrawCnChar(16,8, "对");
-            oledDrawCnChar(32,8, "丢");
-            oledDrawCnChar(48,8, "失");
-            ui_refresh_timer = app_easy_timer(200, ui_refresh_timer_cb_handler);    
-            break;
-        
-        case(BBPG_UI_CONNECT_LOSS_2):
-            BBPG_UI_STATE = BBPG_UI_CONNECT_LOSS_1;
-            oledDrawPicture(CONNECT_LOSS_PIC);
-            ui_refresh_timer = app_easy_timer(200, ui_refresh_timer_cb_handler);    
-            break;         
-        
-        case(BBPG_UI_SLEEP):
-            oledEnterSleep();
-            break;
-        
-        case(BBPG_UI_WAKE_UP):
-            BBPG_UI_STATE = BBPG_UI_SLEEP;
-            BBPG_STATE = BBPG_HAVE_CONNECTION_OLED_SLEEP; //
-            
-            oledExitingSleep();
-            oledDrawClear();
-            oledDrawAsciiChar(2,4,0x31);
-            oledDrawAsciiChar(14,4,0x39);
-            oledDrawAsciiChar(26,4,0x3a);
-            oledDrawAsciiChar(38,4,0x35);
-            oledDrawAsciiChar(50,4,0x37);
-            ui_refresh_timer = app_easy_timer(1000, ui_refresh_timer_cb_handler); 
-            break;
-        
-        default:
-            break;
-     }
- }
 
 void identify_timer_cb_handler(void)
 {
@@ -520,15 +676,8 @@ void identify_timer_cb_handler(void)
         case(BBPG_IDENTIFY):
             BBPG_STATE = BBPG_NO_CONNECTION;
             
-            switch(BBPG_UI_STATE)
-            {
-                case(BBPG_UI_IDENTIFY_1):
-                case(BBPG_UI_IDENTIFY_2):
-                    BBPG_UI_STATE = BBPG_UI_IDENTIFY_FAIL;
-                    break;
-                default:
-                    break;
-            }
+            uiRegisterFrame(&frame_identify_fail_1);
+            uiRegisterFrame(&frame_identify_fail_2);
         
             app_disconnect();
             //app_easy_timer_cancel(identify_timer); can not cancel itself that execute in its own body??
@@ -537,17 +686,33 @@ void identify_timer_cb_handler(void)
             break;
     }
 }
- 
+
+void timestamp_tictok_timer_cb_handler(void)
+{
+    UNIX_TIMESTAMP++;
+    
+    timer_counter_timer = app_easy_timer(100/*1s*/, timestamp_tictok_timer_cb_handler); // never stop
+}
+
 void start_advertise_user_define_cb(void)
 {
+    static uint8_t isTimestampTimerInit = 0;
+    
+    if(!isTimestampTimerInit)
+    {
+        isTimestampTimerInit = 1;
+        
+        timer_counter_timer = app_easy_timer(100/*1s*/, timestamp_tictok_timer_cb_handler);
+    }
+    
     switch(BBPG_STATE)
     {
         case(BBPG_NO_CONNECTION):
             switch(BBPG_UI_STATE)
             {
                 case(BBPG_UI_LAUNCH):
-                    ui_refresh_timer = app_easy_timer(50/*0.5s*/, ui_refresh_timer_cb_handler);
-                    // wait for touch trigger wait connect ui of 0.5ms frequency
+                    ui_refresh_timer = app_easy_timer(1/*10ms*/, ui_refresh_timer_cb_handler);
+                    // launch ui
                     break;
                 default:
                     break;
@@ -561,29 +726,69 @@ void start_advertise_user_define_cb(void)
     switch(BBPG_UNDO_STATE)
     {
         case(BBPG_UNDO_DETECT_NO_WORK):
-            undo_detect_timer = app_easy_timer(50/*0.5s*/, undo_detect_timer_cb_handler);
+            undo_detect_timer = app_easy_timer(1/*10ms*/, undo_detect_timer_cb_handler);
+            // launch undo detect
+            break;
+        default:
+            break;
+    }
+    
+    switch(BBPG_BAT_STATE)
+    {
+        case(BBPG_BAT_UNINIT):
+            battery_monitor_timer = app_easy_timer(1/*10s*/, battery_state_update_timer_cb_handler);
             break;
         default:
             break;
     }
 }
 
+void battery_state_update_timer_cb_handler(void)
+{
+    float bat_adc_sample;
+    
+    bat_adc_sample = adcGetP00VbatVal() *BBPG_BAT_CAL_K;
+    
+    if( bat_adc_sample > BBPG_BAT_WORRY_VAL )
+    {
+        BBPG_BAT_STATE = BBPG_BAT_OK;
+        
+        uiUnregisterFrame(4);
+    }
+    else if((BBPG_BAT_WORRY_VAL >= bat_adc_sample) && (bat_adc_sample> BBPG_BAT_OMG_VAL))
+    {
+        BBPG_BAT_STATE = BBPG_BAT_WORRY;
+        
+        uiUnregisterFrame(4);
+    }
+    else if( BBPG_BAT_OMG_VAL >= bat_adc_sample)
+    {
+        BBPG_BAT_STATE = BBPG_BAT_OMG;
+        
+        uiRegisterFrame(&frame_battery_alarm);
+    }
+        
+    battery_monitor_timer = app_easy_timer(1000/*10s*/, battery_state_update_timer_cb_handler);
+}
+
 void connection_build_user_define_cb(void)
 {
-    uint32_t sample;
-    sample = adcGetP00VbatVal();
     switch(BBPG_UI_STATE)
     {
-        case(BBPG_UI_CONNECT_LOSS_1):
-        case(BBPG_UI_CONNECT_LOSS_2):
-        case(BBPG_UI_LAUNCH):        
-        case(BBPG_UI_WAIT_CONNECT_1):
-        case(BBPG_UI_WAIT_CONNECT_2):
-            BBPG_UI_STATE = BBPG_UI_IDENTIFY_1;
+        case(BBPG_UI_LAUNCH):
+            BBPG_UI_STATE = BBPG_UI_WORK;
+            uiRegisterFrame(&frame_identify_1);
+            uiRegisterFrame(&frame_identify_2);
             break;
+
+        case(BBPG_UI_WORK):
+            uiRegisterFrame(&frame_identify_1);
+            uiRegisterFrame(&frame_identify_2);
+            break;
+
         default:
             break;
-    }    
+    }
     BBPG_STATE = BBPG_IDENTIFY;
     identify_timer = app_easy_timer(BBPG_IDENTIFY_TIME, identify_timer_cb_handler);
 }
@@ -598,8 +803,10 @@ void disconnection_occur_user_define_sb(void)
             switch(BBPG_UI_STATE)
             {
                 case(BBPG_UI_SLEEP):    
-                    BBPG_UI_STATE = BBPG_UI_CONNECT_LOSS_1;
-                     
+                    BBPG_UI_STATE = BBPG_UI_WORK;
+                    uiRegisterFrame(&frame_connect_loss_1);
+                    uiRegisterFrame(&frame_connect_loss_2);
+
                     ui_refresh_timer = app_easy_timer(1, ui_refresh_timer_cb_handler);  // oled wake up first call
                     break;
                 
@@ -612,11 +819,11 @@ void disconnection_occur_user_define_sb(void)
             BBPG_STATE = BBPG_NO_CONNECTION;
             switch(BBPG_UI_STATE)
             {
-                case(BBPG_UI_IDENTIFY_SUCCESS):
-                case(BBPG_UI_CONNECT_OK_1):
-                    BBPG_UI_STATE = BBPG_UI_CONNECT_LOSS_1;
+                case(BBPG_UI_WORK):
+                    uiRegisterFrame(&frame_connect_loss_1);
+                    uiRegisterFrame(&frame_connect_loss_2);
                     break;
-                
+
                 default:
                     break;
             }
@@ -626,9 +833,9 @@ void disconnection_occur_user_define_sb(void)
             BBPG_STATE = BBPG_NO_CONNECTION;
             switch(BBPG_UI_STATE)
             {
-                case(BBPG_UI_IDENTIFY_1):
-                case(BBPG_UI_IDENTIFY_2):
-                    BBPG_UI_STATE = BBPG_UI_IDENTIFY_FAIL;
+                case(BBPG_UI_WORK):
+                    uiRegisterFrame(&frame_connect_loss_1);
+                    uiRegisterFrame(&frame_connect_loss_2);
                     break;
 
                 default:
@@ -641,50 +848,45 @@ void disconnection_occur_user_define_sb(void)
     }
 }
 
-static const uint8_t battery_filter_option=0;
-
-static inline uint16_t battery_filter_value (uint16_t new_adc_value)
+void identifySuccessUiUpdateCallBack(void)
 {
-     switch(battery_filter_option)
-     {
-         case 0:
-                 return(new_adc_value);
-         case 1:
-                 return(new_adc_value&0xFFF0);
-         case 2:
-                 return(battery_moving_average_filter(new_adc_value));
-         case 3:
-                 return(battery_moving_average_with_reaction_filter(new_adc_value));
-     }
-     return (new_adc_value);
+    uiRegisterFrame(&frame_identify_success_1);
+    uiRegisterFrame(&frame_identify_success_2);
 }
 
-uint32_t adcGetP00VbatVal(void)
+void undoDetectUiUpdateCallBack(bool isCancel)
 {
-    static uint32_t adc_sample, adc_sample2;
-    
-    adc_calibrate();
-
-    adc_init(GP_ADC_SE, GP_ADC_SIGN, GP_ADC_ATTN3X);
-    adc_usDelay(20);
-
-    adc_enable_channel(ADC_CHANNEL_P00);
-
-    adc_sample = adc_get_sample();
-    adc_usDelay(1);
-    adc_init(GP_ADC_SE, 0, GP_ADC_ATTN3X );
-    
-    adc_enable_channel(ADC_CHANNEL_P00);
-
-    adc_sample2 = adc_get_sample();
-    //We have to divide the following result by 2 if
-    //the 10 bit accuracy is enough
-    adc_sample = (adc_sample2 + adc_sample);
-    adc_disable();
-
-    adc_sample = battery_filter_value(adc_sample);
-    
-    return adc_sample;
+    if(isCancel)
+    {
+        uiUnregisterFrame(2);
+        uiUnregisterFrame(3);
+    }
+    else
+    {
+        switch(BBPG_UI_STATE)
+        {
+            case(BBPG_UI_SLEEP):
+                BBPG_UI_STATE = BBPG_UI_WORK;
+            
+                uiRegisterFrame(&frame_undo_alarm_1);
+                uiRegisterFrame(&frame_undo_alarm_2);
+                oledExitingSleep();    
+            
+                BBPG_STATE = BBPG_HAVE_CONNECTION;
+            
+                ui_refresh_timer = app_easy_timer(1, ui_refresh_timer_cb_handler);   
+                break;
+            
+            case(BBPG_UI_WORK):
+                uiRegisterFrame(&frame_undo_alarm_1);
+                uiRegisterFrame(&frame_undo_alarm_2);
+                break;
+            
+            default:
+                break;
+        }
+    }
 }
+
 
 /// @} APP

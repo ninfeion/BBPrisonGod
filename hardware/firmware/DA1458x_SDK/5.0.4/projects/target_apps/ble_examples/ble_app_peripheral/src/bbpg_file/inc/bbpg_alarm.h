@@ -19,6 +19,9 @@ void setPwm4Duty(uint8_t val);
 void pwm234Pause(void);
 void pwm234Continue(void);
 
+void enableMotorGPIO(void);
+void disableMotorGPIO(void);
+
 void breakDetectInit(GPIO_PORT undo_port, GPIO_PIN undo_pin,
                      GPIO_PORT cut_port, GPIO_PIN cut_pin);
 bool isUndoDetectAlarm(void);
