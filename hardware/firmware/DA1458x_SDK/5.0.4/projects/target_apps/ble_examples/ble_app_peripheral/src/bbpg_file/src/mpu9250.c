@@ -25,16 +25,18 @@ void mpu9250Init(GPIO_PORT I2C_GPIO_PORT, GPIO_PIN I2C_SCL_PIN, GPIO_PIN I2C_SDA
      * BBFLIGHT SET
      *****
      */
-    /*
-	hwI2CWriteByte(RA_PWR_MGMT_1, 0x00);
+    hwI2CWriteByte(RA_PWR_MGMT_1, 0x08);     // set PD_PTAT = 1
+    delay_ms(1000);
+    hwI2CWriteByte(RA_PWR_MGMT_2, 0x07);     // disable all gyro axis
 	delay_ms(1000);
-	hwI2CWriteByte(RA_SMPLRT_DIV, 0x00);     // 0x00	SAMPLE_RATE=Internal_Sample_Rate / (1 + SMPLRT_DIV)
-	hwI2CWriteByte(RA_CONFIG, 0x02);         // 0x02	Set gyro sample rate to 1 kHz and DLPF to 92 Hz
-	hwI2CWriteByte(RA_GYRO_CONFIG, 0x18);    // 2000d/s
+	hwI2CWriteByte(RA_SMPLRT_DIV, 0xFF);     // 0x00	SAMPLE_RATE=Internal_Sample_Rate / (1 + SMPLRT_DIV)
+	//hwI2CWriteByte(RA_CONFIG, 0x02);         // 0x02	Set gyro sample rate to 1 kHz and DLPF to 92 Hz
+	//hwI2CWriteByte(RA_GYRO_CONFIG, 0x18);    // 2000d/s
 	hwI2CWriteByte(RA_ACCEL_CONFIG_1, 0x18); // 16g range
-	hwI2CWriteByte(RA_ACCEL_CONFIG_2, 0x02); // Set accelerometer rate to 1 kHz and bandwidth to 92 Hz
+	hwI2CWriteByte(RA_ACCEL_CONFIG_2, 0x04); // Set accelerometer rate to 1 kHz and bandwidth to 20 Hz
     
-		
+    delay_ms(1000);
+    
 	#ifdef MPU_PASSMODE_ENABLED
         hwI2CWriteByte(RA_INT_PIN_CFG,0x02); // turn on Bypass Mode 
 		delay_ms(1000);
@@ -48,39 +50,44 @@ void mpu9250Init(GPIO_PORT I2C_GPIO_PORT, GPIO_PIN I2C_SCL_PIN, GPIO_PIN I2C_SDA
 		hwI2CWriteByte(AK8963_CNTL,AK8963_POWER_DOWN); // address should be switch to ak's, into power down
 		delay_ms(100);
 	#endif       
-    */
+    
     
     /*********************
      * BBPG SET
      *********************
      */
+    /*
     hwI2CWriteByte(RA_PWR_MGMT_1, 0x28);        // set CYCLE = 1, set SLEEP = 0, set PD_PTAT = 1
+    delay_ms(1000);
     hwI2CWriteByte(RA_PWR_MGMT_2, 0x07);        // disable all gyro axis
+    delay_ms(1000);
     hwI2CWriteByte(RA_LP_ACCEL_ODR, 0x05);      // set the low power accel ODR: 7.81Hz
     
     hwI2CWriteByte(RA_SMPLRT_DIV, 0x00);        // low power mode, don't care this register
-    hwI2CWriteByte(RA_CONFIG, 0x40);            // set fifo mode to 1: fifo would not be written when full
+    hwI2CWriteByte(RA_CONFIG, 0x00);            // set fifo mode to 0: fifo would over written when full, if mode is 1 would not write when full
     hwI2CWriteByte(RA_ACCEL_CONFIG_1, 0x18);    // 16g accel full scale range, disable xyz self test
-	hwI2CWriteByte(RA_ACCEL_CONFIG_2, 0x00);    // Set accel_fchoice_b = 0, the ORD follow LP_ACCEL_ODR register
+	hwI2CWriteByte(RA_ACCEL_CONFIG_2, 0x08);    // Set accel_fchoice_b = 1, then ACCEL_FCHOICE = 0(inverted);the ORD follow LP_ACCEL_ODR register
     
     hwI2CWriteByte(RA_FIFO_EN, 0x08);           // only enable accel fifo write
+     
+    delay_ms(1000);
+    */
 }
-
 
 uint16_t readMPUFIFOCount(void)
 {
     uint8_t buffer[2];
-    hwI2CReadMultipleBytes(buffer, RA_FIFO_CNT_H, 2);
+    //hwI2CReadMultipleBytes(buffer, RA_FIFO_CNT_H, 2);
+    hwI2CReadByte(RA_FIFO_CNT_H, &buffer[0]);
+    hwI2CReadByte(RA_FIFO_CNT_L, &buffer[1]);
     
     return ((uint16_t) buffer[0]<<8) | ((uint16_t) buffer[1]);
 }
-
 
 void readMPUFIFO(uint8_t* data, uint32_t size)
 {
     hwI2CReadMultipleBytes(data, RA_FIFO_R_W, size);
 }
-
 
 uint8_t getMPU9250ID(void)
 {

@@ -166,6 +166,7 @@ void undo_alarm_1(void);
 void undo_alarm_2(void);
 void battery_alarm(void);
 void wake_up_time_show(void);
+void list_empty_show(void);
 
 void identifySuccessUiUpdateCallBack(void);
 

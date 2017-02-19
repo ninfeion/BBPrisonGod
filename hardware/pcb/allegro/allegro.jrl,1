@@ -1,15 +1,15 @@
 \t (00:00:03) allegro 17.2 S004 Windows SPB 64-bit Edition
-\t (00:00:03)     Journal start - Mon Feb 06 02:58:24 2017
-\t (00:00:03)         Host=NINFEION-PC User=Ninfeion Pid=5304 CPUs=4
+\t (00:00:03)     Journal start - Sun Feb 12 20:48:59 2017
+\t (00:00:03)         Host=NINFEION-PC User=Ninfeion Pid=5912 CPUs=4
 \t (00:00:03) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
 \t (00:00:03) 
    (00:00:03) Loading axlcore.cxt 
-\t (00:00:05) Opening existing design...
-\d (00:00:05) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_PCB_V238_VBUS_CHANGE.brd
-\i (00:00:05) trapsize 6487
+\t (00:00:04) Opening existing design...
+\d (00:00:04) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_PCB_V238_VBUS_CHANGE.brd
+\i (00:00:04) trapsize 6487
 \i (00:00:05) trapsize 6731
 \i (00:00:05) trapsize 6731
 \i (00:00:05) trapsize 6562
 \i (00:00:05) generaledit 
-\i (00:00:07) exit 
-\t (00:00:07)     Journal end - Mon Feb 06 02:58:27 2017
+\i (00:00:09) exit 
+\t (00:00:09)     Journal end - Sun Feb 12 20:49:04 2017

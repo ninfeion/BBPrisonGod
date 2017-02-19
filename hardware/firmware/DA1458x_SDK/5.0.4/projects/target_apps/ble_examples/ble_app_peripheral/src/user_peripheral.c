@@ -38,6 +38,8 @@
 #include "bbpg_alarm.h"
 #include "oled_draw.h"
 #include "bbpg_user_setup.h"
+#include "mpu9250.h"
+
 
 /*
  * TYPE DEFINITIONS
@@ -71,6 +73,7 @@ ke_msg_id_t identify_timer;
 ke_msg_id_t undo_detect_timer;
 ke_msg_id_t battery_monitor_timer;
 ke_msg_id_t timer_counter_timer;
+ke_msg_id_t accel_refresh_timer;
 
 // Manufacturer Specific Data
 struct mnf_specific_data_ad_structure mnf_data __attribute__((section("retention_mem_area0"),zero_init)); //@RETENTION MEMORY
@@ -284,6 +287,7 @@ void user_catch_rest_hndl(ke_msg_id_t const msgid,
                     break;
                 
                 case CUST1_IDX_BBPG_LOSS_CHECK_VAL:
+                    bbpg_loss_check_wr_ind_handler(msgid, msg_param, dest_id, src_id);
                     break;
 
                 default:
@@ -497,7 +501,7 @@ void battery_alarm(void)
 UI_FRAME_CLASS frame_wake_up_time_show =
 {
     .priority = 5,
-    .showTime = 200,
+    .showTime = 500,
     .ui_frame_cb = wake_up_time_show
 };
 
@@ -515,7 +519,21 @@ void wake_up_time_show(void)
     oledDrawAsciiChar(38,4,((uint8_t)(time_ptr->tm_min/10)+0x30));
     oledDrawAsciiChar(50,4,((uint8_t)(time_ptr->tm_min%10)+0x30));
 }
-   
+
+UI_FRAME_CLASS frame_list_empty_show =
+{
+    .priority = 6,
+    .showTime = 200,
+    .ui_frame_cb = list_empty_show
+};
+
+void list_empty_show(void)
+{
+    oledDrawPicture(LAUNCH_PIC);
+}
+
+
+// TODO: UI frame list check initialization
 static UI_FRAME_CLASS* ui_frame_list[BBPG_UI_MAX_FRAME] = {0};
 
 void uiRegisterFrame(UI_FRAME_CLASS* tarFrame)
@@ -530,7 +548,9 @@ void uiUnregisterFrame(uint8_t frameNum)
  
 void ui_refresh_timer_cb_handler(void)
 {
+    UI_FRAME_CLASS* frame_ptr_temp;
     static uint8_t frame_count = 0;    
+    uint8_t frame_empty_check_count;
     
     switch(BBPG_UI_STATE)
     {
@@ -545,10 +565,14 @@ void ui_refresh_timer_cb_handler(void)
             break;   
 
         case(BBPG_UI_WORK):
+            
+            frame_ptr_temp = ui_frame_list[frame_count]; // for bug that the undo alarm cancel and display incorrectly ##DEBUG.1702191936 
             if(ui_frame_list[frame_count] != NULL)
-            {
-                ui_frame_list[frame_count]->ui_frame_cb();
-                ui_refresh_timer = app_easy_timer(ui_frame_list[frame_count]->showTime, ui_refresh_timer_cb_handler);
+            {   
+                //ui_frame_list[frame_count]->ui_frame_cb(); ##DEBUG.1702191936 
+                //ui_refresh_timer = app_easy_timer(ui_frame_list[frame_count]->showTime, ui_refresh_timer_cb_handler); ##DEBUG.1702191936 
+                frame_ptr_temp->ui_frame_cb();
+                ui_refresh_timer = app_easy_timer(frame_ptr_temp->showTime, ui_refresh_timer_cb_handler);
                 
                 frame_count = (frame_count<BBPG_UI_MAX_FRAME-1)?(frame_count+1):(0);
             }
@@ -557,16 +581,38 @@ void ui_refresh_timer_cb_handler(void)
                 while(1)
                 {
                     frame_count = (frame_count<BBPG_UI_MAX_FRAME-1)?(frame_count+1):(0);
-
+                    
+                    frame_ptr_temp = ui_frame_list[frame_count]; // for bug that the undo alarm cancel and display incorrectly ##DEBUG.1702191936 
                     if(ui_frame_list[frame_count] != NULL)
                     {
-                        ui_frame_list[frame_count]->ui_frame_cb();
-                        ui_refresh_timer = app_easy_timer(ui_frame_list[frame_count]->showTime, ui_refresh_timer_cb_handler);
+                        //ui_frame_list[frame_count]->ui_frame_cb(); ##DEBUG.1702191936 
+                        //ui_refresh_timer = app_easy_timer(ui_frame_list[frame_count]->showTime, ui_refresh_timer_cb_handler); ##DEBUG.1702191936 
+                        frame_ptr_temp->ui_frame_cb();
+                        ui_refresh_timer = app_easy_timer(frame_ptr_temp->showTime, ui_refresh_timer_cb_handler);
                         
                         frame_count = (frame_count<BBPG_UI_MAX_FRAME-1)?(frame_count+1):(0);
 
                         break;
-                    }   
+                    }
+                    else    // check whether frame list empty or not.
+                    {
+                        for(frame_empty_check_count=0; frame_empty_check_count< BBPG_UI_MAX_FRAME; frame_empty_check_count++)
+                        {
+                            if(ui_frame_list[frame_empty_check_count] != NULL)
+                            {
+                                break;
+                            }
+                        }
+                        
+                        if(frame_empty_check_count == BBPG_UI_MAX_FRAME)
+                        {
+                            uiRegisterFrame(&frame_list_empty_show);
+                            
+                            ui_refresh_timer = app_easy_timer(1, ui_refresh_timer_cb_handler);
+                            
+                            break;
+                        }
+                    }
                 }
             }
             break;
@@ -576,8 +622,9 @@ void ui_refresh_timer_cb_handler(void)
             
             uiUnregisterFrame(0);
             uiUnregisterFrame(1);
-            uiUnregisterFrame(4);
+            //uiUnregisterFrame(4);
             uiUnregisterFrame(5);
+            uiUnregisterFrame(6);
         
             BBPG_STATE = BBPG_HAVE_CONNECTION_OLED_SLEEP; //
             break;
@@ -598,9 +645,6 @@ void ui_refresh_timer_cb_handler(void)
 
 void undo_detect_timer_cb_handler(void)
 {  
-    struct custs1_val_ntf_req* req;
-    uint8_t breakNotify[32];
-    
     static uint8_t ledCount;
     
     switch(BBPG_UNDO_STATE)
@@ -625,41 +669,48 @@ void undo_detect_timer_cb_handler(void)
             
         //case(BBPG_UNDO_DETECT_SAFE):
         case(BBPG_UNDO_DETECT_ALARM):
-
-            breakNotify[0] = 0x01;
-
-            if((BBPG_STATE != BBPG_NO_CONNECTION) && (BBPG_STATE != BBPG_IDENTIFY))
-            {
-                req = KE_MSG_ALLOC_DYN(CUSTS1_VAL_NTF_REQ,
-                                       TASK_CUSTS1,
-                                       TASK_APP,
-                                       custs1_val_ntf_req,
-                                       DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN);
-
-                req->conhdl = app_env->conhdl;
-                req->handle = CUST1_IDX_BBPG_BREAK_CHECK_VAL;
-                req->length = DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN;
             
-                memcpy(req->value, &breakNotify, DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN);
+            if(BBPG_OPTION.UNDO_ALARM_ENABLE)
+            {
+                if((BBPG_STATE != BBPG_NO_CONNECTION) && (BBPG_STATE != BBPG_IDENTIFY))
+                {
+                    struct custs1_val_ntf_req* req;
+                    uint8_t breakNotify[32];
+      
+                    //breakNotify[0] = 0x01;
+                    sprintf(breakNotify, "%s %d", DATA_UNDO_ALARM_SEND_TO_PHONE, UNIX_TIMESTAMP);
+                    
+                    req = KE_MSG_ALLOC_DYN(CUSTS1_VAL_NTF_REQ,
+                                           TASK_CUSTS1,
+                                           TASK_APP,
+                                           custs1_val_ntf_req,
+                                           DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN);
+
+                    req->conhdl = app_env->conhdl;
+                    req->handle = CUST1_IDX_BBPG_BREAK_CHECK_VAL;
+                    req->length = DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN;
                 
-                ke_msg_send(req);
+                    memcpy(req->value, &breakNotify, DEF_CUST1_BBPG_BREAK_CHECK_CHAR_LEN);
+                    
+                    ke_msg_send(req);
+                }
+
+                if(ledCount)
+                {
+                    ledCount = ~ledCount;
+
+                    setPwm2Duty(0); // flash the led
+                    setPwm4Duty(50); // disable the sounder
+                }
+                else
+                {
+                    ledCount = ~ledCount;
+
+                    setPwm2Duty(100);
+                    setPwm4Duty(50);                 
+                }
             }
-
-            if(ledCount)
-            {
-                ledCount = ~ledCount;
-
-                setPwm2Duty(0); // flash the led
-                setPwm4Duty(50); // disable the sounder
-            }
-            else
-            {
-                ledCount = ~ledCount;
-
-                setPwm2Duty(100);
-                setPwm4Duty(50);                 
-            }
-
+            
             undo_detect_timer = app_easy_timer(100/*1s*/, undo_detect_timer_cb_handler);
 
             break;
@@ -694,6 +745,30 @@ void timestamp_tictok_timer_cb_handler(void)
     timer_counter_timer = app_easy_timer(100/*1s*/, timestamp_tictok_timer_cb_handler); // never stop
 }
 
+void accel_refresh_timer_cb_handler(void)
+{
+    //static uint16_t mpuFIFOCount;
+    
+    static int16_t accelRaw[3];
+    
+    //static uint8_t fifoTemp[48]; 
+    
+    switch(BBPG_ACCEL_STATE)
+    {
+        case(BBPG_ACCEL_METER_WORK):
+            //mpuFIFOCount = readMPUFIFOCount();
+            //readMPUFIFO(fifoTemp, 48);
+        
+            readMPU9250AccelRaw(accelRaw);
+        
+            accel_refresh_timer = app_easy_timer(100/*1s, sleep detect, and destory detect*/, accel_refresh_timer_cb_handler);
+            break;
+        
+        default:
+            break;
+    }
+}
+
 void start_advertise_user_define_cb(void)
 {
     static uint8_t isTimestampTimerInit = 0;
@@ -705,13 +780,29 @@ void start_advertise_user_define_cb(void)
         timer_counter_timer = app_easy_timer(100/*1s*/, timestamp_tictok_timer_cb_handler);
     }
     
+    switch(BBPG_ACCEL_STATE)
+    {
+        case(BBPG_ACCEL_METER_UNINIT):
+            BBPG_ACCEL_STATE = BBPG_ACCEL_METER_WORK;
+        
+            accel_refresh_timer = app_easy_timer(1, accel_refresh_timer_cb_handler);
+            break;
+        
+        case(BBPG_ACCEL_METER_WORK):
+            break;
+    
+        default:
+            break;
+    }
+            
+    
     switch(BBPG_STATE)
     {
         case(BBPG_NO_CONNECTION):
             switch(BBPG_UI_STATE)
             {
                 case(BBPG_UI_LAUNCH):
-                    ui_refresh_timer = app_easy_timer(1/*10ms*/, ui_refresh_timer_cb_handler);
+                    ui_refresh_timer = app_easy_timer(1, ui_refresh_timer_cb_handler);
                     // launch ui
                     break;
                 default:
@@ -726,7 +817,7 @@ void start_advertise_user_define_cb(void)
     switch(BBPG_UNDO_STATE)
     {
         case(BBPG_UNDO_DETECT_NO_WORK):
-            undo_detect_timer = app_easy_timer(1/*10ms*/, undo_detect_timer_cb_handler);
+            undo_detect_timer = app_easy_timer(1, undo_detect_timer_cb_handler);
             // launch undo detect
             break;
         default:
@@ -736,7 +827,7 @@ void start_advertise_user_define_cb(void)
     switch(BBPG_BAT_STATE)
     {
         case(BBPG_BAT_UNINIT):
-            battery_monitor_timer = app_easy_timer(1/*10s*/, battery_state_update_timer_cb_handler);
+            battery_monitor_timer = app_easy_timer(1, battery_state_update_timer_cb_handler);
             break;
         default:
             break;
@@ -806,6 +897,8 @@ void disconnection_occur_user_define_sb(void)
                     BBPG_UI_STATE = BBPG_UI_WORK;
                     uiRegisterFrame(&frame_connect_loss_1);
                     uiRegisterFrame(&frame_connect_loss_2);
+                    
+                    uiUnregisterFrame(5); // TODO: for disconnect but display time
 
                     ui_refresh_timer = app_easy_timer(1, ui_refresh_timer_cb_handler);  // oled wake up first call
                     break;
@@ -822,6 +915,8 @@ void disconnection_occur_user_define_sb(void)
                 case(BBPG_UI_WORK):
                     uiRegisterFrame(&frame_connect_loss_1);
                     uiRegisterFrame(&frame_connect_loss_2);
+                    
+                    uiUnregisterFrame(5); // TODO: for disconnect but display time
                     break;
 
                 default:
@@ -836,6 +931,8 @@ void disconnection_occur_user_define_sb(void)
                 case(BBPG_UI_WORK):
                     uiRegisterFrame(&frame_connect_loss_1);
                     uiRegisterFrame(&frame_connect_loss_2);
+                
+                    uiUnregisterFrame(5); // TODO: maybe this also necessary
                     break;
 
                 default:

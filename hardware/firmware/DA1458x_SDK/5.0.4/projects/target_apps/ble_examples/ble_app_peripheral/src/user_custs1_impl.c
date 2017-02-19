@@ -51,6 +51,14 @@ BBPG_STATE_T BBPG_STATE = BBPG_NO_CONNECTION;
 BBPG_UI_STATE_T BBPG_UI_STATE = BBPG_UI_LAUNCH;
 BBPG_UNDO_DETECT_STATE_T BBPG_UNDO_STATE = BBPG_UNDO_DETECT_NO_WORK;
 BBPG_BATTERY_STATE_T BBPG_BAT_STATE = BBPG_BAT_UNINIT;
+BBPG_ACCEL_METER_STATE_T BBPG_ACCEL_STATE;
+
+BBPG_OPTION_T BBPG_OPTION =
+{
+    .UNDO_ALARM_ENABLE = 0,
+    .MPU_WORK_ENABLE = 1,
+};
+
 uint32_t UNIX_TIMESTAMP = 0;
 
 /*
@@ -77,7 +85,7 @@ void bbpg_control_wr_ind_handler(ke_msg_id_t const msgid,
     uint8_t val[32];
     memcpy(&val, &param->value[0], param->length);
     
-    static uint16_t checksum;
+    uint16_t checksum;
     
     // decoder process
     if((val[0]  == '#') &&
@@ -109,6 +117,8 @@ void bbpg_control_wr_ind_handler(ke_msg_id_t const msgid,
                     break;
                     
                 case BBPG_COM_TYPE_UNDO_ALARM_ENABLE:
+                    
+                    BBPG_OPTION.UNDO_ALARM_ENABLE = val[7];
                     break;
                 
                 case BBPG_COM_TYPE_JUST_UPDATE_TIME:
@@ -119,7 +129,7 @@ void bbpg_control_wr_ind_handler(ke_msg_id_t const msgid,
             }
         }
     }
-                    
+     
     
     if(val[0] == 1)
     {
@@ -146,6 +156,41 @@ void bbpg_control_wr_ind_handler(ke_msg_id_t const msgid,
                 break;
         }
     }
+}
+
+void bbpg_loss_check_wr_ind_handler(ke_msg_id_t const msgid,
+                                 struct custs1_val_write_ind const *param,
+                                 ke_task_id_t const dest_id,
+                                 ke_task_id_t const src_id)
+{
+    uint8_t val[32];
+    
+    memcpy(&val, &param->value[0], param->length);
+    
+    if(val[0] == 1)
+    {
+        if((BBPG_STATE != BBPG_NO_CONNECTION) && (BBPG_STATE != BBPG_IDENTIFY))
+        {
+            struct custs1_val_ntf_req* req;
+ 
+            sprintf(val, "%d", UNIX_TIMESTAMP);
+                    
+            req = KE_MSG_ALLOC_DYN(CUSTS1_VAL_NTF_REQ,
+                                   TASK_CUSTS1,
+                                   TASK_APP,
+                                   custs1_val_ntf_req,
+                                   DEF_CUST1_BBPG_LOSS_CHECK_CHAR_LEN);
+
+            req->conhdl = app_env->conhdl;
+            req->handle = CUST1_IDX_BBPG_LOSS_CHECK_VAL;
+            req->length = DEF_CUST1_BBPG_LOSS_CHECK_CHAR_LEN;
+               
+            memcpy(req->value, &val, DEF_CUST1_BBPG_LOSS_CHECK_CHAR_LEN);
+                   
+            ke_msg_send(req);
+        }        
+        
+    }    
 }
 
 void undo_detect_irq_handler(void)

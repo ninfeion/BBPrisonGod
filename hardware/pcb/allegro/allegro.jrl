@@ -1,15 +1,42 @@
-\t (00:00:15) allegro 17.2 S004 Windows SPB 64-bit Edition
-\t (00:00:15)     Journal start - Thu Feb 09 00:38:53 2017
-\t (00:00:15)         Host=NINFEION-PC User=Ninfeion Pid=7044 CPUs=4
-\t (00:00:15) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
-\t (00:00:15) 
-   (00:00:15) Loading axlcore.cxt 
-\t (00:00:16) Opening existing design...
-\d (00:00:18) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_PCB_V238_VBUS_CHANGE.brd
-\i (00:00:19) trapsize 6487
-\i (00:00:19) trapsize 6731
-\i (00:00:19) trapsize 6731
-\i (00:00:19) trapsize 6562
-\i (00:00:19) generaledit 
-\i (03:44:25) exit 
-\t (03:44:27)     Journal end - Thu Feb 09 04:23:05 2017
+\t (00:00:03) allegro 17.2 S004 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Tue Feb 14 21:50:19 2017
+\t (00:00:03)         Host=NINFEION-PC User=Ninfeion Pid=14904 CPUs=4
+\t (00:00:03) CmdLine= C:\Cadence\Cadence_SPB_17.2-2016\tools\bin\allegro.exe
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\d (00:00:04) Design opened: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_PCB_V238_VBUS_CHANGE.brd
+\i (00:00:04) trapsize 5221
+\i (00:00:04) trapsize 5378
+\i (00:00:04) trapsize 5378
+\i (00:00:05) trapsize 5270
+\i (00:00:05) generaledit 
+\i (00:00:12) step out 
+\i (00:00:45) setwindow form.step_out
+\i (00:00:45) FORM step_out bare_board NO 
+\i (00:00:46) FORM step_out bare_board YES 
+\i (00:00:47) FORM step_out bare_board NO 
+\i (00:01:03) FORM step_out browse  
+\i (00:01:06) fillin "menu_cancel"
+\i (00:01:27) FORM step_out filename PRISON_GOD_PCB_V238_VBUS_CHANGE_nobareboard 
+\i (00:01:27) FORM step_out done  
+\t (00:01:27) Starting Exporting STEP File...
+\t (00:01:30) STEP output completed.
+\i (00:01:33) setwindow text
+\i (00:01:33) close 
+\i (00:01:34) setwindow form.step_out
+\i (00:01:34) FORM step_out cancel  
+\i (00:01:34) setwindow pcb
+\i (00:01:34) generaledit 
+\i (00:05:41) step out 
+\i (00:05:43) setwindow form.step_out
+\i (00:05:43) FORM step_out bare_board YES 
+\i (00:05:52) FORM step_out hilighted_pkg YES 
+\i (00:05:53) FORM step_out mapped_pkg YES 
+\i (00:06:18) FORM step_out cancel  
+\i (00:06:18) setwindow pcb
+\i (00:06:18) generaledit 
+\i (00:06:20) exit 
+\e (00:06:20) Do you want to save the changes you made to PRISON_GOD_PCB_V238_VBUS_CHANGE.brd?
+\i (00:06:22) fillin no 
+\t (00:06:22)     Journal end - Tue Feb 14 21:56:38 2017

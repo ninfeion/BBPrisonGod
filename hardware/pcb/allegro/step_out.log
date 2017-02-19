@@ -3,7 +3,7 @@
 (    STEP Export                                                      )
 (                                                                     )
 (    Software Version : 17.2S004                                      )
-(    Date/Time        : Wed Jan 25 21:04:55 2017                      )
+(    Date/Time        : Tue Feb 14 21:51:43 2017                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -102,19 +102,19 @@ WARNING: Discarding unconnected item on Board Geometry / Outline:
   End (29.5656 7.6454)
 
 
-STEP file: PRISON_GOD_PCB_V238_VBUS_CHANGE
+STEP file: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_PCB_V238_VBUS_CHANGE_nobareboard.stp
 Design file: C:/Ninfeion_Git/BBPrisonGod/hardware/pcb/allegro/PRISON_GOD_PCB_V238_VBUS_CHANGE.brd
 Export units: Millimeter
 STEP protocol: AP-214
 Source identification: allegro_17.2S004
 Export selected and highlighted parts?: NO
 Export secondary parts?: NO
-Export parts with mapped STEP Models?: NO
+Export parts with mapped STEP Models?: YES
 Export parts without mapped STEP Models?: NO
 Export assemblies and enclosures parts?: NO
 Export mechanical drills?: YES
 Export electrical through pin drills?: YES
 Export electrical through via drills?: NO
-Export bare board only?: YES
+Export bare board only?: NO
 Export external copper?: YES
 step_out complete.

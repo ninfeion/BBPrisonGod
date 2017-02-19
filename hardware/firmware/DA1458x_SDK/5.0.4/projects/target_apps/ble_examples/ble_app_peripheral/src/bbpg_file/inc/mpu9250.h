@@ -2,13 +2,9 @@
 #define _MPU9250_H_
 
 #include "stdint.h"
-#include "stdio.h"
 #include "stdbool.h"
-
-#include "hw_i2c.h"
-
 #include "gpio.h"
-#include "bbpg_user_setup.h"
+#include "hw_i2c.h"
 
 #define RA_SELF_TEST_X_GYRO			0X00
 #define RA_SELF_TEST_Y_GYRO			0X01
@@ -237,7 +233,7 @@
 
 
 void mpu9250Init(GPIO_PORT I2C_GPIO_PORT, GPIO_PIN I2C_SCL_PIN, GPIO_PIN I2C_SDA_PIN,
-								 uint16_t dev_address, uint8_t speed, uint8_t address_mode, uint8_t address_size);
+				 uint16_t dev_address, uint8_t speed, uint8_t address_mode, uint8_t address_size);
 
 uint8_t getMPU9250ID(void);
 uint8_t getAK8963ID_Bypass(void);

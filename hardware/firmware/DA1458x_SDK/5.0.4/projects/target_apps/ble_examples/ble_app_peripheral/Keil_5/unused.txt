@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 5060183: Last Updated: Sat Feb 11 00:27:09 2017
+;#<FEEDBACK># ARM Linker, 5060183: Last Updated: Sun Feb 19 20:25:30 2017
 ;VERSION 0.2
 ;FILE adc.o
 ;FILE app.o
@@ -114,7 +114,6 @@ GPIO_init <= USED 0
 ;FILE hardfault_handler.o
 ;FILE hw_i2c.o
 hwI2CReadByte <= USED 0
-hwI2CReadMultipleBytes <= USED 0
 hwI2CRelease <= USED 0
 hwI2CWriteMultipleBytes <= USED 0
 ;FILE i2c_eeprom.o
@@ -135,10 +134,8 @@ log_ke_malloc <= USED 0
 ;FILE llc.obj
 ;FILE llc_con_update_ind.obj
 ;FILE mpu9250.o
-delay_ms <= USED 0
 getMPU9250ID <= USED 0
 mpu9250Check <= USED 0
-readMPU9250AccelRaw <= USED 0
 readMPUFIFO <= USED 0
 readMPUFIFOCount <= USED 0
 ;FILE nmi_handler.o
