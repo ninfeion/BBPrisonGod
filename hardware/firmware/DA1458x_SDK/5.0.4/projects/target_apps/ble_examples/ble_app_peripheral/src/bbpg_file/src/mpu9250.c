@@ -33,7 +33,7 @@ void mpu9250Init(GPIO_PORT I2C_GPIO_PORT, GPIO_PIN I2C_SCL_PIN, GPIO_PIN I2C_SDA
 	//hwI2CWriteByte(RA_CONFIG, 0x02);         // 0x02	Set gyro sample rate to 1 kHz and DLPF to 92 Hz
 	//hwI2CWriteByte(RA_GYRO_CONFIG, 0x18);    // 2000d/s
 	hwI2CWriteByte(RA_ACCEL_CONFIG_1, 0x18); // 16g range
-	hwI2CWriteByte(RA_ACCEL_CONFIG_2, 0x04); // Set accelerometer rate to 1 kHz and bandwidth to 20 Hz
+	hwI2CWriteByte(RA_ACCEL_CONFIG_2, 0x05); // Set accelerometer rate to 1 kHz and bandwidth to 10 Hz
     
     delay_ms(1000);
     

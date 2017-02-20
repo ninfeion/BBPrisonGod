@@ -40,6 +40,9 @@
 #include "bbpg_user_setup.h"
 #include "mpu9250.h"
 
+//#include "bbpg_queue.h"
+//#include "nm_step_count.h"
+
 
 /*
  * TYPE DEFINITIONS
@@ -740,28 +743,31 @@ void identify_timer_cb_handler(void)
 
 void timestamp_tictok_timer_cb_handler(void)
 {
-    UNIX_TIMESTAMP++;
+    static uint8_t unix_count = 0;
+    if(unix_count++ >=10)
+    {
+        UNIX_TIMESTAMP++;
+        unix_count = 0;
+    }
     
-    timer_counter_timer = app_easy_timer(100/*1s*/, timestamp_tictok_timer_cb_handler); // never stop
+    motionDetectTimestamp_ms = motionDetectTimestamp_ms + 100;
+    
+    timer_counter_timer = app_easy_timer(10/*0.1s*/, timestamp_tictok_timer_cb_handler); // never stop
 }
 
 void accel_refresh_timer_cb_handler(void)
 {
-    //static uint16_t mpuFIFOCount;
-    
-    static int16_t accelRaw[3];
-    
-    //static uint8_t fifoTemp[48]; 
+    int16_t accelRaw[3];
     
     switch(BBPG_ACCEL_STATE)
     {
         case(BBPG_ACCEL_METER_WORK):
-            //mpuFIFOCount = readMPUFIFOCount();
-            //readMPUFIFO(fifoTemp, 48);
-        
             readMPU9250AccelRaw(accelRaw);
         
-            accel_refresh_timer = app_easy_timer(100/*1s, sleep detect, and destory detect*/, accel_refresh_timer_cb_handler);
+            //motionEvenAnalysis(motionDetectTimestamp_ms, accelRaw[0], accelRaw[1], accelRaw[2]);
+            //nmStepCount(motionDetectTimestamp_ms, accelRaw[0], accelRaw[1], accelRaw[2]);
+            
+            accel_refresh_timer = app_easy_timer(10/*0.1s, 10Hz, i already config the mpu dlpf bandwidth to 10hz, sleep detect, and destory detect*/, accel_refresh_timer_cb_handler);
             break;
         
         default:
@@ -784,8 +790,8 @@ void start_advertise_user_define_cb(void)
     {
         case(BBPG_ACCEL_METER_UNINIT):
             BBPG_ACCEL_STATE = BBPG_ACCEL_METER_WORK;
-        
-            accel_refresh_timer = app_easy_timer(1, accel_refresh_timer_cb_handler);
+                    
+            //accel_refresh_timer = app_easy_timer(1, accel_refresh_timer_cb_handler);
             break;
         
         case(BBPG_ACCEL_METER_WORK):

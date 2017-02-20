@@ -84,7 +84,7 @@ static struct att_char128_desc custs1_long_value_char       = {ATT_CHAR_PROP_RD 
                                                               {0, 0},
                                                               DEF_CUST1_LONG_VALUE_UUID_128};
 */
-static struct att_char128_desc custs1_bbpg_control_char     = {ATT_CHAR_PROP_WR,
+static struct att_char128_desc custs1_bbpg_control_char     = {ATT_CHAR_PROP_RD | ATT_CHAR_PROP_WR | ATT_CHAR_PROP_NTF,
                                                               {0, 0},
                                                               DEF_CUST1_BBPG_CONTROL_UUID_128};
 
@@ -215,8 +215,10 @@ struct attm_desc_128 custs1_att_db[CUST1_IDX_NB] =
     */
     [CUST1_IDX_BBPG_CONTROL_CHAR]       = {(uint8_t*)&att_decl_char, ATT_UUID_16_LEN, PERM(RD, ENABLE),
                                             sizeof(custs1_bbpg_control_char), sizeof(custs1_bbpg_control_char), (uint8_t*)&custs1_bbpg_control_char},
-    [CUST1_IDX_BBPG_CONTROL_VAL]        = {CUST1_BBPG_CONTROL_UUID_128, ATT_UUID_128_LEN, PERM(WR, ENABLE),
-                                            DEF_CUST1_BBPG_CONTROL_CHAR_LEN, 0, NULL},
+    [CUST1_IDX_BBPG_CONTROL_VAL]        = {CUST1_BBPG_CONTROL_UUID_128, ATT_UUID_128_LEN, PERM(RD, ENABLE) | PERM(WR, ENABLE) | PERM(NTF, ENABLE),
+                                            DEF_CUST1_BBPG_CONTROL_CHAR_LEN, 0, NULL},    
+    [CUST1_IDX_BBPG_CONTROL_NTF_CFG]    = {(uint8_t*)&att_decl_cfg, ATT_UUID_16_LEN, PERM(RD, ENABLE) | PERM(WR, ENABLE),
+                                            sizeof(uint16_t), 0, NULL},                                                                                       
     [CUST1_IDX_BBPG_CONTROL_USER_DESC]  = {(uint8_t*)&att_decl_user_desc, ATT_UUID_16_LEN, PERM(RD, ENABLE),
                                             sizeof(CUST1_BBPG_CONTROL_USER_DESC) - 1, sizeof(CUST1_BBPG_CONTROL_USER_DESC) - 1, CUST1_BBPG_CONTROL_USER_DESC},
     

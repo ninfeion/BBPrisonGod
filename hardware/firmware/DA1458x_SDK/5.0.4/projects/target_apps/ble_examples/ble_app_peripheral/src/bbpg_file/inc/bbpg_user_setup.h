@@ -66,7 +66,15 @@
 
 #define BBPG_MOTOR_DELAY_PAR 1000000
 
+#define BBPG_PHONE2BAND_MESS_HEAD '#'
+#define BBPG_PHONE2BAND_MESS_REAR '%'
+
+#define BBPG_BAND2PHONE_MESS_HEAD '@'
+#define BBPG_BAND2PHONE_MESS_REAR '$'
+
 #define DATA_UNDO_ALARM_SEND_TO_PHONE "UNDO_ALARM"
+
+#define BBPG_MPU9250_FIFO_MAX_SIZE 48 // 3*16
 
 typedef enum
 {
@@ -149,6 +157,8 @@ enum
     BBPG_COM_TYPE_IDENTIFY = 1,
     BBPG_COM_TYPE_UNDO_ALARM_ENABLE,
     BBPG_COM_TYPE_JUST_UPDATE_TIME,
+    
+    BBPG_COM_TYPE_GET_BATTERY_VAL,
 };
 
 typedef struct 
@@ -166,6 +176,7 @@ extern BBPG_ACCEL_METER_STATE_T BBPG_ACCEL_STATE;
 extern BBPG_OPTION_T BBPG_OPTION;
 
 extern uint32_t UNIX_TIMESTAMP;
+extern uint32_t motionDetectTimestamp_ms;
 
 #endif
 
