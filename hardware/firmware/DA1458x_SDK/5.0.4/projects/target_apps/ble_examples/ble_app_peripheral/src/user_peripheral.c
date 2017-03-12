@@ -633,10 +633,15 @@ void ui_refresh_timer_cb_handler(void)
             break;
         
         case(BBPG_UI_WAKE_UP):
-            //BBPG_UI_STATE = BBPG_UI_SLEEP;
             BBPG_UI_STATE = BBPG_UI_WORK;
             uiRegisterFrame(&frame_wake_up_time_show); 
             oledExitingSleep();
+            
+            /**
+              * New Way For Wakeup Menu
+              */
+            //BBPG_UI_STATE = BBPG_UI_MENU;
+            //oledExitingSleep();
         
             ui_refresh_timer = app_easy_timer(1, ui_refresh_timer_cb_handler); 
             break;

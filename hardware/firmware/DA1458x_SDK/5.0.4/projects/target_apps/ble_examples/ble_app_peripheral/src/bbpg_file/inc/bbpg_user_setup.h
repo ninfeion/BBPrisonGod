@@ -100,6 +100,7 @@ typedef enum
     BBPG_UI_SLEEP,
     BBPG_UI_WAKE_UP,
     
+    BBPG_UI_MENU,
 }BBPG_UI_STATE_T;
 
 typedef enum

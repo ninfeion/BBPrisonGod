@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 5060183: Last Updated: Tue Feb 21 00:35:03 2017
+;#<FEEDBACK># ARM Linker, 5060183: Last Updated: Fri Feb 24 15:17:02 2017
 ;VERSION 0.2
 ;FILE adc.o
 ;FILE app.o
@@ -138,8 +138,6 @@ getMPU9250ID <= USED 0
 mpu9250Check <= USED 0
 readMPUFIFO <= USED 0
 readMPUFIFOCount <= USED 0
-;FILE nm_step_count.o
-nmStepCount <= USED 0
 ;FILE nmi_handler.o
 ;FILE nvds.o
 ;FILE oled_dis.o

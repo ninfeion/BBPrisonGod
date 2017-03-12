@@ -119,15 +119,15 @@ void periph_init(void)
 				MPU9250_ADDRESS, I2C_STANDARD, I2C_7BIT_ADDR, I2C_1BYTE_ADDR);    
     
     oledIOInit(OLED_POWER_GPIO_PORT, OLED_POWER_GPIO_PIN,
-             OLED_I2C_GPIO_PORT, 
-             OLED_I2C_SCL_PIN, OLED_I2C_SDA_PIN,
-             OLED_RES_PORT, OLED_RES_PIN);
+               OLED_I2C_GPIO_PORT, 
+               OLED_I2C_SCL_PIN, OLED_I2C_SDA_PIN,
+               OLED_RES_PORT, OLED_RES_PIN);
              
     oledSSD1306Initialization();
 
     breakDetectInit(CUT_DETECT_PORT, CUT_DETECT_PIN,
                     UNDO_DETECT_PORT, UNDO_DETECT_PIN);
-    
+                    
     touchModuleInit(TOUCH_IO_PORT, TOUCH_IO_PIN);    
     
     adcIOInit();

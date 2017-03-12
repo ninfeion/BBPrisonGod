@@ -1,0 +1,49 @@
+#ifndef _MPU9250_FIFO_H_
+#define _MPU9250_FIFO_H_
+
+#include "stdint.h"
+
+//#include "ke_mem.obj"
+// API TRANS INDEX
+#define malloc(n)   ke_malloc(n)
+#define free(n)     ke_free(n)
+typedef int16_t QElemType;
+    
+typedef struct QNode
+{
+    QElemType data;
+    struct QNode *next;
+}QNode, *QueuePtr;
+
+typedef struct
+{
+    QueuePtr front;
+    QueuePtr rear;
+}FIFO_Queue;
+
+typedef enum
+{
+    ERROR,
+    OVERFLOW,
+    OK,
+    FALSE,
+    TRUE,
+}FIFO_Status;
+
+// data struct
+static FIFO_Queue mpu9250FIFO;
+
+FIFO_Status initQueue(void);
+FIFO_Status destoryQueue(void);
+FIFO_Status clearQueue(void);
+FIFO_Status queueEmpty(void);
+uint16_t    queueLength(void);
+
+uint16_t queueGetHead(QElemType &data); // just get the head data, would not delete it
+uint16_t queueAddAnElement(QElemType data);
+uint16_t queuePopHead(QElemType &data);
+
+FIFO_Status queueTraverse(targetFunc());
+
+#endif
+
